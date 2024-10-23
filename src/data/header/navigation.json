@@ -1,0 +1,171 @@
+[
+  {
+    "title": "Home",
+    "to": "/"
+   
+  },
+  {
+    "title": "Services",
+    "to": "#!",
+    "subMenu": [
+      {
+        "title": "Android ",
+        "to": "#",
+        "icon": "icon-phone-sync",
+        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Android UX-UI ",
+        "to": "#",
+        "icon": "icon-user-sync",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Android Game ",
+        "to": "#",
+        "icon": "icon-device-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "iPhone App ",
+        "to": "#",
+        "icon": "icon-cloud-dots",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "iPhone UX-UI ",
+        "to": "#",
+        "icon": "icon-phone-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "iPhone Game ",
+        "to": "#",
+        "icon": "icon-device-sync",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Web App",
+        "to": "#",
+        "icon": "icon-coin-user",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "React JS",
+        "to": "#",
+        "icon": "icon-user-time",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Node JS",
+        "to": "#",
+        "icon": "icon-hand-up",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Next JS",
+        "to": "#",
+        "icon": "icon-device-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Wordpress",
+        "to": "#",
+        "icon": "icon-target-chart",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Laravel",
+        "to": "#",
+        "icon": "icon-user-chart",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      }
+    ]
+  },
+  {
+    "title": "Industry",
+    "to": "#!",
+    "subMenu": [
+      {
+        "title": "Banking, Finance & Insurance",
+        "to": "#!"
+      },
+      {
+        "title": "Dating",
+        "to": "#!"
+      },
+      {
+        "title": "E-Commerce Retail & B2B",
+        "to": "#!"
+      },
+      {
+        "title": "E-Learning",
+        "to": "#!"
+      },
+      {
+        "title": "E-Learning",
+        "to": "#!"
+      }
+    ]
+  },
+  {
+    "title": "Outsourcing",
+    "to": "#!",
+    "subMenu": [
+      {
+        "title": "Hire Mobile App Developer",
+        "to": "#"
+      },
+      {
+        "title": "Hire iPhone App Developer",
+        "to": "#"
+      },
+      {
+        "title": "Hire Android Developer",
+        "to": "#"
+      },
+      {
+        "title": "Hire iPad App Developer",
+        "to": "#"
+      },
+      {
+        "title": "Hire Cross-Platform Developer",
+        "to": "#"
+      },
+      {
+        "title": "Hire React Native Developer",
+        "to": "#"
+      }
+    ]
+  },
+  {
+    "title": "Our Work",
+    "to": "#!",
+    "subMenu": [
+      {
+        "title": "Portfolio",
+        "to": "#"
+      },
+      {
+        "title": "SEO Case Study",
+        "to": "#"
+      }
+     
+    ]
+  },
+  {
+    "title": "Packages",
+    "to": "#!",
+    "subMenu": [
+      {
+        "title": "Seo packages",
+        "to": "#"
+      }
+    ]
+  },
+  {"title" : "Blogs",
+"to" : "#"},
+  {"title" : "Career",
+"to" : " #"}
+
+]
