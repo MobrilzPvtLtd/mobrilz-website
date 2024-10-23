@@ -20,7 +20,7 @@ export default function FooterOne({ classname }) {
                   )}
                 </Link>
                 <div className="caption1">Welcome to Mobrilz! We provide diverse IT solutions with a team of experts. From IT management to cloud solutions, we have you covered. </div>
-                <div className="caption1">Mon - Fri: 10:00 - 18:00 <br />Closed on Weekends</div>
+                <div className="caption1">Mon - Fri: 10:00 - 18:00 <br />Closed on Weekends </div>
               </div>
             </div>
             <div className="w-full md:w-1/2">
