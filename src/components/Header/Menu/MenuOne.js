@@ -12,7 +12,7 @@ export default function MenuOne({ container }) {
         <div className="menu__wrapper gap-10">
           <h1 className="text-white">
             <Link href="/" className="menu__wrapper__logo block">
-              <img className="w-40" src="/images/Mobrilz-logo.png" alt="Logo" />
+              <img className="w-40" src="/images/mobrilz-logo.png" alt="Logo" />
             </Link>
           </h1>
           
