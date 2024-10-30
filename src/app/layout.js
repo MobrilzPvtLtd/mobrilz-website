@@ -1,8 +1,11 @@
-import { Plus_Jakarta_Sans } from "next/font/google";
 import '@/styles/styles.scss';
+import { Inter } from 'next/font/google';
 import GlobalProvider from "./GlobalProvider";
 
-const plusJakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+});
 
 export const metadata = {
   title: "Top Web and Mobile App Development Company in India - Mobrilz ",
@@ -12,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={plusJakarta.className}>
+      <body className={inter.variable}>
         <GlobalProvider>
           {children}
           <div id="nav-full" />

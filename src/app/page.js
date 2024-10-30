@@ -18,7 +18,7 @@ import SliderTwo from "@/components/Sections/Slider/SliderTwo";
 export default function Home() {
   return (
     <>
-      <LayoutOne className="-style-1">
+      <LayoutOne className="-style-1 font-sans">
         <SliderTwo className="-style-1 lg:py-[60px] py-0 " />
         <AboutOne />
         <BenefitOne classname="lg:mt-20 sm:mt-14 mt-10" data={benefitData} start={0} limit={4} />

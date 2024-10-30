@@ -9,7 +9,9 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {fontFamily: {
+      sans: ['inter', 'sans-serif'], 
+    },},
     container: {
       padding: {
         DEFAULT: '16px',
@@ -34,6 +36,7 @@ module.exports = {
       darkBlue: '#000428',
       mediumBlue: '#00295d',
     },
+  
   },
   plugins: [],
 }
