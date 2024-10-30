@@ -14,9 +14,9 @@ export default function FooterOne({ classname }) {
               <div className="footer-company-infor flex flex-col gap-5">
                 <Link href="/" className="logo">
                   {classname ? (
-                    <Image src={'/images/mobrilz-logo.jpeg'} width={5000} height={5000} alt="logo" className="w-[148px]" />
+                    <Image src={'/images/mobrilz-logo.png'} width={5000} height={5000} alt="logo" className="w-[148px]" />
                   ) : (
-                    <Image src={'/images/mobrilz-logo.jpeg'} width={5000} height={5000} alt="logo" className="w-[148px]" />
+                    <Image src={'/images/mobrilz-logo.png'} width={5000} height={5000} alt="logo" className="w-[148px]" />
                   )}
                 </Link>
                 <div className="caption1">Welcome to Mobrilz! We provide diverse IT solutions with a team of experts. From IT management to cloud solutions, we have you covered. </div>
