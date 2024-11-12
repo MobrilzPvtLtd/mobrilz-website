@@ -41,13 +41,13 @@ export default function MenuFunctionIcons(props) {
         <div className="list__button flex items-center gap-4 pr-10">
           {!hide.includes("phone") && (
             <div className="hidden lg_2:flex items-center gap-2  px-2.5 py-[5px] rounded-full ">
-              <span className="icon bg-white text-blue w-8 h-8 flex items-center justify-center rounded-full">
+              {/* <span className="icon bg-white text-blue w-8 h-8 flex items-center justify-center rounded-full">
                 <Icon.PhoneCall className="text-2xl flex-shrink-0" />
-              </span>
-              <span className="text-button text-white whitespace-nowrap flex-shrink-0">
+              </span> */}
+              {/* <span className="text-button text-white whitespace-nowrap flex-shrink-0">
                 {" "}
                 + 1 (256) 854-2032
-              </span>
+              </span> */}
             </div>
           )}
           <Link

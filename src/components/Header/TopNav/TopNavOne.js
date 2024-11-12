@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -8,33 +8,54 @@ import { XIcon } from "@heroicons/react/solid";
 import SocialIcons from "../../Other/SocialIcons";
 import Select from "@/components/Control/Select";
 import { renderContainer } from "../../../common/utils";
+import * as Icon from "@phosphor-icons/react/dist/ssr";
 
 export default function TopNavOne() {
+  const [isVisible, setIsVisible] = React.useState(true);
 
+  if (!isVisible) return null;
 
-    const [isVisible, setIsVisible] = React.useState(true);
-
-if (!isVisible) return null;
-
-return (
-  <>
-  <div className="bg-blue-600 text-black font-semibold px-3 py-1 bg-white dark:bg-black dark:text-white flex items-center justify-between text-center">
-    <div className="flex-1">
-      <p className="text-sm md:text-base">This is a message from mobrilz</p>
-    </div>
-   
-      <Link href="#!" className="text-sm md:text-base font-semibold underline ml-4">
-          Learn More
-      </Link>
-  
-    {/* <button
-      onClick={() => setIsVisible(false)}
-      className="ml-4 p-1 rounded hover:bg-blue-700"
-      aria-label="Close"
-    >
-      <XIcon className="h-5 w-5" />
-    </button> */}
-  </div>
+  return (
+    <>
+      <div className="bg-blue-600 text-black font-semibold px-3 py-1 bg-white dark:bg-black dark:text-white flex items-center justify-center text-center">
+        <div className="flex justify-center">
+          <div className="hidden lg_2:flex items-center gap-2  px-2.5 py-[5px] rounded-full ">
+            <span className="icon bg-white text-blue w-8 h-8 flex items-center justify-center rounded-full">
+              <Icon.EnvelopeSimple className="text-2xl flex-shrink-0" />
+            </span>
+            <a
+              href="mailto:sales@mobrilz.com"
+              className="text-button text-black whitespace-nowrap flex-shrink-0"
+            >
+              sales@mobrilz.com
+            </a>
+          </div>
+          <div className="hidden lg_2:flex items-center gap-2  px-2.5 py-[5px] rounded-full ">
+            <span className="icon bg-white text-blue w-8 h-8 flex items-center justify-center rounded-full">
+              <Icon.PhoneCall className="text-2xl flex-shrink-0" />
+            </span>
+            <a
+              href="tel:+12568542032"
+              className="text-button text-black whitespace-nowrap flex-shrink-0"
+            >
+              +1 (256) 854-2032
+            </a>
+          </div>
+          <div className="hidden lg_2:flex items-center gap-2  px-2.5 py-[5px] rounded-full ">
+            <span className="icon bg-white text-blue w-8 h-8 flex items-center justify-center rounded-full">
+              <Icon.MapPin className="text-2xl flex-shrink-0" />
+            </span>
+            <a
+              href="https://maps.app.goo.gl/iVn8iNN8brrRZYue9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-button text-black whitespace-nowrap flex-shrink-0"
+            >
+              E-38, 2nd Floor, Sector 63 Noida, U.P. 201301, India
+            </a>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

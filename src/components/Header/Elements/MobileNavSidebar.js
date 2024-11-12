@@ -11,8 +11,6 @@ export default function MobileNavSidebar({ showMobileNav, setShowMobileNav }) {
   const [searchInput, setSearchInput] = useState("");
   const [currency, setCurrency] = useState("USD");
   const [language, setLanguage] = useState("ENG");
-
-  console.log("showMobileNav" ,showMobileNav)
   return (
     <>
       <ClientOnlyPortal selector="#nav-sidebar">

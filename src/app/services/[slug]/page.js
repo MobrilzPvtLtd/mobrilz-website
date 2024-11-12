@@ -17,17 +17,19 @@ import { getPostByTitle } from "@/common/postSelect";
 export default function ServiceDtail({ params: { slug } }) {
     // Decode URL
     const decodedSlug = decodeURIComponent(slug);
+    console.log("decoded slug" , decodedSlug)
 
     // handle with ' and "
     const cleanedSlug = decodedSlug.replace(/['"]/g, "'");
 
     const foundPost = getPostByTitle(serviceData, cleanedSlug);
+    console.log("service data" , foundPost)
 
     return (
         <>
             <LayoutOne className="-style-1">
                 <div className="bg-subpage absolute top-0 w-full h-[740px] bg-linear-gradient z-[-1]"></div>
-                <HeadingSubpage classname={'lg:pt-20 sm:pt-14 pt-10 lg:pb-[60px] md:pb-12 pb-8'} title={foundPost[0].title} desc={foundPost[0].desc} />
+                {/* <HeadingSubpage classname={'lg:pt-20 sm:pt-14 pt-10 lg:pb-[60px] md:pb-12 pb-8'} title={foundPost[0].title} desc={foundPost[0].desc} /> */}
                 <BenefitSeven background="bg-linear" />
                 <BrandOne classname={'lg:pt-20 md:pt-14 pt-10 style-subpage'} />
                 <AboutSevenFirst />
