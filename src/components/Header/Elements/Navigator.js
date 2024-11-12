@@ -92,7 +92,7 @@ export default function Navigator({ disableSubmenu, className }) {
                 <div className="ml-2 flex gap-2">
                   <div className=" w-3/4 ">
                     <div className="service-cate heading6">Mobile</div>
-                    <ul className="grid grid-cols-2 gap-5 gap-y-2.5 mt-2">
+                    <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
                       {item.subMenu.slice(0, ).map((i, index) => (
                         <li
                           key={index}
@@ -216,7 +216,7 @@ export default function Navigator({ disableSubmenu, className }) {
                 <div className="ml-2 flex gap-2">
                   <div className=" w-3/4 ">
                     <div className="service-cate heading6">Web</div>
-                    <ul className=" w-full grid grid-cols-3 gap-5 gap-y-2.5 mt-2">
+                    <ul className=" w-full grid grid-cols-3 gap-0 gap-y-0 mt-2">
                       {item.subMenu2.slice(0, ).map((i, index) => (
                         <li
                           key={index}
@@ -316,8 +316,8 @@ export default function Navigator({ disableSubmenu, className }) {
                 <div className="ml-2 flex gap-2">
                   <div className=" w-3/4 ">
                     <div className="service-cate heading6">AWS Services</div>
-                    <ul className="grid grid-cols-2 gap-5 gap-y-2.5 mt-2">
-                      {item.subMenu3.slice(0, 6).map((i, index) => (
+                    <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
+                      {item.subMenu3.slice(0, ).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
@@ -416,8 +416,8 @@ export default function Navigator({ disableSubmenu, className }) {
                 <div className="flex gap-2 ml-2">
                   <div className=" w-3/4 ">
                     <div className="service-cate heading6">Ecommerce</div>
-                    <ul className="grid grid-cols-2 gap-5 gap-y-2.5 mt-2">
-                      {item.subMenu4.slice(0, 6).map((i, index) => (
+                    <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
+                      {item.subMenu4.slice(0, ).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
@@ -517,7 +517,7 @@ export default function Navigator({ disableSubmenu, className }) {
                 <div className="flex gap-2 ml-2">
                   <div className=" w-3/4 ">
                     <div className="service-cate heading6">Emerging Technologies</div>
-                    <ul className="grid grid-cols-2 gap-5 gap-y-2.5 mt-2">
+                    <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
                       {item.subMenu5.slice(0, ).map((i, index) => (
                         <li
                           key={index}
@@ -619,8 +619,8 @@ export default function Navigator({ disableSubmenu, className }) {
                   <div className=" w-3/4 ">
                     <div className="service-cate heading6">Digital Marketing Services
                     </div>
-                    <ul className="grid grid-cols-2 gap-5 gap-y-2.5 mt-2">
-                      {item.subMenu6.slice(0, 6).map((i, index) => (
+                    <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
+                      {item.subMenu6.slice(0, ).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
