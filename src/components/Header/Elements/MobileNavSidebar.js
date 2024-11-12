@@ -11,6 +11,8 @@ export default function MobileNavSidebar({ showMobileNav, setShowMobileNav }) {
   const [searchInput, setSearchInput] = useState("");
   const [currency, setCurrency] = useState("USD");
   const [language, setLanguage] = useState("ENG");
+
+  console.log("showMobileNav" ,showMobileNav)
   return (
     <>
       <ClientOnlyPortal selector="#nav-sidebar">
@@ -21,23 +23,8 @@ export default function MobileNavSidebar({ showMobileNav, setShowMobileNav }) {
           classNames="cart-sidebar"
         >
           <div className="navigation-sidebar">
-            <div className="search-box">
-              <form>
-                <input
-                  type="text"
-                  placeholder="What are you looking for?"
-                  value={searchInput}
-                  onChange={(e) => setSearchInput(e.target.value)}
-                />
-                <button>
-                  <Icon.MagnifyingGlass className="text-lg" />
-                </button>
-              </form>
-            </div>
             <NavigatorMobile />
-            <div className="navigation-sidebar__footer">
-              <a className="navigation-sidebar__footer__auth">Login/Register</a>
-            </div>
+            
           </div>
         </CSSTransition>
       </ClientOnlyPortal>

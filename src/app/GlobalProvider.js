@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/lib/integration/react";
 import { persistor, store } from "../redux/store";
@@ -10,12 +10,14 @@ import { ToastContainer } from 'react-toastify';
 import withReduxStore from "../common/with-redux-store";
 import Loading from "../components/Other/Loading";
 import * as Icon from "@phosphor-icons/react/dist/ssr";
+import { ThemeProvider } from 'next-themes'
 
 const GlobalProvider = ({ children, reduxStore }) => {
+  
     return (
-        <Provider store={reduxStore}>
+        <Provider store={reduxStore} suppressHydrationWarning>
             <PersistGate loading={<Loading />} persistor={persistor}>
-                {children}
+            <ThemeProvider>{children}</ThemeProvider>
                 <ToastContainer position="bottom-left" autoClose={3000} />
                 <ScrollToTop
                     smooth

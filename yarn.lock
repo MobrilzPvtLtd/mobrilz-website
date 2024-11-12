@@ -47,6 +47,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@heroicons/react@npm:v1":
+  version: 1.0.6
+  resolution: "@heroicons/react@npm:1.0.6"
+  peerDependencies:
+    react: ">= 16"
+  checksum: 10c0/04d77c604be6a9d3373e2cf773ef0f3e9fa02b52ed85260c440e629682dc3045935090811dda0423fa9bb2d5f8090cdbdda54c901dd3598c9bad691d0abce3d6
+  languageName: node
+  linkType: hard
+
 "@isaacs/cliui@npm:^8.0.2":
   version: 8.0.2
   resolution: "@isaacs/cliui@npm:8.0.2"
@@ -1501,12 +1510,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mobrilz@workspace:."
   dependencies:
+    "@heroicons/react": "npm:v1"
     "@phosphor-icons/react": "npm:^2.1.5"
     autoprefixer: "npm:^10.4.19"
     bootstrap: "npm:^5.3.3"
     classnames: "npm:^2.5.1"
     gsap: "npm:^3.12.5"
     next: "npm:14.1.0"
+    next-themes: "npm:^0.4.3"
     parallax-js: "npm:^3.1.0"
     postcss: "npm:^8.4.38"
     prop-types: "npm:^15.8.1"
@@ -1579,6 +1590,16 @@ __metadata:
   version: 0.6.4
   resolution: "negotiator@npm:0.6.4"
   checksum: 10c0/3e677139c7fb7628a6f36335bf11a885a62c21d5390204590a1a214a5631fcbe5ea74ef6a610b60afe84b4d975cbe0566a23f20ee17c77c73e74b80032108dea
+  languageName: node
+  linkType: hard
+
+"next-themes@npm:^0.4.3":
+  version: 0.4.3
+  resolution: "next-themes@npm:0.4.3"
+  peerDependencies:
+    react: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
+    react-dom: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
+  checksum: 10c0/81dbe9efed2b10169e4ecd2ff59f3dedc091518c92a79354b863ccdcc444a061125de975af5c0c123ce9a1ebd7b20b05a1fdbfcf2aaeeb337fec03fe38fd8cb0
   languageName: node
   linkType: hard
 

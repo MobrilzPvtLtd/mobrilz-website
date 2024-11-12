@@ -27,12 +27,14 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@heroicons/react", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:1.0.6"],\
           ["@phosphor-icons/react", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:2.1.7"],\
           ["autoprefixer", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:10.4.20"],\
           ["bootstrap", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:5.3.3"],\
           ["classnames", "npm:2.5.1"],\
           ["gsap", "npm:3.12.5"],\
           ["next", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:14.1.0"],\
+          ["next-themes", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:0.4.3"],\
           ["parallax-js", "npm:3.1.0"],\
           ["postcss", "npm:8.4.47"],\
           ["prop-types", "npm:15.8.1"],\
@@ -113,6 +115,28 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/@floating-ui-utils-npm-0.2.8-01a00634a5-10c0.zip/node_modules/@floating-ui/utils/",\
         "packageDependencies": [\
           ["@floating-ui/utils", "npm:0.2.8"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@heroicons/react", [\
+      ["npm:1.0.6", {\
+        "packageLocation": "../../../.yarn/berry/cache/@heroicons-react-npm-1.0.6-51f92ebbfd-10c0.zip/node_modules/@heroicons/react/",\
+        "packageDependencies": [\
+          ["@heroicons/react", "npm:1.0.6"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:1.0.6", {\
+        "packageLocation": "./.yarn/__virtual__/@heroicons-react-virtual-b4928281ec/4/.yarn/berry/cache/@heroicons-react-npm-1.0.6-51f92ebbfd-10c0.zip/node_modules/@heroicons/react/",\
+        "packageDependencies": [\
+          ["@heroicons/react", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:1.0.6"],\
+          ["@types/react", null],\
+          ["react", "npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1847,12 +1871,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["mobrilz", "workspace:."],\
+          ["@heroicons/react", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:1.0.6"],\
           ["@phosphor-icons/react", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:2.1.7"],\
           ["autoprefixer", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:10.4.20"],\
           ["bootstrap", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:5.3.3"],\
           ["classnames", "npm:2.5.1"],\
           ["gsap", "npm:3.12.5"],\
           ["next", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:14.1.0"],\
+          ["next-themes", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:0.4.3"],\
           ["parallax-js", "npm:3.1.0"],\
           ["postcss", "npm:8.4.47"],\
           ["prop-types", "npm:15.8.1"],\
@@ -1980,6 +2006,32 @@ const RAW_RUNTIME_STATE =
           "react-dom",\
           "react",\
           "sass"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["next-themes", [\
+      ["npm:0.4.3", {\
+        "packageLocation": "../../../.yarn/berry/cache/next-themes-npm-0.4.3-45cb093cef-10c0.zip/node_modules/next-themes/",\
+        "packageDependencies": [\
+          ["next-themes", "npm:0.4.3"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:0.4.3", {\
+        "packageLocation": "./.yarn/__virtual__/next-themes-virtual-6e07a0bc20/4/.yarn/berry/cache/next-themes-npm-0.4.3-45cb093cef-10c0.zip/node_modules/next-themes/",\
+        "packageDependencies": [\
+          ["next-themes", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:0.4.3"],\
+          ["@types/react", null],\
+          ["@types/react-dom", null],\
+          ["react", "npm:18.3.1"],\
+          ["react-dom", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\

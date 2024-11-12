@@ -8,6 +8,7 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {fontFamily: {
       sans: ['inter', 'sans-serif'], 
@@ -36,7 +37,10 @@ module.exports = {
       darkBlue: '#000428',
       mediumBlue: '#00295d',
     },
-  
+    screens: {
+      lg: '1025px', 
+      lg_2: '1200px', 
+    },
   },
   plugins: [],
 }

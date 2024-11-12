@@ -17,7 +17,7 @@ export default function MenuOne({ container }) {
           </h1>
           
           <Navigator />
-          <MenuFunctionIcons hide="button" />
+          <MenuFunctionIcons hide={"button"} />
         </div>
       </div>
     </header>

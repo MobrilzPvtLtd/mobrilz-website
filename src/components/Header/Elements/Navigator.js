@@ -36,6 +36,7 @@ else if(state==4){
     { id: 3, title: "Blogs", icon: "icon-user-sync" },
     { id: 4, title: "What We Do", icon: "icon-user-sync" },
   ];
+  console.log("navbar data" , menuData)
   function renderMenu() {
     return menuData.map((item, index) => {
       if (item.title === "Home") {

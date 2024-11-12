@@ -1,44 +1,40 @@
 'use client'
 
 import React, { useState } from "react";
-import { Container } from "reactstrap";
 import Link from "next/link";
+import { Container } from "reactstrap";
+import { XIcon } from "@heroicons/react/solid";
 
 import SocialIcons from "../../Other/SocialIcons";
 import Select from "@/components/Control/Select";
 import { renderContainer } from "../../../common/utils";
 
-export default function TopNavOne({ container }) {
-  const [currency, setCurrency] = useState("USD");
-  const [language, setLanguage] = useState("ENG");
+export default function TopNavOne() {
 
-  return (
-    <div className="top-nav .-style-1">
-      <div className={renderContainer(container)}>
-        <div className="top-nav__wrapper">
-          <SocialIcons className="-white" />
-          <p className="top-nav__wrapper__promo">
-            Free shipping on international orders of $120+
-          </p>
-          <div className="top-nav__wrapper__selectors">
-            <Select
-              id="cur"
-              options={["USD", "VND", "YEN"]}
-              getValue={(val) => setCurrency(val)}
-              className="-white -borderless"
-            />
-            <Select
-              id="lang"
-              options={["EN", "VI", "JP"]}
-              getValue={(val) => setLanguage(val)}
-              className="-white -borderless"
-            />
-            <Link href={process.env.PUBLIC_URL + "#"}>
-              <span className="top-nav__auth">Login/Register</span>
-            </Link>
-          </div>
-        </div>
-      </div>
+
+    const [isVisible, setIsVisible] = React.useState(true);
+
+if (!isVisible) return null;
+
+return (
+  <>
+  <div className="bg-blue-600 text-black font-semibold px-3 py-1 bg-white dark:bg-black dark:text-white flex items-center justify-between text-center">
+    <div className="flex-1">
+      <p className="text-sm md:text-base">This is a message from mobrilz</p>
     </div>
+   
+      <Link href="#!" className="text-sm md:text-base font-semibold underline ml-4">
+          Learn More
+      </Link>
+  
+    {/* <button
+      onClick={() => setIsVisible(false)}
+      className="ml-4 p-1 rounded hover:bg-blue-700"
+      aria-label="Close"
+    >
+      <XIcon className="h-5 w-5" />
+    </button> */}
+  </div>
+    </>
   );
 }

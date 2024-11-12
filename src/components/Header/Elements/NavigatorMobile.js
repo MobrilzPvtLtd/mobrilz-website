@@ -105,7 +105,7 @@ export default function Navigator() {
             classNames="dropdown-menu-mobile"
           >
             <ul className="dropdown-menu">
-              {item.subMenu.map((i, index) => (
+              {item?.subMenu?.map((i, index) => (
                 <li key={index}>
                   <Link href={`${process.env.PUBLIC_URL}${i.to}`}>
                     <span>{i.title}</span>

@@ -1,8 +1,15 @@
+'use client'
 import ServiceItem from "@/components/Service/ServiceItem"
+import { useEffect } from "react"
 
 const SolutionOne = ({ data, start, limit }) => {
+    let darkmode = localStorage.getItem("darkmode")
+    useEffect(()=>{
+
+    },[darkmode])
+   
     return (
-        <section className="section-solution bg-linear lg:mt-20 sm:mt-14 mt-10 lg:py-20 sm:py-14 py-10">
+        <section className={`section-solution ${!darkmode ? "bg-linear" : "bg-black"}  lg:mt-20 sm:mt-14 mt-10 lg:py-20 sm:py-14 py-10`}>
             <div className="container text-center">
                 <span className="tag text-label">How we do</span>
                 <h3 className="heading3 text-center mt-3">Our Services</h3>
