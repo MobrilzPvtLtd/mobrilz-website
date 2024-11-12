@@ -9,39 +9,109 @@
     "to": "#!",
     "subMenu": [
       {
-        "title": "Mobile ",
+        "title": "Android App Development ",
         "to": "#",
         "icon": "icon-phone-sync",
         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       },
       {
-        "title": "Web",
+        "title": "Android UX-UI App Development",
         "to": "#",
         "icon": "icon-user-sync",
          "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       },
       {
-        "title": "AWS Services",
+        "title": "Android Game Development",
         "to": "#",
         "icon": "icon-device-cloud",
          "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       },
       {
-        "title": "Ecommerce",
+        "title": "IPhone App Development",
         "to": "#",
         "icon": "icon-cloud-dots",
          "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       },
       {
-        "title": "Emerging Technologies",
+        "title": "IPhone UX-UI App Development",
         "to": "#",
         "icon": "icon-phone-cloud",
          "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       },
       {
-        "title": "Digital Marketing Services",
+        "title": "IPhone Game Development",
         "to": "#",
         "icon": "icon-device-sync",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "IPad App Development",
+        "to": "#",
+        "icon": "icon-phone-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "IPad UX/UI App Development",
+        "to": "#",
+        "icon": "icon-phone-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "IPad Game Development",
+        "to": "#",
+        "icon": "icon-phone-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Cross Platform App Development",
+        "to": "#",
+        "icon": "icon-phone-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "React Native App Development",
+        "to": "#",
+        "icon": "icon-phone-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Ionic App Development",
+        "to": "#",
+        "icon": "icon-phone-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Flutter App Development",
+        "to": "#",
+        "icon": "icon-phone-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Kotlin App Development",
+        "to": "#",
+        "icon": "icon-phone-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "PhoneGap App Development ",
+        "to": "#",
+        "icon": "icon-phone-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Xamarin App Development",
+        "to": "#",
+        "icon": "icon-phone-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },{
+        "title": "Titanium App Development",
+        "to": "#",
+        "icon": "icon-phone-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },{
+        "title": "Sencha App Development",
+        "to": "#",
+        "icon": "icon-phone-cloud",
          "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       }
       

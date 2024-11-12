@@ -25,10 +25,12 @@ export default function Navigator({ disableSubmenu, className }) {
     }
   };
   const btnJson = [
-    { id: 1, title: "Development", icon: "icon-phone-sync" },
-    { id: 2, title: "Portfolio", icon: "icon-user-sync" },
-    { id: 3, title: "Blogs", icon: "icon-user-sync" },
-    { id: 4, title: "What We Do", icon: "icon-user-sync" },
+    { id: 1, title: "Mobile", icon: "icon-phone-sync" },
+    { id: 2, title: "Web", icon: "icon-user-sync" },
+    { id: 3, title: "AWS Services", icon: "icon-user-sync" },
+    { id: 4, title: "Ecommerce", icon: "icon-user-sync" },
+    { id: 5, title: "Emerging Technologies", icon: "icon-user-sync" },
+    { id: 6, title: "Digital Marketing Services", icon: "icon-user-sync" }
   ];
   // console.log("navbar data" , menuData)
   function renderMenu() {
@@ -59,7 +61,7 @@ export default function Navigator({ disableSubmenu, className }) {
             </Link>
             <div className="dropdown-menu -wide flex gap-3">
               <div
-                className="w-1/5 h-96 flex flex-col gap-3 justify-start items-center shadow-none"
+                className="w-fit h-96 flex flex-col gap-3 justify-start items-center shadow-none"
                 style={{ boxShadow: "10px 0 5px rgb(182 182 182 / 10%)" }}
               >
                 <h1 className="text-2xl font-semibold text-[#2d50e1]">
@@ -72,7 +74,7 @@ export default function Navigator({ disableSubmenu, className }) {
                     onMouseEnter={() => handleHover(item.id)}
                   >
                     <button
-                      className=" text-black dark:text-white w-40 h-10 p-2 px-5 text-sm text-left font-semibold flex gap-2 items-center"
+                      className=" text-black dark:text-white w-[17rem] h-10 p-2 px-5 text-sm text-left font-semibold flex gap-2 items-center"
                       onMouseEnter={() => {
                         activeClass(item.id);
                       }}
@@ -89,9 +91,9 @@ export default function Navigator({ disableSubmenu, className }) {
               {visible == 1 ? (
                 <div className="ml-2 flex gap-2">
                   <div className=" w-3/4 ">
-                    <div className="service-cate heading6">Development</div>
-                    <ul className="grid grid-cols-3 gap-5 gap-y-2.5 mt-2">
-                      {item.subMenu.slice(0, 6).map((i, index) => (
+                    <div className="service-cate heading6">Mobile</div>
+                    <ul className="grid grid-cols-2 gap-5 gap-y-2.5 mt-2">
+                      {item.subMenu.slice(0, ).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
