@@ -143,7 +143,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
-                      <div className="heading6">Explore All Services</div>
+                      <div className="heading6">Explore All Mobile Services</div>
                       <div className="caption1 text-surface1 mt-1">
                         Unlocking the Full Spectrum of IT Solutions and Business
                         Consulting for your needs
@@ -215,7 +215,7 @@ export default function Navigator({ disableSubmenu, className }) {
               {visible == 2 ? (
                 <div className="ml-2 flex gap-2">
                   <div className=" w-3/4 ">
-                    <div className="service-cate heading6">Portfolio</div>
+                    <div className="service-cate heading6">Web</div>
                     <ul className=" w-full grid grid-cols-3 gap-5 gap-y-2.5 mt-2">
                       {item.subMenu2.slice(0, ).map((i, index) => (
                         <li
@@ -243,7 +243,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
-                      <div className="heading6">Explore All Portfolio</div>
+                      <div className="heading6">Explore All Web Services</div>
                       <div className="caption1 text-surface1 mt-1">
                         Unlocking the Full Spectrum of IT Solutions and Business
                         Consulting for your needs
@@ -315,7 +315,7 @@ export default function Navigator({ disableSubmenu, className }) {
               {visible == 3 ? (
                 <div className="ml-2 flex gap-2">
                   <div className=" w-3/4 ">
-                    <div className="service-cate heading6">Blogs</div>
+                    <div className="service-cate heading6">AWS Services</div>
                     <ul className="grid grid-cols-2 gap-5 gap-y-2.5 mt-2">
                       {item.subMenu3.slice(0, 6).map((i, index) => (
                         <li
@@ -343,7 +343,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
-                      <div className="heading6">Explore All Blogs</div>
+                      <div className="heading6">Explore All AWS Services</div>
                       <div className="caption1 text-surface1 mt-1">
                         Unlocking the Full Spectrum of IT Solutions and Business
                         Consulting for your needs
@@ -415,7 +415,7 @@ export default function Navigator({ disableSubmenu, className }) {
               {visible == 4 ? (
                 <div className="flex gap-2 ml-2">
                   <div className=" w-3/4 ">
-                    <div className="service-cate heading6">What We Do</div>
+                    <div className="service-cate heading6">Ecommerce</div>
                     <ul className="grid grid-cols-2 gap-5 gap-y-2.5 mt-2">
                       {item.subMenu4.slice(0, 6).map((i, index) => (
                         <li
@@ -444,7 +444,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
-                      <div className="heading6">Explore What We Do</div>
+                      <div className="heading6">Explore Ecommerce Services</div>
                       <div className="caption1 text-surface1 mt-1">
                         Unlocking the Full Spectrum of IT Solutions and Business
                         Consulting for your needs
