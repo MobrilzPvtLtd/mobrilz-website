@@ -217,7 +217,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   <div className=" w-3/4 ">
                     <div className="service-cate heading6">Portfolio</div>
                     <ul className=" w-full grid grid-cols-3 gap-5 gap-y-2.5 mt-2">
-                      {item.subMenu2.slice(0, 6).map((i, index) => (
+                      {item.subMenu2.slice(0, ).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
@@ -316,7 +316,7 @@ export default function Navigator({ disableSubmenu, className }) {
                 <div className="ml-2 flex gap-2">
                   <div className=" w-3/4 ">
                     <div className="service-cate heading6">Blogs</div>
-                    <ul className="grid grid-cols-1 gap-5 gap-y-2.5 mt-2">
+                    <ul className="grid grid-cols-2 gap-5 gap-y-2.5 mt-2">
                       {item.subMenu3.slice(0, 6).map((i, index) => (
                         <li
                           key={index}
@@ -416,7 +416,7 @@ export default function Navigator({ disableSubmenu, className }) {
                 <div className="flex gap-2 ml-2">
                   <div className=" w-3/4 ">
                     <div className="service-cate heading6">What We Do</div>
-                    <ul className="grid grid-cols-1 gap-5 gap-y-2.5 mt-2">
+                    <ul className="grid grid-cols-2 gap-5 gap-y-2.5 mt-2">
                       {item.subMenu4.slice(0, 6).map((i, index) => (
                         <li
                           key={index}
@@ -445,6 +445,210 @@ export default function Navigator({ disableSubmenu, className }) {
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
                       <div className="heading6">Explore What We Do</div>
+                      <div className="caption1 text-surface1 mt-1">
+                        Unlocking the Full Spectrum of IT Solutions and Business
+                        Consulting for your needs
+                      </div>
+                      <Link
+                        className="button-main text-button-sm mt-3"
+                        href="/services/service-detail"
+                      >
+                        Explore Now
+                      </Link>
+                      <div className="more-infor mt-8">
+                        <div className="mail flex items-center">
+                          <Icon.Envelope className="text-lg" />
+                          <div className="caption1 pl-2">
+                            hi.avitex@gmail.com
+                          </div>
+                        </div>
+                        <div className="call flex items-center mt-3">
+                          <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
+                            <Icon.Phone
+                              weight="fill"
+                              className="text-sm text-white"
+                            />
+                          </span>
+                          <div className="text-title pl-2">123 456 7890</div>
+                        </div>
+                        <div className="list-social flex items-center gap-2.5 mt-4">
+                          <Link
+                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                          >
+                            <span className="icon-facebook text-base"></span>
+                          </Link>
+                          <Link
+                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                            href="https://www.linkedin.com/"
+                            target="_blank"
+                          >
+                            <span className="icon-linkedin text-base"></span>
+                          </Link>
+                          <Link
+                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                            href="https://www.twitter.com/"
+                            target="_blank"
+                          >
+                            <span className="icon-twitter text-base"></span>
+                          </Link>
+                          <Link
+                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                            href="https://www.youtube.com/"
+                            target="_blank"
+                          >
+                            <span className="icon-youtube text-base"></span>
+                          </Link>
+                          <Link
+                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                          >
+                            <span className="icon-instagram text-sm"></span>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : null}
+              {visible == 5 ? (
+                <div className="flex gap-2 ml-2">
+                  <div className=" w-3/4 ">
+                    <div className="service-cate heading6">Emerging Technologies</div>
+                    <ul className="grid grid-cols-2 gap-5 gap-y-2.5 mt-2">
+                      {item.subMenu5.slice(0, ).map((i, index) => (
+                        <li
+                          key={index}
+                          className={`${pathname === i.to ? "active" : ""}`}
+                        >
+                          <Link
+                            className={`flex items-center gap-2`}
+                            href={process.env.PUBLIC_URL + "/services/[slug]"}
+                            as={
+                              process.env.PUBLIC_URL +
+                              "/services/" +
+                              convertToSlug(i.title)
+                            }
+                          >
+                            <span
+                              className={`${i.icon} text-blue text-2xl flex-shrink-0`}
+                            ></span>
+                            <span>{i.title}</span>
+                            {/* <span className="">{i.desc}</span> */}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    
+                  </div>
+                  <div className="w-1/4 ">
+                    <div className="content bg-linear rounded-lg p-6">
+                      <div className="heading6">Explore All Emerging Technologies</div>
+                      <div className="caption1 text-surface1 mt-1">
+                        Unlocking the Full Spectrum of IT Solutions and Business
+                        Consulting for your needs
+                      </div>
+                      <Link
+                        className="button-main text-button-sm mt-3"
+                        href="/services/service-detail"
+                      >
+                        Explore Now
+                      </Link>
+                      <div className="more-infor mt-8">
+                        <div className="mail flex items-center">
+                          <Icon.Envelope className="text-lg" />
+                          <div className="caption1 pl-2">
+                            hi.avitex@gmail.com
+                          </div>
+                        </div>
+                        <div className="call flex items-center mt-3">
+                          <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
+                            <Icon.Phone
+                              weight="fill"
+                              className="text-sm text-white"
+                            />
+                          </span>
+                          <div className="text-title pl-2">123 456 7890</div>
+                        </div>
+                        <div className="list-social flex items-center gap-2.5 mt-4">
+                          <Link
+                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                          >
+                            <span className="icon-facebook text-base"></span>
+                          </Link>
+                          <Link
+                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                            href="https://www.linkedin.com/"
+                            target="_blank"
+                          >
+                            <span className="icon-linkedin text-base"></span>
+                          </Link>
+                          <Link
+                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                            href="https://www.twitter.com/"
+                            target="_blank"
+                          >
+                            <span className="icon-twitter text-base"></span>
+                          </Link>
+                          <Link
+                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                            href="https://www.youtube.com/"
+                            target="_blank"
+                          >
+                            <span className="icon-youtube text-base"></span>
+                          </Link>
+                          <Link
+                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                          >
+                            <span className="icon-instagram text-sm"></span>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : null}
+              {visible == 6 ? (
+                <div className="flex gap-2 ml-2">
+                  <div className=" w-3/4 ">
+                    <div className="service-cate heading6">Digital Marketing Services
+                    </div>
+                    <ul className="grid grid-cols-2 gap-5 gap-y-2.5 mt-2">
+                      {item.subMenu6.slice(0, 6).map((i, index) => (
+                        <li
+                          key={index}
+                          className={`${pathname === i.to ? "active" : ""}`}
+                        >
+                          <Link
+                            className={`flex items-center gap-2`}
+                            href={process.env.PUBLIC_URL + "/services/[slug]"}
+                            as={
+                              process.env.PUBLIC_URL +
+                              "/services/" +
+                              convertToSlug(i.title)
+                            }
+                          >
+                            <span
+                              className={`${i.icon} text-blue text-2xl flex-shrink-0`}
+                            ></span>
+                            <span>{i.title}</span>
+                            {/* <span className="">{i.desc}</span> */}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    
+                  </div>
+                  <div className="w-1/4 ">
+                    <div className="content bg-linear rounded-lg p-6">
+                      <div className="heading6">Explore All Digital Marketing Services
+                      </div>
                       <div className="caption1 text-surface1 mt-1">
                         Unlocking the Full Spectrum of IT Solutions and Business
                         Consulting for your needs
