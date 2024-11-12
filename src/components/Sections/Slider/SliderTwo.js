@@ -32,9 +32,9 @@ const SliderTwo = () => {
               <div className="slider-item  w-full relative">
                 <div className="container w-full h-full flex items-center">
                   <div className="text-content">
-                    <h2 className="heading1 text-white">App Development
+                    <h2 className="text-3xl pt-5 sm:text-5xl md:text-5xl lg:text-5xl xl:text-7xl 2xl:text-7xl font-semibold text-white">App Development
                     & <br />Web Solutions Company</h2>
-                    <div className="body2 text-white md:mt-4 mt-2">Mobrilz is a Noida-NCR-based mobile & web app development company providing services in the USA, Canada, Europe, the Middle east, and across the world.</div>
+                    <div className="body2 text-white md:mt-4 mt-2">Mobrilz is a Noida-NCR-based mobile & web app development company providing services in the USA,<br></br> Canada, Europe, the Middle east, and across the world.</div>
                     <div className="group-btn flex items-center flex-wrap gap-3 md:mt-8 mt-5">
                       {/* <Link href={process.env.PUBLIC_URL + "/services/[slug]"} */}
                       <Link href="#"
@@ -67,7 +67,7 @@ const SliderTwo = () => {
               <div className="slider-item h-full w-full relative">
                 <div className="container w-full h-full flex items-center">
                   <div className="text-content">
-                    <h2 className="heading1 text-white">Responsive Website Solutions</h2>
+                    <h2 className="text-3xl pt-10 sm:text-5xl md:text-5xl lg:text-5xl xl:text-7xl 2xl:text-7xl font-semibold text-white">Responsive Website Solutions</h2>
                     <div className="list-feature mt-3">
                       <div className="flex items-center">
                         <Icon.Check className='text-blue text-2xl' />
