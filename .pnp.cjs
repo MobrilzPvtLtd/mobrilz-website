@@ -29,6 +29,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@heroicons/react", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:1.0.6"],\
           ["@phosphor-icons/react", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:2.1.7"],\
+          ["@react-spring/web", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:9.7.5"],\
           ["autoprefixer", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:10.4.20"],\
           ["bootstrap", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:5.3.3"],\
           ["classnames", "npm:2.5.1"],\
@@ -556,6 +557,127 @@ const RAW_RUNTIME_STATE =
         ],\
         "packagePeers": [\
           "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@react-spring/animated", [\
+      ["npm:9.7.5", {\
+        "packageLocation": "../../../.yarn/berry/cache/@react-spring-animated-npm-9.7.5-e7a80d3c21-10c0.zip/node_modules/@react-spring/animated/",\
+        "packageDependencies": [\
+          ["@react-spring/animated", "npm:9.7.5"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:5c3277fc27c736aae9dbafb59a96292da9e599f440ff5a22ad12f3da2cf7bcccd9f7d339345e9abfe0544621b4b1c96d9b893c1eafa8017c3e65a7a89543fbc2#npm:9.7.5", {\
+        "packageLocation": "./.yarn/__virtual__/@react-spring-animated-virtual-4fc592eada/4/.yarn/berry/cache/@react-spring-animated-npm-9.7.5-e7a80d3c21-10c0.zip/node_modules/@react-spring/animated/",\
+        "packageDependencies": [\
+          ["@react-spring/animated", "virtual:5c3277fc27c736aae9dbafb59a96292da9e599f440ff5a22ad12f3da2cf7bcccd9f7d339345e9abfe0544621b4b1c96d9b893c1eafa8017c3e65a7a89543fbc2#npm:9.7.5"],\
+          ["@react-spring/shared", "virtual:5c3277fc27c736aae9dbafb59a96292da9e599f440ff5a22ad12f3da2cf7bcccd9f7d339345e9abfe0544621b4b1c96d9b893c1eafa8017c3e65a7a89543fbc2#npm:9.7.5"],\
+          ["@react-spring/types", "npm:9.7.5"],\
+          ["@types/react", null],\
+          ["react", "npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@react-spring/core", [\
+      ["npm:9.7.5", {\
+        "packageLocation": "../../../.yarn/berry/cache/@react-spring-core-npm-9.7.5-9c7c5bcc24-10c0.zip/node_modules/@react-spring/core/",\
+        "packageDependencies": [\
+          ["@react-spring/core", "npm:9.7.5"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:5c3277fc27c736aae9dbafb59a96292da9e599f440ff5a22ad12f3da2cf7bcccd9f7d339345e9abfe0544621b4b1c96d9b893c1eafa8017c3e65a7a89543fbc2#npm:9.7.5", {\
+        "packageLocation": "./.yarn/__virtual__/@react-spring-core-virtual-fc5b207be4/4/.yarn/berry/cache/@react-spring-core-npm-9.7.5-9c7c5bcc24-10c0.zip/node_modules/@react-spring/core/",\
+        "packageDependencies": [\
+          ["@react-spring/core", "virtual:5c3277fc27c736aae9dbafb59a96292da9e599f440ff5a22ad12f3da2cf7bcccd9f7d339345e9abfe0544621b4b1c96d9b893c1eafa8017c3e65a7a89543fbc2#npm:9.7.5"],\
+          ["@react-spring/animated", "virtual:5c3277fc27c736aae9dbafb59a96292da9e599f440ff5a22ad12f3da2cf7bcccd9f7d339345e9abfe0544621b4b1c96d9b893c1eafa8017c3e65a7a89543fbc2#npm:9.7.5"],\
+          ["@react-spring/shared", "virtual:5c3277fc27c736aae9dbafb59a96292da9e599f440ff5a22ad12f3da2cf7bcccd9f7d339345e9abfe0544621b4b1c96d9b893c1eafa8017c3e65a7a89543fbc2#npm:9.7.5"],\
+          ["@react-spring/types", "npm:9.7.5"],\
+          ["@types/react", null],\
+          ["react", "npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@react-spring/rafz", [\
+      ["npm:9.7.5", {\
+        "packageLocation": "../../../.yarn/berry/cache/@react-spring-rafz-npm-9.7.5-1d03adee03-10c0.zip/node_modules/@react-spring/rafz/",\
+        "packageDependencies": [\
+          ["@react-spring/rafz", "npm:9.7.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@react-spring/shared", [\
+      ["npm:9.7.5", {\
+        "packageLocation": "../../../.yarn/berry/cache/@react-spring-shared-npm-9.7.5-3e317d9163-10c0.zip/node_modules/@react-spring/shared/",\
+        "packageDependencies": [\
+          ["@react-spring/shared", "npm:9.7.5"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:5c3277fc27c736aae9dbafb59a96292da9e599f440ff5a22ad12f3da2cf7bcccd9f7d339345e9abfe0544621b4b1c96d9b893c1eafa8017c3e65a7a89543fbc2#npm:9.7.5", {\
+        "packageLocation": "./.yarn/__virtual__/@react-spring-shared-virtual-1109024952/4/.yarn/berry/cache/@react-spring-shared-npm-9.7.5-3e317d9163-10c0.zip/node_modules/@react-spring/shared/",\
+        "packageDependencies": [\
+          ["@react-spring/shared", "virtual:5c3277fc27c736aae9dbafb59a96292da9e599f440ff5a22ad12f3da2cf7bcccd9f7d339345e9abfe0544621b4b1c96d9b893c1eafa8017c3e65a7a89543fbc2#npm:9.7.5"],\
+          ["@react-spring/rafz", "npm:9.7.5"],\
+          ["@react-spring/types", "npm:9.7.5"],\
+          ["@types/react", null],\
+          ["react", "npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@react-spring/types", [\
+      ["npm:9.7.5", {\
+        "packageLocation": "../../../.yarn/berry/cache/@react-spring-types-npm-9.7.5-b41ad8a858-10c0.zip/node_modules/@react-spring/types/",\
+        "packageDependencies": [\
+          ["@react-spring/types", "npm:9.7.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@react-spring/web", [\
+      ["npm:9.7.5", {\
+        "packageLocation": "../../../.yarn/berry/cache/@react-spring-web-npm-9.7.5-9609448a64-10c0.zip/node_modules/@react-spring/web/",\
+        "packageDependencies": [\
+          ["@react-spring/web", "npm:9.7.5"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:9.7.5", {\
+        "packageLocation": "./.yarn/__virtual__/@react-spring-web-virtual-5c3277fc27/4/.yarn/berry/cache/@react-spring-web-npm-9.7.5-9609448a64-10c0.zip/node_modules/@react-spring/web/",\
+        "packageDependencies": [\
+          ["@react-spring/web", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:9.7.5"],\
+          ["@react-spring/animated", "virtual:5c3277fc27c736aae9dbafb59a96292da9e599f440ff5a22ad12f3da2cf7bcccd9f7d339345e9abfe0544621b4b1c96d9b893c1eafa8017c3e65a7a89543fbc2#npm:9.7.5"],\
+          ["@react-spring/core", "virtual:5c3277fc27c736aae9dbafb59a96292da9e599f440ff5a22ad12f3da2cf7bcccd9f7d339345e9abfe0544621b4b1c96d9b893c1eafa8017c3e65a7a89543fbc2#npm:9.7.5"],\
+          ["@react-spring/shared", "virtual:5c3277fc27c736aae9dbafb59a96292da9e599f440ff5a22ad12f3da2cf7bcccd9f7d339345e9abfe0544621b4b1c96d9b893c1eafa8017c3e65a7a89543fbc2#npm:9.7.5"],\
+          ["@react-spring/types", "npm:9.7.5"],\
+          ["@types/react", null],\
+          ["@types/react-dom", null],\
+          ["react", "npm:18.3.1"],\
+          ["react-dom", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
           "react"\
         ],\
         "linkType": "HARD"\
@@ -1873,6 +1995,7 @@ const RAW_RUNTIME_STATE =
           ["mobrilz", "workspace:."],\
           ["@heroicons/react", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:1.0.6"],\
           ["@phosphor-icons/react", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:2.1.7"],\
+          ["@react-spring/web", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:9.7.5"],\
           ["autoprefixer", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:10.4.20"],\
           ["bootstrap", "virtual:6b7df642d01740853161bb823685e91f11596545f97d9a22019ed4d3d69cde1a7f888809f4ea2bc6a7672b7f6478db571e1fa056a7dff53dcce0e57e0e5574f4#npm:5.3.3"],\
           ["classnames", "npm:2.5.1"],\
