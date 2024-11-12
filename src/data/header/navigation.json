@@ -9,77 +9,134 @@
     "to": "#!",
     "subMenu": [
       {
+        "title": "Mobile ",
+        "to": "#",
+        "icon": "icon-phone-sync",
+        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Web",
+        "to": "#",
+        "icon": "icon-user-sync",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "AWS Services",
+        "to": "#",
+        "icon": "icon-device-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Ecommerce",
+        "to": "#",
+        "icon": "icon-cloud-dots",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Emerging Technologies",
+        "to": "#",
+        "icon": "icon-phone-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Digital Marketing Services",
+        "to": "#",
+        "icon": "icon-device-sync",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      }
+      
+    ]
+    ,
+    "subMenu2": [
+      {
         "title": "Android ",
         "to": "#",
         "icon": "icon-phone-sync",
         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       },
       {
-        "title": "Android UX-UI ",
+        "title": "IOS",
         "to": "#",
         "icon": "icon-user-sync",
          "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       },
       {
-        "title": "Android Game ",
+        "title": "Web",
         "to": "#",
         "icon": "icon-device-cloud",
-         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
-      },
-      {
-        "title": "iPhone App ",
-        "to": "#",
-        "icon": "icon-cloud-dots",
-         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
-      },
-      {
-        "title": "iPhone UX-UI ",
-        "to": "#",
-        "icon": "icon-phone-cloud",
-         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
-      },
-      {
-        "title": "iPhone Game ",
-        "to": "#",
-        "icon": "icon-device-sync",
-         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
-      },
-      {
-        "title": "Web App",
-        "to": "#",
-        "icon": "icon-coin-user",
-         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
-      },
-      {
-        "title": "React JS",
-        "to": "#",
-        "icon": "icon-user-time",
-         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
-      },
-      {
-        "title": "Node JS",
-        "to": "#",
-        "icon": "icon-hand-up",
-         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
-      },
-      {
-        "title": "Next JS",
-        "to": "#",
-        "icon": "icon-device-cloud",
-         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
-      },
-      {
-        "title": "Wordpress",
-        "to": "#",
-        "icon": "icon-target-chart",
-         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
-      },
-      {
-        "title": "Laravel",
-        "to": "#",
-        "icon": "icon-user-chart",
          "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       }
+      
+      
+    ],
+    "subMenu3": [
+      {
+        "title": "How Much Does SEO Cost in 2024 ",
+        "to": "#",
+        "icon": "icon-phone-sync",
+        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "How Much Does Instagram Advertising Cost in 2024?",
+        "to": "#",
+        "icon": "icon-user-sync",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "How Much Does eCommerce Website Development Cost In India?",
+        "to": "#",
+        "icon": "icon-device-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "How Much Does Grocery App Development Cost in 2024?",
+        "to": "#",
+        "icon": "icon-device-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "How Much Does eCommerce Website Development Cost In India?",
+        "to": "#",
+        "icon": "icon-device-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "How Much Does it Cost to Develop a Website in 2024?",
+        "to": "#",
+        "icon": "icon-device-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      }
+      
+      
+    ],
+    "subMenu4": [
+      {
+        "title": "We Are Increasing Business Success With Technology ",
+        "to": "#",
+        "icon": "icon-phone-sync",
+        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Web Application Testing",
+        "to": "#",
+        "icon": "icon-user-sync",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Desktop Application Testing",
+        "to": "#",
+        "icon": "icon-device-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Mobile Application Testing",
+        "to": "#",
+        "icon": "icon-device-cloud",
+         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      }
+      
+      
+      
     ]
   },
   {

@@ -13,23 +13,17 @@ export default function Navigator({ disableSubmenu, className }) {
   const activeClass = (item) => {
     setVisible(item);
   };
-  const handleHover =(state)=>{
-if(state==1){
-  setHoverColor('#e8edfc');
-}
-else if(state==2){
-  setHoverColor('#e8edfc');
-
-}
-else if(state==3){
-   setHoverColor('#e8edfc');
-
-}
-else if(state==4){
-  setHoverColor('#e8edfc');
-
-}
-  }
+  const handleHover = (state) => {
+    if (state == 1) {
+      setHoverColor("#e8edfc");
+    } else if (state == 2) {
+      setHoverColor("#e8edfc");
+    } else if (state == 3) {
+      setHoverColor("#e8edfc");
+    } else if (state == 4) {
+      setHoverColor("#e8edfc");
+    }
+  };
   const btnJson = [
     { id: 1, title: "Development", icon: "icon-phone-sync" },
     { id: 2, title: "Portfolio", icon: "icon-user-sync" },
@@ -64,7 +58,10 @@ else if(state==4){
               <span className="text-white">{item.title}</span>
             </Link>
             <div className="dropdown-menu -wide flex gap-3">
-              <div className="w-1/5 h-96 flex flex-col gap-3 justify-start items-center shadow-none" style={{ boxShadow: "10px 0 5px rgb(182 182 182 / 10%)" }}>
+              <div
+                className="w-1/5 h-96 flex flex-col gap-3 justify-start items-center shadow-none"
+                style={{ boxShadow: "10px 0 5px rgb(182 182 182 / 10%)" }}
+              >
                 <h1 className="text-2xl font-semibold text-[#2d50e1]">
                   Services
                 </h1>
@@ -75,9 +72,9 @@ else if(state==4){
                     onMouseEnter={() => handleHover(item.id)}
                   >
                     <button
-                      className=" text-black w-40 h-10 p-2 px-5 text-sm text-left font-semibold flex gap-2 items-center"
-                      onMouseEnter={() => {activeClass(item.id);
-                       
+                      className=" text-black dark:text-white w-40 h-10 p-2 px-5 text-sm text-left font-semibold flex gap-2 items-center"
+                      onMouseEnter={() => {
+                        activeClass(item.id);
                       }}
                     >
                       <span
@@ -92,7 +89,7 @@ else if(state==4){
               {visible == 1 ? (
                 <div className="ml-2 flex gap-2">
                   <div className=" w-3/4 ">
-                    <div className="service-cate heading6">Mobile</div>
+                    <div className="service-cate heading6">Development</div>
                     <ul className="grid grid-cols-3 gap-5 gap-y-2.5 mt-2">
                       {item.subMenu.slice(0, 6).map((i, index) => (
                         <li
@@ -117,8 +114,8 @@ else if(state==4){
                       ))}
                     </ul>
                     <hr className="border-none h-[1px] bg-grey"></hr>
-                    <div className="service-cate heading6 mt-5">Web</div>
-                    <ul className="grid grid-cols-3 gap-5 gap-y-2.5 mt-2">
+                    {/* <div className="service-cate heading6 mt-5">Web</div> */}
+                    {/* <ul className="grid grid-cols-3 gap-5 gap-y-2.5 mt-2">
                       {item.subMenu.slice(6, 12).map((i, index) => (
                         <li
                           key={index}
@@ -140,7 +137,7 @@ else if(state==4){
                           </Link>
                         </li>
                       ))}
-                    </ul>
+                    </ul> */}
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
@@ -216,9 +213,9 @@ else if(state==4){
               {visible == 2 ? (
                 <div className="ml-2 flex gap-2">
                   <div className=" w-3/4 ">
-                    <div className="service-cate heading6">Mobile</div>
-                    <ul className="grid grid-cols-3 gap-5 gap-y-2.5 mt-2">
-                      {item.subMenu.slice(0, 6).map((i, index) => (
+                    <div className="service-cate heading6">Portfolio</div>
+                    <ul className=" w-full grid grid-cols-3 gap-5 gap-y-2.5 mt-2">
+                      {item.subMenu2.slice(0, 6).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
@@ -240,30 +237,7 @@ else if(state==4){
                         </li>
                       ))}
                     </ul>
-                    <div className="service-cate heading6 mt-5">Web</div>
-                    <ul className="grid grid-cols-3 gap-5 gap-y-2.5 mt-2">
-                      {item.subMenu.slice(6, 12).map((i, index) => (
-                        <li
-                          key={index}
-                          className={`${pathname === i.to ? "active" : ""}`}
-                        >
-                          <Link
-                            className={`flex items-center gap-2`}
-                            href={process.env.PUBLIC_URL + "/services/[slug]"}
-                            as={
-                              process.env.PUBLIC_URL +
-                              "/services/" +
-                              convertToSlug(i.title)
-                            }
-                          >
-                            <span
-                              className={`${i.icon} text-blue text-2xl flex-shrink-0`}
-                            ></span>
-                            <span>{i.title}</span>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+                    
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
@@ -339,9 +313,9 @@ else if(state==4){
               {visible == 3 ? (
                 <div className="ml-2 flex gap-2">
                   <div className=" w-3/4 ">
-                    <div className="service-cate heading6">Mobile</div>
-                    <ul className="grid grid-cols-3 gap-5 gap-y-2.5 mt-2">
-                      {item.subMenu.slice(0, 6).map((i, index) => (
+                    <div className="service-cate heading6">Blogs</div>
+                    <ul className="grid grid-cols-1 gap-5 gap-y-2.5 mt-2">
+                      {item.subMenu3.slice(0, 6).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
@@ -363,30 +337,7 @@ else if(state==4){
                         </li>
                       ))}
                     </ul>
-                    <div className="service-cate heading6 mt-5">Web</div>
-                    <ul className="grid grid-cols-3 gap-5 gap-y-2.5 mt-2">
-                      {item.subMenu.slice(6, 12).map((i, index) => (
-                        <li
-                          key={index}
-                          className={`${pathname === i.to ? "active" : ""}`}
-                        >
-                          <Link
-                            className={`flex items-center gap-2`}
-                            href={process.env.PUBLIC_URL + "/services/[slug]"}
-                            as={
-                              process.env.PUBLIC_URL +
-                              "/services/" +
-                              convertToSlug(i.title)
-                            }
-                          >
-                            <span
-                              className={`${i.icon} text-blue text-2xl flex-shrink-0`}
-                            ></span>
-                            <span>{i.title}</span>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+                    
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
@@ -462,9 +413,9 @@ else if(state==4){
               {visible == 4 ? (
                 <div className="flex gap-2 ml-2">
                   <div className=" w-3/4 ">
-                    <div className="service-cate heading6">Mobile</div>
-                    <ul className="grid grid-cols-3 gap-5 gap-y-2.5 mt-2">
-                      {item.subMenu.slice(0, 6).map((i, index) => (
+                    <div className="service-cate heading6">What We Do</div>
+                    <ul className="grid grid-cols-1 gap-5 gap-y-2.5 mt-2">
+                      {item.subMenu4.slice(0, 6).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
@@ -478,42 +429,16 @@ else if(state==4){
                               convertToSlug(i.title)
                             }
                           >
-                            
                             <span
                               className={`${i.icon} text-blue text-2xl flex-shrink-0`}
                             ></span>
                             <span>{i.title}</span>
                             {/* <span className="">{i.desc}</span> */}
-                            
                           </Link>
                         </li>
                       ))}
                     </ul>
-                    <div className="service-cate heading6 mt-5">Web</div>
-                    <ul className="grid grid-cols-3 gap-5 gap-y-2.5 mt-2">
-                      {item.subMenu.slice(6, 12).map((i, index) => (
-                        <li
-                          key={index}
-                          className={`${pathname === i.to ? "active" : ""}`}
-                        >
-                          <Link
-                            className={`flex items-center gap-2`}
-                            href={process.env.PUBLIC_URL + "/services/[slug]"}
-                            as={
-                              process.env.PUBLIC_URL +
-                              "/services/" +
-                              convertToSlug(i.title)
-                            }
-                          >
-                            <span
-                              className={`${i.icon} text-blue text-2xl flex-shrink-0`}
-                            ></span>
-                            <span>{i.title}</span>
-                            {/* <p>{i.desc}</p> */}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+                    
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
@@ -630,19 +555,20 @@ else if(state==4){
           <Link href={process.env.PUBLIC_URL + item.to}>
             <span className="text-white">{item.title}</span>
           </Link>
-          {(item.title != "Blogs" && item.title != "Career")?
-          <ul className="dropdown-menu">
-            {item.subMenu?.map((i, index) => (
-              <li
-                key={index}
-                className={`${pathname.includes(i.to) ? "active" : ""}`}
-              >
-                <Link href={i.to}>
-                  <span>{i.title}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>:null}
+          {item.title != "Blogs" && item.title != "Career" ? (
+            <ul className="dropdown-menu">
+              {item.subMenu?.map((i, index) => (
+                <li
+                  key={index}
+                  className={`${pathname.includes(i.to) ? "active" : ""}`}
+                >
+                  <Link href={i.to}>
+                    <span>{i.title}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          ) : null}
         </li>
       );
     });
