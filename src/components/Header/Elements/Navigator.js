@@ -36,7 +36,7 @@ else if(state==4){
     { id: 3, title: "Blogs", icon: "icon-user-sync" },
     { id: 4, title: "What We Do", icon: "icon-user-sync" },
   ];
-  console.log("navbar data" , menuData)
+  // console.log("navbar data" , menuData)
   function renderMenu() {
     return menuData.map((item, index) => {
       if (item.title === "Home") {
@@ -70,12 +70,12 @@ else if(state==4){
                 </h1>
                 {btnJson.map((item) => (
                   <div
-                    className={`w-full transition-all hover:bg-[${hoverColor}] hover:scale-[1.01]`}
+                    className={`w-full transition-all hover:bg-[#e8edfc] hover:scale-[1.01]`}
                     key={item.id}
                     onMouseEnter={() => handleHover(item.id)}
                   >
                     <button
-                      className=" text-grey-500 w-40 h-10 p-2 px-5 text-sm text-left font-semibold flex gap-2 items-center"
+                      className=" text-black w-40 h-10 p-2 px-5 text-sm text-left font-semibold flex gap-2 items-center"
                       onMouseEnter={() => {activeClass(item.id);
                        
                       }}
