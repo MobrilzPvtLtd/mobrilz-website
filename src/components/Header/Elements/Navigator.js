@@ -10,9 +10,11 @@ export default function Navigator({ disableSubmenu, className }) {
   const pathname = usePathname();
   const [visible, setVisible] = useState(1);
   const [hoverColor, setHoverColor] = useState(null);
+  const [ID, setID] = useState(1);
   const activeClass = (item) => {
     setVisible(item);
   };
+
   const handleHover = (state) => {
     if (state == 1) {
       setHoverColor("#e8edfc");
@@ -31,9 +33,12 @@ export default function Navigator({ disableSubmenu, className }) {
     { id: 4, title: "Ecommerce", icon: "icon-user-sync" },
     { id: 5, title: "Emerging Technologies", icon: "icon-user-sync" },
     { id: 6, title: "Digital Marketing Services", icon: "icon-user-sync" },
-    { id: 7, title: "Outsourcing", icon: "icon-user-sync" }
+    { id: 7, title: "Outsourcing", icon: "icon-user-sync" },
   ];
-  // console.log("navbar data" , menuData)
+
+  const handleHoverExplore = (id) => {
+    setID(id);
+  };
   function renderMenu() {
     return menuData.map((item, index) => {
       if (item.title === "Home") {
@@ -94,7 +99,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   <div className=" w-3/4 ">
                     <div className="service-cate heading6">Mobile</div>
                     <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
-                      {item.subMenu.slice(0, ).map((i, index) => (
+                      {item.subMenu.slice(0).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
@@ -144,7 +149,9 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
-                      <div className="heading6">Explore All Mobile Services</div>
+                      <div className="heading6">
+                        Explore All Mobile Services
+                      </div>
                       <div className="caption1 text-surface1 mt-1">
                         Unlocking the Full Spectrum of IT Solutions and Business
                         Consulting for your needs
@@ -218,7 +225,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   <div className=" w-3/4 ">
                     <div className="service-cate heading6">Web</div>
                     <ul className=" w-full grid grid-cols-3 gap-0 gap-y-0 mt-2">
-                      {item.subMenu2.slice(0, ).map((i, index) => (
+                      {item.subMenu2.slice(0).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
@@ -240,7 +247,6 @@ export default function Navigator({ disableSubmenu, className }) {
                         </li>
                       ))}
                     </ul>
-                    
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
@@ -318,7 +324,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   <div className=" w-3/4 ">
                     <div className="service-cate heading6">AWS Services</div>
                     <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
-                      {item.subMenu3.slice(0, ).map((i, index) => (
+                      {item.subMenu3.slice(0).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
@@ -340,7 +346,6 @@ export default function Navigator({ disableSubmenu, className }) {
                         </li>
                       ))}
                     </ul>
-                    
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
@@ -418,7 +423,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   <div className=" w-3/4 ">
                     <div className="service-cate heading6">Ecommerce</div>
                     <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
-                      {item.subMenu4.slice(0, ).map((i, index) => (
+                      {item.subMenu4.slice(0).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
@@ -441,7 +446,6 @@ export default function Navigator({ disableSubmenu, className }) {
                         </li>
                       ))}
                     </ul>
-                    
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
@@ -517,9 +521,11 @@ export default function Navigator({ disableSubmenu, className }) {
               {visible == 5 ? (
                 <div className="flex gap-2 ml-2">
                   <div className=" w-3/4 ">
-                    <div className="service-cate heading6">Emerging Technologies</div>
+                    <div className="service-cate heading6">
+                      Emerging Technologies
+                    </div>
                     <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
-                      {item.subMenu5.slice(0, ).map((i, index) => (
+                      {item.subMenu5.slice(0).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
@@ -542,11 +548,12 @@ export default function Navigator({ disableSubmenu, className }) {
                         </li>
                       ))}
                     </ul>
-                    
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
-                      <div className="heading6">Explore All Emerging Technologies</div>
+                      <div className="heading6">
+                        Explore All Emerging Technologies
+                      </div>
                       <div className="caption1 text-surface1 mt-1">
                         Unlocking the Full Spectrum of IT Solutions and Business
                         Consulting for your needs
@@ -618,10 +625,11 @@ export default function Navigator({ disableSubmenu, className }) {
               {visible == 6 ? (
                 <div className="flex gap-2 ml-2">
                   <div className=" w-3/4 ">
-                    <div className="service-cate heading6">Digital Marketing Services
+                    <div className="service-cate heading6">
+                      Digital Marketing Services
                     </div>
                     <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
-                      {item.subMenu6.slice(0, ).map((i, index) => (
+                      {item.subMenu6.slice(0).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
@@ -644,11 +652,11 @@ export default function Navigator({ disableSubmenu, className }) {
                         </li>
                       ))}
                     </ul>
-                    
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
-                      <div className="heading6">Explore All Digital Marketing Services
+                      <div className="heading6">
+                        Explore All Digital Marketing Services
                       </div>
                       <div className="caption1 text-surface1 mt-1">
                         Unlocking the Full Spectrum of IT Solutions and Business
@@ -721,10 +729,9 @@ export default function Navigator({ disableSubmenu, className }) {
               {visible == 7 ? (
                 <div className="flex gap-2 ml-2">
                   <div className=" w-3/4 ">
-                    <div className="service-cate heading6">Outsourcing
-                    </div>
+                    <div className="service-cate heading6">Outsourcing</div>
                     <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
-                      {item.subMenu7.slice(0, ).map((i, index) => (
+                      {item.subMenu7.slice(0).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
@@ -747,11 +754,11 @@ export default function Navigator({ disableSubmenu, className }) {
                         </li>
                       ))}
                     </ul>
-                    
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
-                      <div className="heading6">Explore All Outsourcing Services
+                      <div className="heading6">
+                        Explore All Outsourcing Services
                       </div>
                       <div className="caption1 text-surface1 mt-1">
                         Unlocking the Full Spectrum of IT Solutions and Business
@@ -821,6 +828,139 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                 </div>
               ) : null}
+            </div>
+          </li>
+        );
+      }
+      if (item.title === "Industry") {
+        return (
+          <li
+            key={index}
+            className={`${pathname.includes("/services/") ? "active" : ""}`}
+            onMouseLeave={() => activeClass(1)}
+          >
+            <Link href={process.env.PUBLIC_URL + item.to}>
+              <span className="text-white">{item.title}</span>
+            </Link>
+            <div className="dropdown-menu -wide flex gap-3">
+              <div className="ml-2 flex gap-2 justify-between w-full">
+                <div className=" w-3/4 ">
+                  <div className="service-cate heading6">Industry</div>
+                  <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
+                    {item.subMenu.slice(0).map((i, index) => (
+                      <li
+                        key={index}
+                        className={`${pathname === i.to ? "active" : ""}`}
+                      >
+                        <Link
+                          className={`flex items-center gap-2`}
+                          href={process.env.PUBLIC_URL + "/services/[slug]"}
+                          as={
+                            process.env.PUBLIC_URL +
+                            "/services/" +
+                            convertToSlug(i.title)
+                          }
+                          onMouseEnter={() => handleHoverExplore(i.id)}
+                          onMouseLeave={()=> handleHoverExplore(1)}
+                        >
+                          <span
+                            className={`${i.icon} text-blue text-2xl flex-shrink-0`}
+                          ></span>
+                          <span>{i.title}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                  <hr className="border-none h-[1px] bg-grey"></hr>
+                </div>
+                <div className="w-1/4 ">
+                  {item.title === "Industry" ? (
+                    <div>
+                      {item.subMenu.map((i, index) => (
+                        <div>
+                        {ID === i.id && (
+                        <div
+                          className="content bg-linear rounded-lg p-6"
+                          key={index}
+                        >
+                          
+                            <div className="heading6">
+                              Explore All {i.title} Services
+                            </div>
+                         
+                          <div className="caption1 text-surface1 mt-1">
+                            Unlocking the Full Spectrum of IT Solutions and
+                            Business Consulting for your needs
+                          </div>
+                          <Link
+                            className="button-main text-button-sm mt-3"
+                            href="/services/service-detail"
+                          >
+                            Explore Now
+                          </Link>
+                          <div className="more-infor mt-8">
+                            <div className="mail flex items-center">
+                              <Icon.Envelope className="text-lg" />
+                              <div className="caption1 pl-2">
+                                hi.avitex@gmail.com
+                              </div>
+                            </div>
+                            <div className="call flex items-center mt-3">
+                              <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
+                                <Icon.Phone
+                                  weight="fill"
+                                  className="text-sm text-white"
+                                />
+                              </span>
+                              <div className="text-title pl-2">
+                                123 456 7890
+                              </div>
+                            </div>
+                            <div className="list-social flex items-center gap-2.5 mt-4">
+                              <Link
+                                className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                              >
+                                <span className="icon-facebook text-base"></span>
+                              </Link>
+                              <Link
+                                className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                                href="https://www.linkedin.com/"
+                                target="_blank"
+                              >
+                                <span className="icon-linkedin text-base"></span>
+                              </Link>
+                              <Link
+                                className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                                href="https://www.twitter.com/"
+                                target="_blank"
+                              >
+                                <span className="icon-twitter text-base"></span>
+                              </Link>
+                              <Link
+                                className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                                href="https://www.youtube.com/"
+                                target="_blank"
+                              >
+                                <span className="icon-youtube text-base"></span>
+                              </Link>
+                              <Link
+                                className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                              >
+                                <span className="icon-instagram text-sm"></span>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>)}
+                        </div>
+                      ))}
+                    </div>
+                  ) : null}
+                </div>
+              </div>
             </div>
           </li>
         );

@@ -617,24 +617,108 @@
     "title": "Industry",
     "to": "#!",
     "subMenu": [
-      {
+      { "id" : 1 ,
         "title": "Banking, Finance & Insurance",
         "to": "#!"
       },
-      {
+      {"id" : 2 ,
         "title": "Dating",
         "to": "#!"
       },
-      {
+      {"id" : 3 ,
         "title": "E-Commerce Retail & B2B",
         "to": "#!"
       },
-      {
+      {"id" : 4 ,
         "title": "E-Learning",
         "to": "#!"
       },
-      {
-        "title": "E-Learning",
+      {"id" : 5 ,
+        "title": "Event & Ticket",
+        "to": "#!"
+      },
+      {"id" : 6 ,
+        "title": "E-Governance",
+        "to": "#!"
+      },
+      {"id" : 7 ,
+        "title": "Food & Beverage",
+        "to": "#!"
+      },
+      {"id" : 8 ,
+        "title": "Grocery",
+        "to": "#!"
+      },
+      {"id" : 9 ,
+        "title": "Gaming & Leisure",
+        "to": "#!"
+      },
+      {"id" : 10 ,
+        "title": "Healthcare & Fitness",
+        "to": "#!"
+      },
+      {"id" : 11,
+        "title": "Maps & Navigation",
+        "to": "#!"
+      },
+      {"id" : 12,
+        "title": "Matrimonial App Development",
+        "to": "#!"
+      },
+      {"id" : 13,
+        "title": "Marketing & Classified",
+        "to": "#!"
+      },
+      {"id" : 14,
+        "title": "Non-Profit Organization",
+        "to": "#!"
+      },
+      {"id" : 15,
+        "title": "OTT Platform App Development",
+        "to": "#!"
+      },
+      {"id" : 16,
+        "title": "Real Estate & Property",
+        "to": "#!"
+      },
+      {"id" : 17,
+        "title": "Social Networking",
+        "to": "#!"
+      },
+      {"id" : 18,
+        "title": "Taxi Booking Ride Sharing",
+        "to": "#!"
+      },
+      {"id" : 19,
+        "title": "Transport Logistics",
+        "to": "#!"
+      },
+      {"id" : 20,
+        "title": "Video Streaming",
+        "to": "#!"
+      },
+      {"id" : 21,
+        "title": "Video Multi-DRM",
+        "to": "#!"
+      },
+      {"id" : 22,
+        "title": "Travel & Hospitality",
+        "to": "#!"
+      },
+      {"id" : 23,
+        "title": "Recruitment Job Portal",
+        "to": "#!"
+      },
+      {"id" : 24,
+        "title": "AWS Elemental Link",
+        "to": "#!"
+      },
+      {"id" : 25,
+        "title": "Video Watermarking Service",
+        "to": "#!"
+      },
+      {"id" : 26,
+        "title": "Online University Solution",
         "to": "#!"
       }
     ]
