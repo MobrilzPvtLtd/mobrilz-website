@@ -114,7 +114,7 @@ export default function Navigator({ disableSubmenu, className }) {
                               className={`${pathname === i.to ? "active" : ""}`}
                             >
                               <Link
-                                className={`flex items-center gap-4 ml-2`}
+                                className={`flex items-center gap-2 ml-2`}
                                 href={
                                   process.env.PUBLIC_URL + "/services/[slug]"
                                 }
@@ -126,7 +126,7 @@ export default function Navigator({ disableSubmenu, className }) {
                               >
                                 <div className="w-10 border border-grey p-2 flex justify-center items-center ">
                                 <i
-                                  className={`${i.icon} text-blue text-lg border `}
+                                  className={`${i.icon} text-blue text-lg  `}
                                 ></i>
                                 </div>
                                 <span className="text-[#565454]">{i.title}</span>
