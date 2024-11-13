@@ -18,7 +18,7 @@ export default function (WrappedComponent) {
       if (scroll >= headerRef.current.offsetHeight) {
         setIsHeaderFixed(true);
       } else {
-        setIsHeaderFixed(false);
+        setIsHeaderFixed(true);
       }
     }, [scroll]);
 

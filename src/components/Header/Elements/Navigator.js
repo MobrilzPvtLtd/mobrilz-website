@@ -86,7 +86,7 @@ export default function Navigator({ disableSubmenu, className }) {
                       }}
                     >
                       <span
-                        className={`${item.icon} text-blue text-2xl flex-shrink-0`}
+                        className={`${item.icon} text-blue text-xl flex-shrink-0`}
                       ></span>
                       {item.title}
                     </button>
@@ -105,7 +105,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           className={`${pathname === i.to ? "active" : ""}`}
                         >
                           <Link
-                            className={`flex items-center gap-2`}
+                            className={`flex items-center gap-4`}
                             href={process.env.PUBLIC_URL + "/services/[slug]"}
                             as={
                               process.env.PUBLIC_URL +
@@ -114,7 +114,7 @@ export default function Navigator({ disableSubmenu, className }) {
                             }
                           >
                             <span
-                              className={`${i.icon} text-blue text-2xl flex-shrink-0`}
+                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
                             ></span>
                             <span>{i.title}</span>
                           </Link>
@@ -231,7 +231,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           className={`${pathname === i.to ? "active" : ""}`}
                         >
                           <Link
-                            className={`flex items-center gap-2`}
+                            className={`flex items-center gap-4`}
                             href={process.env.PUBLIC_URL + "/services/[slug]"}
                             as={
                               process.env.PUBLIC_URL +
@@ -240,7 +240,7 @@ export default function Navigator({ disableSubmenu, className }) {
                             }
                           >
                             <span
-                              className={`${i.icon} text-blue text-2xl flex-shrink-0`}
+                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
                             ></span>
                             <span>{i.title}</span>
                           </Link>
@@ -330,7 +330,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           className={`${pathname === i.to ? "active" : ""}`}
                         >
                           <Link
-                            className={`flex items-center gap-2`}
+                            className={`flex items-center gap-4`}
                             href={process.env.PUBLIC_URL + "/services/[slug]"}
                             as={
                               process.env.PUBLIC_URL +
@@ -339,7 +339,7 @@ export default function Navigator({ disableSubmenu, className }) {
                             }
                           >
                             <span
-                              className={`${i.icon} text-blue text-2xl flex-shrink-0`}
+                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
                             ></span>
                             <span>{i.title}</span>
                           </Link>
@@ -429,7 +429,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           className={`${pathname === i.to ? "active" : ""}`}
                         >
                           <Link
-                            className={`flex items-center gap-2`}
+                            className={`flex items-center gap-4`}
                             href={process.env.PUBLIC_URL + "/services/[slug]"}
                             as={
                               process.env.PUBLIC_URL +
@@ -438,7 +438,7 @@ export default function Navigator({ disableSubmenu, className }) {
                             }
                           >
                             <span
-                              className={`${i.icon} text-blue text-2xl flex-shrink-0`}
+                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
                             ></span>
                             <span>{i.title}</span>
                             {/* <span className="">{i.desc}</span> */}
@@ -531,7 +531,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           className={`${pathname === i.to ? "active" : ""}`}
                         >
                           <Link
-                            className={`flex items-center gap-2`}
+                            className={`flex items-center gap-4`}
                             href={process.env.PUBLIC_URL + "/services/[slug]"}
                             as={
                               process.env.PUBLIC_URL +
@@ -540,7 +540,7 @@ export default function Navigator({ disableSubmenu, className }) {
                             }
                           >
                             <span
-                              className={`${i.icon} text-blue text-2xl flex-shrink-0`}
+                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
                             ></span>
                             <span>{i.title}</span>
                             {/* <span className="">{i.desc}</span> */}
@@ -635,7 +635,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           className={`${pathname === i.to ? "active" : ""}`}
                         >
                           <Link
-                            className={`flex items-center gap-2`}
+                            className={`flex items-center gap-4`}
                             href={process.env.PUBLIC_URL + "/services/[slug]"}
                             as={
                               process.env.PUBLIC_URL +
@@ -644,7 +644,7 @@ export default function Navigator({ disableSubmenu, className }) {
                             }
                           >
                             <span
-                              className={`${i.icon} text-blue text-2xl flex-shrink-0`}
+                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
                             ></span>
                             <span>{i.title}</span>
                             {/* <span className="">{i.desc}</span> */}
@@ -737,7 +737,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           className={`${pathname === i.to ? "active" : ""}`}
                         >
                           <Link
-                            className={`flex items-center gap-2`}
+                            className={`flex items-center gap-4`}
                             href={process.env.PUBLIC_URL + "/services/[slug]"}
                             as={
                               process.env.PUBLIC_URL +
@@ -746,7 +746,7 @@ export default function Navigator({ disableSubmenu, className }) {
                             }
                           >
                             <span
-                              className={`${i.icon} text-blue text-2xl flex-shrink-0`}
+                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
                             ></span>
                             <span>{i.title}</span>
                             {/* <span className="">{i.desc}</span> */}
@@ -847,7 +847,7 @@ export default function Navigator({ disableSubmenu, className }) {
                 <div className=" w-3/4 ">
                   <div className="service-cate heading6">Industry</div>
                   <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
-                    {item.subMenu.slice(0).map((i, index) => (
+                    {item.subMenu.map((i, index) => (
                       <li
                         key={index}
                         className={`${pathname === i.to ? "active" : ""}`}
@@ -863,9 +863,11 @@ export default function Navigator({ disableSubmenu, className }) {
                           onMouseEnter={() => handleHoverExplore(i.id)}
                           onMouseLeave={()=> handleHoverExplore(1)}
                         >
-                          <span
+                          {/* <span
                             className={`${i.icon} text-blue text-2xl flex-shrink-0`}
-                          ></span>
+                          ></span> */}
+                          {/* <IconDisplay title={i.icon} /> */}
+                          <i className={`${i.icon} text-blue text-xl flex-shrink-0`}></i>
                           <span>{i.title}</span>
                         </Link>
                       </li>

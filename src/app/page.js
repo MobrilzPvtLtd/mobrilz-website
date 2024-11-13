@@ -14,10 +14,20 @@ import TestimonialOne from "@/components/Sections/Testimonial/TestimonialOne";
 import testimonialData from "@/data/testimonial/data.json";
 import ContactOne from "@/components/Sections/Contact/ContactOne";
 import SliderTwo from "@/components/Sections/Slider/SliderTwo";
+import allCss from "../styles/components/all.css"
+import Head from 'next/head';
+import favicon from "../../public/images/favicon.ico"
 
 export default function Home() {
   return (
     <>
+    
+    <Head>
+          {/* Link to local Font Awesome CSS */}
+          <link rel="stylesheet" href={allCss} />
+          <link rel="icon" href="/favicon.ico" />
+
+        </Head>
       <LayoutOne className="-style-1 font-sans">
         <SliderTwo className="-style-1 lg:py-[60px] py-0 " />
         <AboutOne />
