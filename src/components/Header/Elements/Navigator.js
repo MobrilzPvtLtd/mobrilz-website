@@ -27,13 +27,13 @@ export default function Navigator({ disableSubmenu, className }) {
     }
   };
   const btnJson = [
-    { id: 1, title: "Mobile", icon: "fa-regular fa-mobile" , desc: "Custom mobile app solutions for all platforms." },
-    { id: 2, title: "Web", icon: "fa-regular fa-desktop" ,desc: "Responsive, full-stack web development services." },
-    { id: 3, title: "AWS Services", icon: "fa-brands fa-aws" ,desc: "Scalable AWS cloud solutions and support." },
-    { id: 4, title: "Ecommerce", icon: "fa-regular fa-cart-shopping" ,desc: "Complete ecommerce development and integration." },
-    { id: 5, title: "Emerging Technologies", icon: "fa-regular fa-cloud-arrow-up" ,desc: "AI, IoT, AR/VR, and blockchain solutions." },
-    { id: 6, title: "Digital Marketing Services", icon: "fa-regular fa-globe" ,desc: "Boost online visibility with digital strategies." },
-    { id: 7, title: "Outsourcing", icon: "fa-brands fa-salesforce" , desc: "Reliable IT outsourcing and project support."},
+    { id: 1, title: "Mobile", icon: "fa-regular fa-mobile" , desc: "Custom mobile app solutions." },
+    { id: 2, title: "Web", icon: "fa-regular fa-desktop" ,desc: "full-stack web development." },
+    { id: 3, title: "AWS Services", icon: "fa-brands fa-aws" ,desc: "AWS certified Company." },
+    { id: 4, title: "Ecommerce", icon: "fa-regular fa-cart-shopping" ,desc: "Complete ecommerce." },
+    { id: 5, title: "Emerging Technologies", icon: "fa-regular fa-cloud-arrow-up" ,desc: "AI, IoT, AR/VR" },
+    { id: 6, title: "Digital Marketing Services", icon: "fa-regular fa-globe" ,desc: "Boost online visibility" },
+    { id: 7, title: "Outsourcing", icon: "fa-brands fa-salesforce" , desc: "Reliable IT outsourcing."},
   ];
 
   const handleHoverExplore = (id) => {
@@ -70,7 +70,7 @@ export default function Navigator({ disableSubmenu, className }) {
                 className="w-fit h-96 flex flex-col gap-3 justify-start items-center shadow-none"
                 style={{ boxShadow: "10px 0 5px rgb(182 182 182 / 10%)" }}
               >
-                <h1 className="text-2xl font-semibold text-[#2d50e1]">
+                <h1 className="text-xl w-full text-left px-5 ml-2 font-semibold text-[#2d50e1]">
                   Services
                 </h1>
                 {btnJson.map((item) => (
@@ -80,14 +80,16 @@ export default function Navigator({ disableSubmenu, className }) {
                     onMouseEnter={() => handleHover(item.id)}
                   >
                     <button
-                      className=" text-black dark:text-white w-[17rem] h-10 p-2 px-5  text-sm text-left font-semibold flex gap-2 items-center"
+                      className=" text-black dark:text-white w-[17rem] h-10 p-2 px-5  text-sm text-left font-semibold flex gap-4 justify-start items-center"
                       onMouseEnter={() => {
                         activeClass(item.id);
                       }}
                     >
+                      <div className="w-10 border border-grey p-2 flex justify-center items-center ">
                       <i
-                        className={`${item.icon} text-blue text-xl flex-shrink-0 w-8`}
+                        className={`${item.icon} text-blue text-xl   hover:bg-linear`}
                       ></i>
+                      </div>
                       <div className="flex flex-col justify-start">
                       <span>{item.title}</span>
                       <span className="text-xs text-[#91939d]">{item.desc}</span>
@@ -105,14 +107,14 @@ export default function Navigator({ disableSubmenu, className }) {
                         <div className="service-cate heading6">
                           Native App Development
                         </div>
-                        <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                        <ul className="flex flex-col gap-0 gap-y-0 mt-2 items-start">
                           {item.subMenu.slice(0, 3).map((i, index) => (
                             <li
                               key={index}
                               className={`${pathname === i.to ? "active" : ""}`}
                             >
                               <Link
-                                className={`flex items-center gap-4`}
+                                className={`flex items-center gap-4 ml-2`}
                                 href={
                                   process.env.PUBLIC_URL + "/services/[slug]"
                                 }
@@ -122,9 +124,11 @@ export default function Navigator({ disableSubmenu, className }) {
                                   convertToSlug(i.title)
                                 }
                               >
-                                <span
-                                  className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
-                                ></span>
+                                <div className="w-10 border border-grey p-2 flex justify-center items-center ">
+                                <i
+                                  className={`${i.icon} text-blue text-lg w-fit flex justify-center items-center border border-grey p-2`}
+                                ></i>
+                                </div>
                                 <span className="text-[#565454]">{i.title}</span>
                               </Link>
                             </li>
@@ -154,7 +158,7 @@ export default function Navigator({ disableSubmenu, className }) {
                                 }
                               >
                                 <span
-                                  className={`${i.icon} text-blue text-2xl flex-shrink-0 w-8`}
+                                  className={`${i.icon} text-blue text-lg flex-shrink-0 w-8`}
                                 ></span>
                                 <span className="text-[#565454]">{i.title}</span>
                               </Link>
