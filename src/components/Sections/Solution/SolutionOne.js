@@ -9,7 +9,7 @@ const SolutionOne = ({ data, start, limit }) => {
     },[darkmode])
    
     return (
-        <section className={`section-solution ${!darkmode ? "bg-linear" : "bg-black"}  lg:mt-20 sm:mt-14 mt-10 lg:py-20 sm:py-14 py-10`}>
+        <section className={`section-solution   lg:mt-20 sm:mt-14 mt-10 lg:py-20 sm:py-14 py-10`}>
             <div className="container text-center">
                 <span className="tag text-label">How we do</span>
                 <h3 className="heading3 text-center mt-3">Our Services</h3>

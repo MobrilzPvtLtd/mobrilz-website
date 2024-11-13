@@ -5,7 +5,7 @@ const ServiceItem = ({ data, type }) => {
     return (
         <>
             {type === 'style-one' && (
-                <div className="service-item -solution rounded-2xl bg-white h-full">
+                <div className="service-item -solution rounded-2xl  h-full">
                     <Link className="main md:p-10 p-8 flex flex-col items-center h-full"
                         // href={process.env.PUBLIC_URL + "/services/[slug]"}
                         // as={

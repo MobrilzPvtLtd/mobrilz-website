@@ -1,3 +1,4 @@
+"use client"
 import LayoutOne from "@/components/Layout/LayoutOne";
 import SliderOne from "@/components/Sections/Slider/SliderOne";
 import AboutOne from "@/components/Sections/About/AboutOne";
@@ -16,9 +17,9 @@ import ContactOne from "@/components/Sections/Contact/ContactOne";
 import SliderTwo from "@/components/Sections/Slider/SliderTwo";
 import allCss from "../styles/components/all.css"
 import Head from 'next/head';
-import favicon from "../../public/images/favicon.ico"
 
 export default function Home() {
+ 
   return (
     <>
     
