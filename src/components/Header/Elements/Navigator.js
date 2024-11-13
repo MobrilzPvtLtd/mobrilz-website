@@ -96,7 +96,7 @@ export default function Navigator({ disableSubmenu, className }) {
               </div>
               {visible == 1 ? (
                 <div className="ml-2 flex gap-2">
-                  <div className=" w-3/4 flex flex-wrap gap-2">
+                  <div className=" w-3/4 flex gap-5">
                     <div>
                       <div>
                         <div className="service-cate heading6">
@@ -122,7 +122,7 @@ export default function Navigator({ disableSubmenu, className }) {
                                 <span
                                   className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
                                 ></span>
-                                <span>{i.title}</span>
+                                <span className="text-[#565454]">{i.title}</span>
                               </Link>
                             </li>
                           ))}
@@ -151,9 +151,9 @@ export default function Navigator({ disableSubmenu, className }) {
                                 }
                               >
                                 <span
-                                  className={`${i.icon} text-blue text-2xl flex-shrink-0`}
+                                  className={`${i.icon} text-blue text-2xl flex-shrink-0 w-8`}
                                 ></span>
-                                <span>{i.title}</span>
+                                <span className="text-[#565454]">{i.title}</span>
                               </Link>
                             </li>
                           ))}
@@ -176,9 +176,9 @@ export default function Navigator({ disableSubmenu, className }) {
                                 }
                               >
                                 <span
-                                  className={`${i.icon} text-blue text-2xl flex-shrink-0`}
+                                  className={`${i.icon} text-blue text-2xl flex-shrink-0 w-8`}
                                 ></span>
-                                <span>{i.title}</span>
+                                <span className="text-[#565454]">{i.title}</span>
                               </Link>
                             </li>
                           ))}
@@ -211,7 +211,7 @@ export default function Navigator({ disableSubmenu, className }) {
                                 <span
                                   className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
                                 ></span>
-                                <span>{i.title}</span>
+                                <span className="text-[#565454]">{i.title}</span>
                               </Link>
                             </li>
                           ))}
@@ -242,7 +242,7 @@ export default function Navigator({ disableSubmenu, className }) {
                                 <span
                                   className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
                                 ></span>
-                                <span>{i.title}</span>
+                                <span className="text-[#565454]">{i.title}</span>
                               </Link>
                             </li>
                           ))}
@@ -326,10 +326,10 @@ export default function Navigator({ disableSubmenu, className }) {
               ) : null}
               {visible == 2 ? (
                 <div className="ml-2 flex gap-2">
-                  <div className=" w-3/4 ">
+                  <div className="w-full bg-linear p-2">
                     <div className="service-cate heading6">Web</div>
-                    <ul className=" w-full grid grid-cols-3 gap-0 gap-y-0 mt-2">
-                      {item.subMenu2.slice(0).map((i, index) => (
+                    <ul className=" w-full relative flex flex-wrap gap-0 gap-y-0 mt-2">
+                      {item.subMenu2.slice(0,).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
@@ -351,6 +351,98 @@ export default function Navigator({ disableSubmenu, className }) {
                         </li>
                       ))}
                     </ul>
+                    {/* <ul className=" w-full flex flex-wrap gap-0 gap-y-0 mt-2">
+                      {item.subMenu2.slice(5,9).map((i, index) => (
+                        <li
+                          key={index}
+                          className={`${pathname === i.to ? "active" : ""}`}
+                        >
+                          <Link
+                            className={`flex items-center gap-4`}
+                            href={process.env.PUBLIC_URL + "/services/[slug]"}
+                            as={
+                              process.env.PUBLIC_URL +
+                              "/services/" +
+                              convertToSlug(i.title)
+                            }
+                          >
+                            <span
+                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
+                            ></span>
+                            <span>{i.title}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <ul className=" w-full flex fflex-wrap gap-0 gap-y-0 mt-2">
+                      {item.subMenu2.slice(9,13).map((i, index) => (
+                        <li
+                          key={index}
+                          className={`${pathname === i.to ? "active" : ""}`}
+                        >
+                          <Link
+                            className={`flex items-center gap-4`}
+                            href={process.env.PUBLIC_URL + "/services/[slug]"}
+                            as={
+                              process.env.PUBLIC_URL +
+                              "/services/" +
+                              convertToSlug(i.title)
+                            }
+                          >
+                            <span
+                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
+                            ></span>
+                            <span>{i.title}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <ul className=" w-full flex fflex-wrap gap-0 gap-y-0 mt-2">
+                      {item.subMenu2.slice(13,18).map((i, index) => (
+                        <li
+                          key={index}
+                          className={`${pathname === i.to ? "active" : ""}`}
+                        >
+                          <Link
+                            className={`flex items-center gap-4`}
+                            href={process.env.PUBLIC_URL + "/services/[slug]"}
+                            as={
+                              process.env.PUBLIC_URL +
+                              "/services/" +
+                              convertToSlug(i.title)
+                            }
+                          >
+                            <span
+                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
+                            ></span>
+                            <span>{i.title}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <ul className=" w-full flex fflex-wrap gap-0 gap-y-0 mt-2">
+                      {item.subMenu2.slice(18).map((i, index) => (
+                        <li
+                          key={index}
+                          className={`${pathname === i.to ? "active" : ""}`}
+                        >
+                          <Link
+                            className={`flex items-center gap-4`}
+                            href={process.env.PUBLIC_URL + "/services/[slug]"}
+                            as={
+                              process.env.PUBLIC_URL +
+                              "/services/" +
+                              convertToSlug(i.title)
+                            }
+                          >
+                            <span
+                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
+                            ></span>
+                            <span>{i.title}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul> */}
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
