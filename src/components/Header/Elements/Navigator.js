@@ -126,7 +126,7 @@ export default function Navigator({ disableSubmenu, className }) {
                               >
                                 <div className="w-10 border border-grey p-2 flex justify-center items-center ">
                                 <i
-                                  className={`${i.icon} text-blue text-lg w-fit flex justify-center items-center border border-grey p-2`}
+                                  className={`${i.icon} text-blue text-lg border `}
                                 ></i>
                                 </div>
                                 <span className="text-[#565454]">{i.title}</span>
@@ -157,9 +157,11 @@ export default function Navigator({ disableSubmenu, className }) {
                                   convertToSlug(i.title)
                                 }
                               >
-                                <span
-                                  className={`${i.icon} text-blue text-lg flex-shrink-0 w-8`}
-                                ></span>
+                                 <div className="w-10 border border-grey p-2 flex justify-center items-center ">
+                                <i
+                                  className={`${i.icon} text-blue text-lg `}
+                                ></i>
+                                </div>
                                 <span className="text-[#565454]">{i.title}</span>
                               </Link>
                             </li>
@@ -182,9 +184,11 @@ export default function Navigator({ disableSubmenu, className }) {
                                   convertToSlug(i.title)
                                 }
                               >
-                                <span
-                                  className={`${i.icon} text-blue text-2xl flex-shrink-0 w-8`}
-                                ></span>
+                                 <div className="w-10 border border-grey p-2 flex justify-center items-center ">
+                                <i
+                                  className={`${i.icon} text-blue text-lg`}
+                                ></i>
+                                </div>
                                 <span className="text-[#565454]">{i.title}</span>
                               </Link>
                             </li>
