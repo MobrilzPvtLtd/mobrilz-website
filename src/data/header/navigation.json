@@ -106,16 +106,17 @@
         "icon": "fal fa-code",
         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       },
-      {
-        "title": "Angular JS",
-        "to": "#",
-        "icon": "fa-brands fa-angular",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
-      },
+      
       {
         "title": "Django",
         "to": "#",
         "icon": "fa-brands fa-python",
+        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Angular JS",
+        "to": "#",
+        "icon": "fa-brands fa-angular",
         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       },
       {
@@ -154,16 +155,17 @@
         "icon": "fa-brands fa-python",
         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       },
-      {
-        "title": "Framework Development",
-        "to": "#",
-        "icon": "fal fa-cogs",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
-      },
+      
       {
         "title": "Laravel",
         "to": "#",
         "icon": "fa-brands fa-laravel",
+        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+      },
+      {
+        "title": "Framework Development",
+        "to": "#",
+        "icon": "fal fa-cogs",
         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       },
       {

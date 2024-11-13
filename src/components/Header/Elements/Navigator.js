@@ -27,13 +27,13 @@ export default function Navigator({ disableSubmenu, className }) {
     }
   };
   const btnJson = [
-    { id: 1, title: "Mobile", icon: "icon-phone-sync" },
-    { id: 2, title: "Web", icon: "icon-user-sync" },
-    { id: 3, title: "AWS Services", icon: "icon-user-sync" },
-    { id: 4, title: "Ecommerce", icon: "icon-user-sync" },
-    { id: 5, title: "Emerging Technologies", icon: "icon-user-sync" },
-    { id: 6, title: "Digital Marketing Services", icon: "icon-user-sync" },
-    { id: 7, title: "Outsourcing", icon: "icon-user-sync" },
+    { id: 1, title: "Mobile", icon: "fa-regular fa-mobile" , desc: "Custom mobile app solutions for all platforms." },
+    { id: 2, title: "Web", icon: "fa-regular fa-desktop" ,desc: "Responsive, full-stack web development services." },
+    { id: 3, title: "AWS Services", icon: "fa-brands fa-aws" ,desc: "Scalable AWS cloud solutions and support." },
+    { id: 4, title: "Ecommerce", icon: "fa-regular fa-cart-shopping" ,desc: "Complete ecommerce development and integration." },
+    { id: 5, title: "Emerging Technologies", icon: "fa-regular fa-cloud-arrow-up" ,desc: "AI, IoT, AR/VR, and blockchain solutions." },
+    { id: 6, title: "Digital Marketing Services", icon: "fa-regular fa-globe" ,desc: "Boost online visibility with digital strategies." },
+    { id: 7, title: "Outsourcing", icon: "fa-brands fa-salesforce" , desc: "Reliable IT outsourcing and project support."},
   ];
 
   const handleHoverExplore = (id) => {
@@ -75,20 +75,23 @@ export default function Navigator({ disableSubmenu, className }) {
                 </h1>
                 {btnJson.map((item) => (
                   <div
-                    className={`w-full transition-all hover:bg-[#e8edfc] hover:scale-[1.01]`}
+                    className={`w-full transition-all py-2 hover:bg-[#e8edfc] hover:scale-[1.01]`}
                     key={item.id}
                     onMouseEnter={() => handleHover(item.id)}
                   >
                     <button
-                      className=" text-black dark:text-white w-[17rem] h-10 p-2 px-5 text-sm text-left font-semibold flex gap-2 items-center"
+                      className=" text-black dark:text-white w-[17rem] h-10 p-2 px-5  text-sm text-left font-semibold flex gap-2 items-center"
                       onMouseEnter={() => {
                         activeClass(item.id);
                       }}
                     >
-                      <span
-                        className={`${item.icon} text-blue text-xl flex-shrink-0`}
-                      ></span>
-                      {item.title}
+                      <i
+                        className={`${item.icon} text-blue text-xl flex-shrink-0 w-8`}
+                      ></i>
+                      <div className="flex flex-col justify-start">
+                      <span>{item.title}</span>
+                      <span className="text-xs text-[#91939d]">{item.desc}</span>
+                      </div>
                     </button>
                   </div>
                 ))}
@@ -326,13 +329,13 @@ export default function Navigator({ disableSubmenu, className }) {
               ) : null}
               {visible == 2 ? (
                 <div className="ml-2 flex gap-2">
-                  <div className="w-full bg-linear p-2">
+                  <div className="w-full p-2">
                     <div className="service-cate heading6">Web</div>
-                    <ul className=" w-full relative flex flex-wrap gap-0 gap-y-0 mt-2">
+                    <ul className=" w-full relative flex flex-wrap gap-4 gap-y-5 mt-2">
                       {item.subMenu2.slice(0,).map((i, index) => (
                         <li
                           key={index}
-                          className={`${pathname === i.to ? "active" : ""}`}
+                          className={`${pathname === i.to ? "active" : ""} bg-[#e8edfc]`}
                         >
                           <Link
                             className={`flex items-center gap-4`}
