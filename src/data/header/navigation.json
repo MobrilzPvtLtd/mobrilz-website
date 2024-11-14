@@ -40,7 +40,7 @@
       {
         "title": "Flutter App Development",
         "to": "#",
-        "icon": "fal fa-code-branch",
+        "icon": "fa-brands fa-flutter",
         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       },
       {
@@ -71,7 +71,7 @@
        {
         "title": "Kotlin App Development",
         "to": "#",
-        "icon": "fal fa-code",
+        "icon": "fa-brands fa-java",
         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       },
       {
@@ -183,7 +183,7 @@
       {
         "title": "Symfony",
         "to": "#",
-        "icon": "fal fa-cogs",
+        "icon": "fa-brands fa-symfony",
         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       },
       {
@@ -201,7 +201,7 @@
       {
         "title": "Joomla",
         "to": "#",
-        "icon": "fal fa-cogs",
+        "icon": "fa-brands fa-joomla",
         "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
       },
       {
