@@ -31,9 +31,9 @@
       }
 
       &.-white {
-        &>ul {
-          &>li {
-            &>a {
+        & > ul {
+          & > li {
+            & > a {
               color: #fff;
               font-weight: 400;
 
@@ -45,11 +45,11 @@
         }
       }
 
-      &>ul {
+      & > ul {
         list-style: none;
         font-size: 0;
 
-        &>li {
+        & > li {
           display: inline-block;
           margin: 0 12px;
 
@@ -61,18 +61,20 @@
 
           &.active,
           &:hover {
-            &>a {
+            & > a {
               &:after {
                 width: 100%;
               }
             }
           }
 
-          &>a {
-            @include link($color: setColor(black),
+          & > a {
+            @include link(
+              $color: setColor(black),
               $fsz: 14px,
               $lh: 24px,
-              $fw: 700);
+              $fw: 700
+            );
             display: block;
             position: relative;
 
@@ -112,12 +114,19 @@
               pointer-events: all;
             }
           }
-
-          .dropdown-menu {
+          &:hover {
+            .dropdown-menu-service {
+              transform: translateY(0);
+              opacity: 1;
+              visibility: visible;
+              pointer-events: all;
+            }
+          }
+          .dropdown-menu-service {
             position: absolute;
             top: 49px;
             left: -40px;
-            background-color: #fff;
+            background-color: #fafbfd;
             padding: 18px 20px;
             border-radius: 0 0 16px 16px;
             box-shadow: -2px 2px 81px -27px rgba(0, 0, 0, 0.3);
@@ -125,7 +134,8 @@
             visibility: hidden;
             pointer-events: none;
             transform: translateY(10px);
-            transition: transform ease 0.4s, opacity ease 0.4s, visibility ease 0.4s;
+            transition: transform ease 0.4s, opacity ease 0.4s,
+              visibility ease 0.4s;
             z-index: 99;
             min-height: 40rem;
 
@@ -138,10 +148,12 @@
               border-radius: 8px;
 
               a {
-                @include link($color: setColor(black),
+                @include link(
+                  $color: setColor(black),
                   $fsz: 16px,
                   $lh: 24px,
-                  $fw: 600);
+                  $fw: 600
+                );
                 position: relative;
                 display: inline-flex;
                 padding: 5px 0px;
@@ -172,7 +184,106 @@
               }
 
               &:hover {
-                background: linear-gradient(238deg, #F4F6FC 0%, #FAF7EF 99.66%);
+                background: linear-gradient(238deg, #f4f6fc 0%, #faf7ef 99.66%);
+              }
+            }
+
+            &.-wide {
+              width: 100%;
+              padding: 24px;
+              top: 74px;
+              left: 0;
+              border-radius: 0 0 24px 24px;
+
+              ul {
+                li {
+                  a {
+                    &::after {
+                      left: 52px;
+                    }
+                  }
+
+                  &:hover,
+                  &.active {
+                    a {
+                      &::after {
+                        width: calc(100% - 72px);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            &.-pages {
+              width: 368px;
+            }
+
+          }
+
+          .dropdown-menu {
+            position: absolute;
+            top: 49px;
+            left: -40px;
+            background-color: #fff;
+            padding: 18px 20px;
+            border-radius: 0 0 16px 16px;
+            box-shadow: -2px 2px 81px -27px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: transform ease 0.4s, opacity ease 0.4s,
+              visibility ease 0.4s;
+            z-index: 99;
+            min-height: fit-content;
+
+            &.style-pages {
+              width: 400px;
+            }
+
+            li {
+              list-style: none;
+              border-radius: 8px;
+
+              a {
+                @include link(
+                  $color: setColor(black),
+                  $fsz: 16px,
+                  $lh: 24px,
+                  $fw: 600
+                );
+                position: relative;
+                display: inline-flex;
+                padding: 5px 0px;
+                white-space: nowrap;
+                border-radius: 8px;
+                transition: all ease 0.3s;
+
+                &:after {
+                  content: "";
+                  position: absolute;
+                  bottom: 10px;
+                  left: 20px;
+                  background-color: setColor(black);
+                  height: 1px;
+                  width: 0;
+                  z-index: 0;
+                  transition: $transition;
+                }
+              }
+
+              &.active,
+              &:hover {
+                a {
+                  &::after {
+                    width: calc(100% - 40px);
+                  }
+                }
+              }
+
+              &:hover {
+                background: linear-gradient(238deg, #f4f6fc 0%, #faf7ef 99.66%);
               }
             }
 
@@ -245,18 +356,18 @@
         margin-right: 24px;
 
         img {
-          @include imgCenter($height: emCal(16, 25),
+          @include imgCenter(
+            $height: emCal(16, 25),
             $width: emCal(16, 25),
-            $type: contain);
+            $type: contain
+          );
         }
 
         &.-cart {
           position: relative;
 
           span {
-            @include typo($fsz: emCal(16, 10),
-              $fw: 400,
-              $color: $white);
+            @include typo($fsz: emCal(16, 10), $fw: 400, $color: $white);
             position: absolute;
             top: -4px;
             right: -5px;
@@ -342,7 +453,7 @@
     background-color: transparent;
     z-index: 2;
 
-    .menu__wrapper .navigator>ul>li>a {
+    .menu__wrapper .navigator > ul > li > a {
       color: setColor(white);
     }
 
@@ -368,7 +479,7 @@
 
     .navigator {
       &.style-three {
-        >ul>li>a {
+        > ul > li > a {
           &::after {
             background-color: setColor(yellow);
           }
@@ -414,7 +525,7 @@
     top: 0;
 
     .navigator {
-      >ul>li>a {
+      > ul > li > a {
         &::after {
           background-color: setColor(pink);
         }
@@ -456,7 +567,7 @@
     top: 0;
 
     .navigator {
-      >ul>li>a {
+      > ul > li > a {
         &::after {
           background-color: setColor(green);
         }
@@ -478,7 +589,7 @@
     }
 
     .list__button {
-      >div {
+      > div {
         background: transparent !important;
         position: relative;
 
@@ -520,7 +631,7 @@
     top: 0;
 
     .menu__wrapper .navigator {
-      >ul>li>a {
+      > ul > li > a {
         color: setColor(black);
 
         &::after {
@@ -557,7 +668,7 @@
     top: 0;
 
     .menu__wrapper .navigator {
-      >ul>li>a {
+      > ul > li > a {
         color: setColor(black);
       }
     }
@@ -612,16 +723,18 @@
   .navigator-mobile {
     margin-bottom: emCal(16, 80);
 
-    &>ul {
+    & > ul {
       list-style: none;
 
-      &>li {
-        &>a {
-          @include link($color: setShadeColor(dark),
+      & > li {
+        & > a {
+          @include link(
+            $color: setShadeColor(dark),
             $hvr-color: setShadeColor(dark),
             $fsz: emCal(16, 16),
             $lh: emCal(16, 36),
-            $fw: 600);
+            $fw: 600
+          );
           display: block;
         }
 
@@ -637,11 +750,13 @@
             list-style: none;
 
             a {
-              @include link($color: setShadeColor(medium),
+              @include link(
+                $color: setShadeColor(medium),
                 $hvr-color: setColor(red),
                 $fsz: emCal(16, 14),
                 $lh: emCal(14, 36),
-                $fw: 500);
+                $fw: 500
+              );
               display: block;
             }
           }
@@ -680,8 +795,8 @@
     }
 
     .social-icons {
-      &>li {
-        &>a {
+      & > li {
+        & > a {
           @include link($color: setShadeColor(dark), $fsz: emCal(16, 16));
         }
       }
@@ -715,11 +830,13 @@
 
       li {
         a {
-          @include link($color: #fff,
+          @include link(
+            $color: #fff,
             $hvr-color: #fff,
             $fsz: emCal(16, 42),
             $lh: emCal(42, 105),
-            $bottom-dash: true);
+            $bottom-dash: true
+          );
         }
       }
     }

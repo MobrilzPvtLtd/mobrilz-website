@@ -65,7 +65,7 @@ export default function Navigator({ disableSubmenu, className }) {
             <Link href={process.env.PUBLIC_URL + item.to}>
               <span className="text-white">{item.title}</span>
             </Link>
-            <div className="dropdown-menu -wide flex gap-3">
+            <div className="dropdown-menu-service -wide flex gap-3">
               <div
                 className="w-fit h-96 flex flex-col gap-3 justify-start items-center shadow-none"
                 style={{ boxShadow: "10px 0 5px rgb(182 182 182 / 10%)" }}
@@ -85,7 +85,7 @@ export default function Navigator({ disableSubmenu, className }) {
                         activeClass(item.id);
                       }}
                     >
-                      <div className="w-10 border border-grey p-2 flex justify-center items-center ">
+                      <div className="w-10 border border-grey p-2 flex bg-white rounded-[50%] justify-center items-center ">
                       <i
                         className={`${item.icon} text-blue text-xl   hover:bg-linear`}
                       ></i>
@@ -100,14 +100,14 @@ export default function Navigator({ disableSubmenu, className }) {
                 <hr className="border-none h-[1px] bg-grey w-full"></hr>
               </div>
               {visible == 1 ? (
-                <div className="ml-2 flex gap-2">
-                  <div className=" w-3/4 flex gap-5">
+                <div className="ml-2 flex gap-2 ">
+                  <div className=" w-3/4 flex gap-5 ">
                     <div>
-                      <div>
-                        <div className="service-cate heading6">
+                      <div >
+                        <div className="service-cate text-xl font-semibold">
                           Native App Development
                         </div>
-                        <ul className="flex flex-col gap-0 gap-y-0 mt-2 items-start">
+                        <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
                           {item.subMenu.slice(0, 3).map((i, index) => (
                             <li
                               key={index}
@@ -124,9 +124,9 @@ export default function Navigator({ disableSubmenu, className }) {
                                   convertToSlug(i.title)
                                 }
                               >
-                                <div className="w-10 border border-grey p-2 flex justify-center items-center ">
+                                <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                 <i
-                                  className={`${i.icon} text-blue text-lg  `}
+                                  className={`${i.icon} text-blue text-md  `}
                                 ></i>
                                 </div>
                                 <span className="text-[#565454]">{i.title}</span>
@@ -137,7 +137,7 @@ export default function Navigator({ disableSubmenu, className }) {
                         <hr className="border-none h-[1px] bg-grey"></hr>
                       </div>
                       <div>
-                        <div className="service-cate heading6 mt-5">
+                        <div className="service-cate text-xl font-semibold mt-5">
                           Cross-Platform App Development
                         </div>
                         <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -147,7 +147,7 @@ export default function Navigator({ disableSubmenu, className }) {
                               className={`${pathname === i.to ? "active" : ""}`}
                             >
                               <Link
-                                className={`flex items-center gap-2`}
+                                className={`flex items-center gap-2 ml-2`}
                                 href={
                                   process.env.PUBLIC_URL + "/services/[slug]"
                                 }
@@ -157,9 +157,9 @@ export default function Navigator({ disableSubmenu, className }) {
                                   convertToSlug(i.title)
                                 }
                               >
-                                 <div className="w-10 border border-grey p-2 flex justify-center items-center ">
+                                 <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                 <i
-                                  className={`${i.icon} text-blue text-lg `}
+                                  className={`${i.icon} text-blue text-md `}
                                 ></i>
                                 </div>
                                 <span className="text-[#565454]">{i.title}</span>
@@ -174,7 +174,7 @@ export default function Navigator({ disableSubmenu, className }) {
                               className={`${pathname === i.to ? "active" : ""}`}
                             >
                               <Link
-                                className={`flex items-center gap-2`}
+                                className={`flex items-center gap-2 ml-2`}
                                 href={
                                   process.env.PUBLIC_URL + "/services/[slug]"
                                 }
@@ -184,9 +184,9 @@ export default function Navigator({ disableSubmenu, className }) {
                                   convertToSlug(i.title)
                                 }
                               >
-                                 <div className="w-10 border border-grey p-2 flex justify-center items-center ">
+                                 <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                 <i
-                                  className={`${i.icon} text-blue text-lg`}
+                                  className={`${i.icon} text-blue text-md`}
                                 ></i>
                                 </div>
                                 <span className="text-[#565454]">{i.title}</span>
@@ -199,7 +199,7 @@ export default function Navigator({ disableSubmenu, className }) {
                     </div>
                     <div>
                       <div>
-                        <div className="service-cate heading6 ">
+                        <div className="service-cate text-xl font-semibold ">
                           Language-Specific
                         </div>
                         <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -209,7 +209,7 @@ export default function Navigator({ disableSubmenu, className }) {
                               className={`${pathname === i.to ? "active" : ""}`}
                             >
                               <Link
-                                className={`flex items-center gap-4`}
+                                className={`flex items-center gap-2 ml-2`}
                                 href={
                                   process.env.PUBLIC_URL + "/services/[slug]"
                                 }
@@ -219,9 +219,11 @@ export default function Navigator({ disableSubmenu, className }) {
                                   convertToSlug(i.title)
                                 }
                               >
-                                <span
-                                  className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
-                                ></span>
+                                 <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                <i
+                                  className={`${i.icon} text-blue text-md `}
+                                ></i>
+                                </div>
                                 <span className="text-[#565454]">{i.title}</span>
                               </Link>
                             </li>
@@ -230,7 +232,7 @@ export default function Navigator({ disableSubmenu, className }) {
                         <hr className="border-none h-[1px] bg-grey"></hr>
                       </div>
                       <div>
-                        <div className="service-cate heading6 mt-5">
+                        <div className="service-cate text-xl font-semibold mt-5">
                           Legacy/Niche
                         </div>
                         <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -240,7 +242,7 @@ export default function Navigator({ disableSubmenu, className }) {
                               className={`${pathname === i.to ? "active" : ""}`}
                             >
                               <Link
-                                className={`flex items-center gap-4`}
+                                className={`flex items-center gap-2 ml-2`}
                                 href={
                                   process.env.PUBLIC_URL + "/services/[slug]"
                                 }
@@ -250,9 +252,11 @@ export default function Navigator({ disableSubmenu, className }) {
                                   convertToSlug(i.title)
                                 }
                               >
-                                <span
-                                  className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
-                                ></span>
+                                <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                <i
+                                  className={`${i.icon} text-blue text-md `}
+                                ></i>
+                                </div>
                                 <span className="text-[#565454]">{i.title}</span>
                               </Link>
                             </li>
@@ -264,7 +268,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
-                      <div className="heading6">
+                      <div className="text-xl font-semibold">
                         Explore All Mobile Services
                       </div>
                       <div className="caption1 text-surface1 mt-1">
@@ -338,12 +342,12 @@ export default function Navigator({ disableSubmenu, className }) {
               {visible == 2 ? (
                 <div className="ml-2 flex gap-2">
                   <div className="w-full p-2">
-                    <div className="service-cate heading6">Web</div>
+                    <div className="service-cate text-xl font-semibold">Web</div>
                     <ul className=" w-full relative flex flex-wrap gap-4 gap-y-5 mt-2">
                       {item.subMenu2.slice(0,).map((i, index) => (
                         <li
                           key={index}
-                          className={`${pathname === i.to ? "active" : ""} bg-[#e8edfc]`}
+                          className={`${pathname === i.to ? "active" : ""} bg-[#e8edfc] px-2`}
                         >
                           <Link
                             className={`flex items-center gap-4`}
@@ -354,10 +358,12 @@ export default function Navigator({ disableSubmenu, className }) {
                               convertToSlug(i.title)
                             }
                           >
-                            <span
-                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
-                            ></span>
-                            <span>{i.title}</span>
+                           <div className="w-fit  p-1 flex justify-center items-center ">
+                                <i
+                                  className={`${i.icon} text-blue text-md `}
+                                ></i>
+                                </div>
+                                <span className="text-[#565454]">{i.title}</span>
                           </Link>
                         </li>
                       ))}
@@ -457,7 +463,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
-                      <div className="heading6">Explore All Web Services</div>
+                      <div className="text-xl font-semibold">Explore All Web Services</div>
                       <div className="caption1 text-surface1 mt-1">
                         Unlocking the Full Spectrum of IT Solutions and Business
                         Consulting for your needs
@@ -529,7 +535,7 @@ export default function Navigator({ disableSubmenu, className }) {
               {visible == 3 ? (
                 <div className="ml-2 flex gap-2">
                   <div className=" w-3/4 ">
-                    <div className="service-cate heading6">AWS Services</div>
+                    <div className="service-cate text-xl font-semibold">AWS Services</div>
                     <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
                       {item.subMenu3.slice(0).map((i, index) => (
                         <li
@@ -556,7 +562,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
-                      <div className="heading6">Explore All AWS Services</div>
+                      <div className="text-xl font-semibold">Explore All AWS Services</div>
                       <div className="caption1 text-surface1 mt-1">
                         Unlocking the Full Spectrum of IT Solutions and Business
                         Consulting for your needs
@@ -628,7 +634,7 @@ export default function Navigator({ disableSubmenu, className }) {
               {visible == 4 ? (
                 <div className="flex gap-2 ml-2">
                   <div className=" w-3/4 ">
-                    <div className="service-cate heading6">Ecommerce</div>
+                    <div className="service-cate text-xl font-semibold">Ecommerce</div>
                     <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
                       {item.subMenu4.slice(0).map((i, index) => (
                         <li
@@ -656,7 +662,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
-                      <div className="heading6">Explore Ecommerce Services</div>
+                      <div className="text-xl font-semibold">Explore Ecommerce Services</div>
                       <div className="caption1 text-surface1 mt-1">
                         Unlocking the Full Spectrum of IT Solutions and Business
                         Consulting for your needs
@@ -728,7 +734,7 @@ export default function Navigator({ disableSubmenu, className }) {
               {visible == 5 ? (
                 <div className="flex gap-2 ml-2">
                   <div className=" w-3/4 ">
-                    <div className="service-cate heading6">
+                    <div className="service-cate text-xl font-semibold">
                       Emerging Technologies
                     </div>
                     <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
@@ -758,7 +764,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
-                      <div className="heading6">
+                      <div className="text-xl font-semibold">
                         Explore All Emerging Technologies
                       </div>
                       <div className="caption1 text-surface1 mt-1">
@@ -832,7 +838,7 @@ export default function Navigator({ disableSubmenu, className }) {
               {visible == 6 ? (
                 <div className="flex gap-2 ml-2">
                   <div className=" w-3/4 ">
-                    <div className="service-cate heading6">
+                    <div className="service-cate text-xl font-semibold">
                       Digital Marketing Services
                     </div>
                     <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
@@ -862,7 +868,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
-                      <div className="heading6">
+                      <div className="text-xl font-semibold">
                         Explore All Digital Marketing Services
                       </div>
                       <div className="caption1 text-surface1 mt-1">
@@ -936,7 +942,7 @@ export default function Navigator({ disableSubmenu, className }) {
               {visible == 7 ? (
                 <div className="flex gap-2 ml-2">
                   <div className=" w-3/4 ">
-                    <div className="service-cate heading6">Outsourcing</div>
+                    <div className="service-cate text-xl font-semibold">Outsourcing</div>
                     <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
                       {item.subMenu7.slice(0).map((i, index) => (
                         <li
@@ -964,7 +970,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
-                      <div className="heading6">
+                      <div className="text-xl font-semibold">
                         Explore All Outsourcing Services
                       </div>
                       <div className="caption1 text-surface1 mt-1">
@@ -1052,7 +1058,7 @@ export default function Navigator({ disableSubmenu, className }) {
             <div className="dropdown-menu -wide flex gap-3">
               <div className="ml-2 flex gap-2 justify-between w-full">
                 <div className=" w-3/4 ">
-                  <div className="service-cate heading6">Industry</div>
+                  <div className="service-cate text-xl font-semibold">Industry</div>
                   <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
                     {item.subMenu.map((i, index) => (
                       <li
@@ -1094,7 +1100,7 @@ export default function Navigator({ disableSubmenu, className }) {
                               className="content bg-linear rounded-lg p-6"
                               key={index}
                             >
-                              <div className="heading6">
+                              <div className="text-xl font-semibold">
                                 Explore All {i.title} Services
                               </div>
 
