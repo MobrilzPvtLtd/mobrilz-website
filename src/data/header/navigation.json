@@ -213,28 +213,47 @@
     ],
     "subMenu3": [
       {
-        "title": "AWS Media Live",
-        "to": "#",
-        "icon": "fal fa-video",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
-      },
-      {
-        "title": "AWS CloudFront",
+        "title": "Cloud Computing",
         "to": "#",
         "icon": "fal fa-cloud",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "EC2, Lambda, S3"
       },
       {
-        "title": "AWS Development Partner",
+        "title": "Databases",
         "to": "#",
-        "icon": "fal fa-handshake",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "icon": "fal fa-database",
+        "desc": "RDS, DynamoDB"
       },
       {
-        "title": "AWS Live Classes Solution",
+        "title": "Storage and Content Delivery",
         "to": "#",
-        "icon": "fal fa-chalkboard-teacher",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "icon": "fal fa-database",
+        "desc": "S3, EBS, CloudFront"
+      },
+      {
+        "title": "Machine Learning",
+        "to": "#",
+        "icon": "fal fa-head-side-gear",
+        "desc": "SageMaker"
+      },
+      {
+        "title": "Media Services",
+        "to": "#",
+        "icon": "fal fa-head-side-gear",
+        "desc": "Media Live, MediaConvert, MediaPackage"
+      },
+      {
+        "title": "Developer Tools",
+        "to": "#",
+        "icon": "fal fa-head-side-gear",
+        "desc": "CodePipeline, CodeBuild, CodeDeploy"
+      },
+      {
+        "title": "Partner Solutions",
+        "to": "#",
+        "icon": "fal fa-head-side-gear",
+        "desc": ["AWS Development Partner",
+        "AWS Live Classes Solution" ]
       }
     ],
     "subMenu4": [

@@ -398,10 +398,10 @@ export default function Navigator({ disableSubmenu, className }) {
                           key={index}
                           className={`${
                             pathname === i.to ? "active" : ""
-                          } bg-[#e8edfc] px-2`}
+                          } bg-[#e8edfc] px-2 flex justify-center`}
                         >
                           <Link
-                            className={`flex items-center gap-2`}
+                            className={`flex items-center gap-2 justify-center`}
                             href={process.env.PUBLIC_URL + "/services/[slug]"}
                             as={
                               process.env.PUBLIC_URL +
