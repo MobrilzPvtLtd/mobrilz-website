@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
-import 'swiper/css/bundle';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css/bundle";
 import Rate from "@/components/Other/Rate";
 
 export default function TestimonialOne({ classname, data }) {
@@ -13,17 +13,27 @@ export default function TestimonialOne({ classname, data }) {
   const handleSlideChange = (item) => {
     setActiveIndex(item.activeIndex);
   };
-
+  
+  
+  
+  
+  
   return (
     <section className="testimonial-block style-one lg:pb-20 sm:pb-14 pb-10">
       <div className="container">
+        <div className="w-full text-center pb-2">
+          <span className="tag text-label text-center">Testimonial</span>
+        </div>
+        <h1 className="heading3 font-semibold w-full text-center pb-5 ">
+          What Our Client Says
+        </h1>
         <div className={`w-full flex items-center justify-center ${classname}`}>
           <div className="lg:w-11/12 w-full relative rounded-[40px] overflow-hidden bg-linear max-md:flex max-sm:flex-col-reverse">
             <div className="list-testimonials sm:w-7/12 lg:pb-12 pb-9">
               <Swiper
                 spaceBetween={0}
                 slidesPerView={1}
-                className='h-full relative style-testimonial'
+                className="h-full relative style-testimonial"
                 pagination={{ clickable: true }}
                 modules={[Pagination]}
                 onSlideChange={handleSlideChange}
@@ -32,7 +42,10 @@ export default function TestimonialOne({ classname, data }) {
                   <SwiperSlide key={index}>
                     <div className="testimonial-item lg:px-[60px] px-9 lg:py-12 py-9">
                       <div className="star flex items-center gap-px">
-                        <Rate currentRate={item.rate} style={"text-blue text-xl"} />
+                        <Rate
+                          currentRate={item.rate}
+                          style={"text-blue text-xl"}
+                        />
                       </div>
                       <h4 className="heading4 lg:mt-6 mt-4">{item.review}</h4>
                       <div className="infor mt-4">
@@ -46,8 +59,19 @@ export default function TestimonialOne({ classname, data }) {
             </div>
             <div className="list-avatar md:absolute top-0 right-0 sm:w-5/12 md:h-full max-md:w-full">
               {data.map((item, index) => (
-                <div className={`bg-img w-full h-full ${index === activeIndex ? 'active' : ''}`} key={index}>
-                  <Image width={5000} height={4000} src={item.image} alt={item.image} className={`w-full h-full object-cover`} />
+                <div
+                  className={`bg-img w-full h-full ${
+                    index === activeIndex ? "active" : ""
+                  }`}
+                  key={index}
+                >
+                  <Image
+                    width={5000}
+                    height={4000}
+                    src={item.image}
+                    alt={item.image}
+                    className={`w-full h-full object-cover`}
+                  />
                 </div>
               ))}
             </div>

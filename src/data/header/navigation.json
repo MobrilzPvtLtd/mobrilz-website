@@ -570,73 +570,74 @@
     "subMenu": [
       {
         "id": 1,
-        "title": "Banking, Finance & Insurance",
+        "title": "Cloud Solutions (AWS, Azure, GCP)",
         "to": "#!",
-        "icon": "fal fa-piggy-bank"
+        "icon": "fal fa-cloud"
       },
-      { "id": 2, "title": "Dating", "to": "#!", "icon": "fal fa-heart" },
+      { "id": 2, "title": " AI and Machine Learning", "to": "#!", "icon": "fal fa-microchip-ai" },
       {
         "id": 3,
-        "title": "E-Commerce Retail & B2B",
+        "title": "Data Analytics and Business Intelligence",
         "to": "#!",
-        "icon": "fal fa-shopping-cart"
+        "icon": "fal fa-database"
       },
-      { "id": 4, "title": "E-Learning", "to": "#!", "icon": "fal fa-book" },
+      { "id": 4, "title": "Cybersecurity", "to": "#!", "icon": "fal fa-camera-security" },
+      {
+        "id": 12,
+        "title": "Robotics",
+        "to": "#!",
+        "icon": "fal fa-robot"
+      },
       {
         "id": 5,
-        "title": "Event & Ticket",
+        "title": "Machine Vision",
         "to": "#!",
-        "icon": "fal fa-ticket-alt"
+        "icon": "fal fa-eye"
       },
       {
         "id": 6,
-        "title": "E-Governance",
+        "title": "PLC & SCADA Systems",
         "to": "#!",
-        "icon": "fal fa-landmark"
+        "icon": "fal fa-tower-control"
       },
       {
         "id": 7,
-        "title": "Food & Beverage",
+        "title": "Industrial IoT",
         "to": "#!",
-        "icon": "fal fa-utensils"
+        "icon": "fal fa-industry"
       },
-      { "id": 8, "title": "Grocery", "to": "#!", "icon": "fal fa-apple-alt" },
+      { "id": 8, "title": "Embedded Systems", "to": "#!", "icon": "fal fa-anchor" },
       {
         "id": 9,
-        "title": "Gaming & Leisure",
+        "title": "Hardware Design",
         "to": "#!",
-        "icon": "fal fa-gamepad"
+        "icon": "fal fa-computer"
       },
       {
         "id": 10,
-        "title": "Healthcare & Fitness",
+        "title": "Firmware Development",
         "to": "#!",
-        "icon": "fal fa-heartbeat"
+        "icon": "fa-brands fa-android"
       },
       {
         "id": 11,
-        "title": "Maps & Navigation",
+        "title": "Software Development",
         "to": "#!",
-        "icon": "fal fa-map-marked-alt"
-      },
-      {
-        "id": 12,
-        "title": "Matrimonial App Development",
-        "to": "#!",
-        "icon": "fal fa-ring"
+        "icon": "fa-brands fa-windows"
       },
       {
         "id": 13,
-        "title": "Marketing & Classified",
+        "title": "Video Watermarking Service",
         "to": "#!",
-        "icon": "fal fa-bullhorn"
+        "icon": "fal fa-video"
       },
       {
         "id": 14,
-        "title": "Non-Profit Organization",
+        "title": "Video Multi-DRM",
         "to": "#!",
-        "icon": "fal fa-hands-helping"
+        "icon": "fal fa-video"
       },
+      
       {
         "id": 15,
         "title": "OTT Platform App Development",
@@ -645,15 +646,15 @@
       },
       {
         "id": 16,
-        "title": "Real Estate & Property",
+        "title": "E-Learning",
         "to": "#!",
-        "icon": "fal fa-building"
+        "icon": "fal fa-chalkboard-user"
       },
       {
         "id": 17,
-        "title": "Social Networking",
+        "title": "Online University Solution",
         "to": "#!",
-        "icon": "fal fa-users"
+        "icon": "fal fa-builing-columns"
       },
       {
         "id": 18,
@@ -669,46 +670,107 @@
       },
       {
         "id": 20,
-        "title": "Video Streaming",
+        "title": "Social Networking",
         "to": "#!",
-        "icon": "fal fa-video"
+        "icon": "fal fa-facebook"
       },
       {
         "id": 21,
-        "title": "Video Multi-DRM",
+        "title": "Matrimonial App Development",
         "to": "#!",
-        "icon": "fal fa-shield-alt"
+        "icon": "fal fa-people"
       },
       {
         "id": 22,
-        "title": "Travel & Hospitality",
+        "title": "Dating",
         "to": "#!",
-        "icon": "fal fa-plane"
+        "icon": "fal fa-heart"
       },
       {
         "id": 23,
-        "title": "Recruitment Job Portal",
+        "title": "Travel & Hospitality",
         "to": "#!",
-        "icon": "fal fa-briefcase"
+        "icon": "fal fa-car"
       },
       {
         "id": 24,
-        "title": "AWS Elemental Link",
+        "title": "Event & Ticket",
         "to": "#!",
-        "icon": "fal fa-link"
+        "icon": "fal fa-ticket"
       },
       {
         "id": 25,
-        "title": "Video Watermarking Service",
+        "title": " Food & Beverage",
         "to": "#!",
-        "icon": "fal fa-water"
+        "icon": "fal fa-pot-food"
       },
       {
         "id": 26,
-        "title": "Online University Solution",
+        "title": "Grocery",
         "to": "#!",
-        "icon": "fal fa-university"
+        "icon": "fal fa-cart-shopping"
+      },
+      {
+        "id": 27,
+        "title": "Maps and Navigation",
+        "to": "#!",
+        "icon": "fal fa-map"
+      },
+      {
+        "id": 28,
+        "title": "Marketing & Classified",
+        "to": "#!",
+        "icon": "fal fa-shop"
+      },
+      {
+        "id": 29,
+        "title": "Non-Profit Organization",
+        "to": "#!",
+        "icon": "fal fa-building-ngo"
+      },
+      {
+        "id": 30,
+        "title": "Recruitment Job Portal",
+        "to": "#!",
+        "icon": "fal fa-browser"
+      },
+      {
+        "id": 31,
+        "title": "Banking, Finance & Insurance",
+        "to": "#!",
+        "icon": "fal fa-building-columns"
+      },
+      {
+        "id": 32,
+        "title": "Gaming & Leisure",
+        "to": "#!",
+        "icon": "fal fa-gamepad"
+      },
+      {
+        "id": 33,
+        "title": "Real Estate & Property",
+        "to": "#!",
+        "icon": "fal fa-house"
+      },
+      {
+        "id": 26,
+        "title": "E-Governance",
+        "to": "#!",
+        "icon": "fal fa-user-police"
+      },
+      {
+        "id": 34,
+        "title": " Healthcare & Fitness",
+        "to": "#!",
+        "icon": "fal fa-notes-medical"
+      },
+      {
+        "id": 35,
+        "title": "E-Commerce Retail & B2B",
+        "to": "#!",
+        "icon": "fal fa-cart-shopping"
       }
+      
     ]
   },
 

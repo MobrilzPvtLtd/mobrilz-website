@@ -38,7 +38,7 @@ export default function Home() {
         {/* <CaseStudyOne classname={'bg-linear lg:mt-20 sm:mt-14 mt-10 lg:py-20 sm:py-14 py-10'} data={caseStudyData} start={0} limit={5} /> */}
         {/* <BannerOne /> */}
         {/* <BrandOne classname={'bg-white lg:py-20 md:py-14 py-10'} /> */}
-        {/* <TestimonialOne data={testimonialData} /> */}
+        <TestimonialOne data={testimonialData} />
         <ContactOne classname={'bg-linear-blue'} />
       </LayoutOne>
     </>
