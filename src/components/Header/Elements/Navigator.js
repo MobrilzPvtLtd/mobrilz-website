@@ -401,7 +401,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           } bg-[#e8edfc] px-2`}
                         >
                           <Link
-                            className={`flex items-center gap-4`}
+                            className={`flex items-center gap-2`}
                             href={process.env.PUBLIC_URL + "/services/[slug]"}
                             as={
                               process.env.PUBLIC_URL +
