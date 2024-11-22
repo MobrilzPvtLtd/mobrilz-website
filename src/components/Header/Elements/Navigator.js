@@ -401,7 +401,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           } bg-[#e8edfc] px-2 flex justify-center`}
                         >
                           <Link
-                            className={`flex items-center gap-2 justify-center`}
+                            className={`flex items-center gap-2 justify-center `}
                             href={process.env.PUBLIC_URL + "/services/[slug]"}
                             as={
                               process.env.PUBLIC_URL +
@@ -409,7 +409,7 @@ export default function Navigator({ disableSubmenu, className }) {
                               convertToSlug(i.title)
                             }
                           >
-                            <div className="w-fit  p-1 flex justify-center items-center ">
+                            <div className="w-fit  flex justify-center items-center ">
                               <i className={`${i.icon} text-blue text-md `}></i>
                             </div>
                             <span className="text-[#565454]">{i.title}</span>
