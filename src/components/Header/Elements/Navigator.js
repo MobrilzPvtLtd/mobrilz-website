@@ -584,19 +584,19 @@ export default function Navigator({ disableSubmenu, className }) {
                 </div>
               ) : null}
               {visible == 3 ? (
-                <div className="ml-2 flex gap-2">
-                  <div className=" w-3/4 ">
-                    <div className="service-cate text-lg font-semibold">
-                      AWS Services
+                <div className="ml-2 flex gap-5">
+                  <div>
+                    <div className="service-cate text-lg font-semibold mt-5">
+                      Core AWS Services
                     </div>
-                    <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
-                      {item.subMenu3.slice(0).map((i, index) => (
+                    <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                      {item.subMenu3.slice(0, 4).map((i, index) => (
                         <li
                           key={index}
                           className={`${pathname === i.to ? "active" : ""}`}
                         >
                           <Link
-                            className={`flex items-center gap-4`}
+                            className={`flex items-center justify-start gap-2 ml-1`}
                             href={process.env.PUBLIC_URL + "/services/[slug]"}
                             as={
                               process.env.PUBLIC_URL +
@@ -604,15 +604,68 @@ export default function Navigator({ disableSubmenu, className }) {
                               convertToSlug(i.title)
                             }
                           >
-                            <span
-                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
-                            ></span>
-                            <span>{i.title}</span>
+                            {/* <div className="flex flex-col"> */}
+                            <div className="flex gap-2">
+                              <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                <i
+                                  className={`${i.icon} text-blue text-md `}
+                                ></i>
+                              </div>
+                              <div className="flex flex-col items-start">
+                              <span className="text-[#565454]">{i.title}</span>
+                              <span className="text-sm text-[#91939d]">
+                                {i.desc}
+                              </span>
+                              </div>
+                            </div>
+                            {/* </div> */}
                           </Link>
                         </li>
                       ))}
                     </ul>
+                    <hr className="border-none h-[1px] bg-grey"></hr>
                   </div>
+                  <div>
+                    <div className="service-cate text-lg font-semibold mt-5">
+                    Specialized Services
+                    </div>
+                    <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                      {item.subMenu3.slice(4, 8).map((i, index) => (
+                        <li
+                          key={index}
+                          className={`${pathname === i.to ? "active" : ""}`}
+                        >
+                          <Link
+                            className={`flex items-center justify-start gap-2 ml-1`}
+                            href={process.env.PUBLIC_URL + "/services/[slug]"}
+                            as={
+                              process.env.PUBLIC_URL +
+                              "/services/" +
+                              convertToSlug(i.title)
+                            }
+                          >
+                            {/* <div className="flex flex-col"> */}
+                            <div className="flex gap-2">
+                              <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                <i
+                                  className={`${i.icon} text-blue text-md `}
+                                ></i>
+                              </div>
+                              <div className="flex flex-col items-start">
+                              <span className="text-[#565454]">{i.title}</span>
+                              <span className="text-sm text-[#91939d]">
+                                {i.desc}
+                              </span>
+                              </div>
+                            </div>
+                            {/* </div> */}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <hr className="border-none h-[1px] bg-grey"></hr>
+                  </div>
+                  
                   <div className="w-1/4 ">
                     <div className="content bg-linear rounded-lg p-6">
                       <div className="text-lg font-semibold">
@@ -1245,7 +1298,6 @@ export default function Navigator({ disableSubmenu, className }) {
                     </div>
                   </div>
                   <div>
-                    
                     <div>
                       <div className="service-cate text-lg font-semibold mt-5">
                         Media and Entertainment
@@ -1370,10 +1422,9 @@ export default function Navigator({ disableSubmenu, className }) {
                       </ul>
                     </div>
                     <hr className="border-none h-[1px] bg-grey"></hr>
-                    
                   </div>
                   <div>
-                  <div>
+                    <div>
                       <div className="service-cate text-lg font-semibold mt-5">
                         Travel and Hospitality
                       </div>
