@@ -11,74 +11,74 @@
         "title": "Android App Development",
         "to": "#",
         "icon": "fal fa-sync-alt",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "iOS App Development",
         "to": "#",
         "icon": "fal fa-cloud-upload-alt",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "iPhone App Development",
         "to": "#",
         "icon": "fal fa-mobile-alt",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "IPad App Development",
         "to": "#",
         "icon": "fal fa-tablet-alt",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "React Native App Development",
         "to": "#",
         "icon": "fa-brands fa-react",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Flutter App Development",
         "to": "#",
         "icon": "fa-brands fa-flutter",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Ionic App Development",
         "to": "#",
         "icon": "fal fa-cogs",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Xamarin App Development",
         "to": "#",
         "icon": "fal fa-code-branch",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "PhoneGap App Development",
         "to": "#",
         "icon": "fal fa-cloud",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
      
       {
         "title": "Titanium App Development",
         "to": "#",
         "icon": "fal fa-cogs",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
        {
         "title": "Kotlin App Development",
         "to": "#",
         "icon": "fa-brands fa-java",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Sencha App Development",
         "to": "#",
         "icon": "fal fa-code-branch",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       }
     ],
     "subMenu2": [
@@ -86,129 +86,129 @@
         "title": "Web Apps",
         "to": "#",
         "icon": "fal fa-desktop",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Moodle",
         "to": "#",
         "icon": "fal fa-graduation-cap",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "PHP",
         "to": "#",
         "icon": "fa-brands fa-php",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Html",
         "to": "#",
         "icon": "fal fa-code",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       
       {
         "title": "Django",
         "to": "#",
         "icon": "fa-brands fa-python",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Angular JS",
         "to": "#",
         "icon": "fa-brands fa-angular",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Yii",
         "to": "#",
         "icon": "fal fa-cogs",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Node JS",
         "to": "#",
         "icon": "fa-brands fa-node",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "React JS",
         "to": "#",
         "icon": "fa-brands fa-react",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Drupal",
         "to": "#",
         "icon": "fa-brands fa-drupal",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Ruby On Rails",
         "to": "#",
         "icon": "fal fa-gem",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Python",
         "to": "#",
         "icon": "fa-brands fa-python",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       
       {
         "title": "Laravel",
         "to": "#",
         "icon": "fa-brands fa-laravel",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Framework Development",
         "to": "#",
         "icon": "fal fa-cogs",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Zend",
         "to": "#",
         "icon": "fal fa-cogs",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "CakePHP",
         "to": "#",
         "icon": "fal fa-cake",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Symfony",
         "to": "#",
         "icon": "fa-brands fa-symfony",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Codelgniter",
         "to": "#",
         "icon": "fal fa-cogs",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Opensource Development",
         "to": "#",
         "icon": "fal fa-code-branch",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Joomla",
         "to": "#",
         "icon": "fa-brands fa-joomla",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "WordPress",
         "to": "#",
         "icon": "fa-brands fa-wordpress",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       }
     ],
     "subMenu3": [
@@ -258,28 +258,76 @@
     ],
     "subMenu4": [
       {
-        "title": "Ecommerce Development",
+        "title": "Custom E-commerce Platforms",
         "to": "#",
-        "icon": "fal fa-shopping-cart",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "icon": "fal fa-cart-shopping",
+        "desc": "Dummy Text"
       },
       {
-        "title": "Oscommerce Development",
+        "title": "Open-Source Solutions",
         "to": "#",
         "icon": "fal fa-store",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
-        "title": "Woocommerce Development",
+        "title": "UI/UX Design",
         "to": "#",
         "icon": "fal fa-cogs",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
+      },
+      {
+        "title": "Responsive Design",
+        "to": "#",
+        "icon": "fal fa-box-open",
+        "desc": "Dummy Text"
+      },
+      {
+        "title": "Theme Customization",
+        "to": "#",
+        "icon": "fal fa-box-open",
+        "desc": "Dummy Text"
+      },
+      {
+        "title": "Magento Development",
+        "to": "#",
+        "icon": "fal fa-box-open",
+        "desc": "Dummy Text"
+      },
+      {
+        "title": "WooCommerce Development*",
+        "to": "#",
+        "icon": "fal fa-box-open",
+        "desc": "Dummy Text"
       },
       {
         "title": "Shopify Development",
         "to": "#",
         "icon": "fal fa-box-open",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
+      },
+      {
+        "title": "OpenCart Development",
+        "to": "#",
+        "icon": "fal fa-box-open",
+        "desc": "Dummy Text"
+      },
+      {
+        "title": "Payment Gateways",
+        "to": "#",
+        "icon": "fal fa-box-open",
+        "desc": "Dummy Text"
+      },
+      {
+        "title": "Shipping Carriers",
+        "to": "#",
+        "icon": "fal fa-box-open",
+        "desc": "Dummy Text"
+      },
+      {
+        "title": "CRM Systems",
+        "to": "#",
+        "icon": "fal fa-box-open",
+        "desc": "Dummy Text"
       }
     ],
     "subMenu5": [
@@ -287,55 +335,49 @@
         "title": "AI Chatbot Development",
         "to": "#",
         "icon": "fal fa-robot",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "AI Chatbot Development"
       },
       {
         "title": "AR/VR Development",
         "to": "#",
         "icon": "fal fa-vr-cardboard",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "AR/VR Development"
       },
       {
         "title": "Blockchain Development",
         "to": "#",
         "icon": "fal fa-cogs",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Blockchain Technology"
       },
       {
-        "title": "Cloud Computing",
+        "title": "Cloud Solutions",
         "to": "#",
         "icon": "fal fa-cloud",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
-      },
-      {
-        "title": "Encrypted Video Streaming",
-        "to": "#",
-        "icon": "fal fa-video",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
-      },
-      {
-        "title": "iBeacon App Development",
-        "to": "#",
-        "icon": "fal fa-broadcast-tower",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "IoT Development",
         "to": "#",
-        "icon": "fal fa-plug",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
-      },
-      {
-        "title": "iWatch App Development",
-        "to": "#",
-        "icon": "fal fa-watch",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "icon": "fal fa-video",
+        "desc": "Dummy Text"
       },
       {
         "title": "Wearable App Development",
         "to": "#",
-        "icon": "fal fa-swatchbook",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "icon": "fal fa-watch",
+        "desc": "Dummy Text"
+      },
+      {
+        "title": "iBeacon App Development",
+        "to": "#",
+        "icon": "fal fa-plug",
+        "desc": "Dummy Text"
+      },
+      {
+        "title": "Encrypted Video Streaming ",
+        "to": "#",
+        "icon": "fal fa-binary-lock",
+        "desc": "Dummy Text"
       }
     ],
     "subMenu6": [
@@ -343,31 +385,31 @@
         "title": "Search Engine Optimization (SEO)",
         "to": "#",
         "icon": "fal fa-search",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
-        "title": "PPC Management Services (Pay Per Click)",
+        "title": "Pay-Per-Click (PPC) Advertising",
         "to": "#",
         "icon": "fal fa-dollar-sign",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Social Media Marketing",
         "to": "#",
         "icon": "fal fa-share-alt",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
-        "title": "Content Marketing Services",
+        "title": "Content Marketing",
         "to": "#",
         "icon": "fal fa-pencil-alt",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Brand Reputation Management",
         "to": "#",
         "icon": "fal fa-thumbs-up",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       }
     ],
     "subMenu7": [
@@ -375,211 +417,211 @@
         "title": "Hire Python Developer",
         "to": "#",
         "icon": "fal fa-python",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Dedicated UI/UX Designer",
         "to": "#",
         "icon": "fal fa-paint-brush",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Mobile App Developer",
         "to": "#",
         "icon": "fal fa-mobile-alt",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire IPhone App Developer",
         "to": "#",
         "icon": "fal fa-apple",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Android Developer",
         "to": "#",
         "icon": "fal fa-android",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire IPad App Developer",
         "to": "#",
         "icon": "fal fa-tablet-alt",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Cross-Platform Developer",
         "to": "#",
         "icon": "fal fa-code-branch",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire React Native Developer",
         "to": "#",
         "icon": "fal fa-cogs",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Ionic App Developer",
         "to": "#",
         "icon": "fal fa-laptop-code",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire PhoneGap Developer",
         "to": "#",
         "icon": "fal fa-phone",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Xamarin Developer",
         "to": "#",
         "icon": "fal fa-puzzle-piece",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Kotlin Developer",
         "to": "#",
         "icon": "fal fa-code",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Sencha Developer",
         "to": "#",
         "icon": "fal fa-terminal",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Node JS Developer",
         "to": "#",
         "icon": "fal fa-server",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Java Developer",
         "to": "#",
         "icon": "fal fa-cogs",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Dot Net Developer",
         "to": "#",
         "icon": "fal fa-dot-circle",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire HTML5 Developer",
         "to": "#",
         "icon": "fal fa-html5",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire PHP Developer",
         "to": "#",
         "icon": "fa-brands fa-php",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire CMS Developer",
         "to": "#",
         "icon": "fal fa-cogs",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Django Developer",
         "to": "#",
         "icon": "fa-brands fa-python",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Joomla Developer",
         "to": "#",
         "icon": "fal fa-cogs",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Wordpress Developer",
         "to": "#",
         "icon": "fal fa-wordpress",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Magento Developer",
         "to": "#",
         "icon": "fal fa-cogs",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire E-Commerce Developer",
         "to": "#",
         "icon": "fal fa-shopping-cart",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Ruby On Rails Developer",
         "to": "#",
         "icon": "fal fa-gem",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Web Developer",
         "to": "#",
         "icon": "fal fa-laptop",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Project Manager",
         "to": "#",
         "icon": "fal fa-users",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Business Analyst",
         "to": "#",
         "icon": "fal fa-chart-line",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire QA Tester",
         "to": "#",
         "icon": "fal fa-check-circle",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire OpenGL Developer",
         "to": "#",
         "icon": "fal fa-cogs",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Unity 3D Developer",
         "to": "#",
         "icon": "fal fa-gamepad",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Blockchain Developer",
         "to": "#",
         "icon": "fal fa-lock",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Web Designers",
         "to": "#",
         "icon": "fal fa-paint-brush",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Andengine Developer",
         "to": "#",
         "icon": "fal fa-cogs",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       },
       {
         "title": "Hire Game Developer",
         "to": "#",
         "icon": "fal fa-gamepad",
-        "desc": "Native Android end-to-end app development for smart wearables, smartphones, and tablets with app upgrade & maintenance services."
+        "desc": "Dummy Text"
       }
     ]
   },
