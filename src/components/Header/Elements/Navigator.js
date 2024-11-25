@@ -26,6 +26,10 @@ export default function Navigator({ disableSubmenu, className }) {
       setHoverColor("#e8edfc");
     }
   };
+  const [active , setActive ] = useState(1)
+  const handleActive = (value)=>{
+setActive(value)
+  }
   const btnJson = [
     {
       id: 1,
@@ -100,7 +104,7 @@ export default function Navigator({ disableSubmenu, className }) {
             <Link href={process.env.PUBLIC_URL + item.to}>
               <span className="text-white">{item.title}</span>
             </Link>
-            <div className="dropdown-menu-service -wide flex gap-3">
+            <div className="dropdown-menu-service -wide flex gap-3"  onMouseLeave={()=>{handleActive(1)}}>
               <div
                 className="w-fit h-96 flex flex-col gap-3 justify-start items-center shadow-none"
                 style={{ boxShadow: "10px 0 5px rgb(182 182 182 / 10%)" }}
@@ -110,9 +114,14 @@ export default function Navigator({ disableSubmenu, className }) {
                 </h1>
                 {btnJson.map((item) => (
                   <div
-                    className={`w-full transition-all py-2 hover:bg-[#e8edfc] hover:scale-[1.01]`}
+                    className={`w-full transition-all py-2 ${
+    item.id === active ? "bg-[#e8edfc] scale-[1.01]" : ""
+  } hover:bg-[#e8edfc] hover:scale-[1.01] focus:bg-[#e8edfc] focus:scale-[1.01] active:bg-[#e8edfc]`}
                     key={item.id}
-                    onMouseEnter={() => handleHover(item.id)}
+                    onMouseEnter={() => {handleHover(item.id)
+                      handleActive(item.id)
+                    }}
+                   
                   >
                     <button
                       className=" text-black dark:text-white w-[17rem] h-10 p-2 px-5  text-sm text-left font-semibold flex gap-4 justify-start items-center"
