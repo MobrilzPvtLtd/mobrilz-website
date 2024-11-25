@@ -120,14 +120,13 @@ setActive(value)
                     key={item.id}
                     onMouseEnter={() => {handleHover(item.id)
                       handleActive(item.id)
+                      activeClass(item.id);
                     }}
                    
                   >
                     <button
                       className=" text-black dark:text-white w-[17rem] h-10 p-2 px-5  text-sm text-left font-semibold flex gap-4 justify-start items-center"
-                      onMouseEnter={() => {
-                        activeClass(item.id);
-                      }}
+                     
                     >
                       <div className="w-10 aspect-video border border-grey p-2 flex bg-white rounded-[50%] justify-center items-center ">
                         <i
