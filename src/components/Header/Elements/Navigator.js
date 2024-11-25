@@ -105,13 +105,13 @@ export default function Navigator({ disableSubmenu, className }) {
               <span className="text-white">{item.title}</span>
             </Link>
             <div
-              className="dropdown-menu-service -wide flex gap-3"
+              className="dropdown-menu-service -wide flex gap-3 w-full"
               onMouseLeave={() => {
                 handleActive(1);
               }}
             >
               <div
-                className="w-fit h-fit flex flex-col gap-3 justify-start items-center shadow-none"
+                className="w-1/5 h-[60vh] flex flex-col gap-3 justify-start items-center shadow-none overflow-y-scroll"
                 style={{ boxShadow: "10px 0 5px rgb(182 182 182 / 10%)" }}
               >
                 <h1 className="text-lg w-full text-left px-5 ml-4 font-semibold text-[#2d50e1]">
@@ -146,288 +146,301 @@ export default function Navigator({ disableSubmenu, className }) {
                 ))}
                 <hr className="border-none h-[1px] bg-grey w-full"></hr>
               </div>
-              {visible == 1 ? (
-                <div className="ml-2 flex gap-2 ">
-                  <div className=" w-3/4 flex gap-5 ">
-                    <div>
+              <div className="w-4/5 overflow-y-scroll h-[60vh]">
+                {visible == 1 ? (
+                  <div className="ml-2 flex gap-2 ">
+                    <div className=" w-3/4 flex gap-5 ">
                       <div>
-                        <div className="service-cate text-lg font-semibold">
-                          Native App Development
-                        </div>
-                        <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
-                          {item.subMenu.slice(0, 3).map((i, index) => (
-                            <li
-                              key={index}
-                              className={`${pathname === i.to ? "active" : ""}`}
-                            >
-                              <Link
-                                className={`flex items-center gap-2 ml-2`}
-                                href={
-                                  process.env.PUBLIC_URL + "/services/[slug]"
-                                }
-                                as={
-                                  process.env.PUBLIC_URL +
-                                  "/services/" +
-                                  convertToSlug(i.title)
-                                }
+                        <div>
+                          <div className="service-cate text-lg font-semibold">
+                            Native App Development
+                          </div>
+                          <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                            {item.subMenu.slice(0, 3).map((i, index) => (
+                              <li
+                                key={index}
+                                className={`${
+                                  pathname === i.to ? "active" : ""
+                                }`}
                               >
-                                <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                  <i
-                                    className={`${i.icon} text-blue text-md  `}
-                                  ></i>
-                                </div>
-                                <span className="text-[#565454]">
-                                  {i.title}
-                                </span>
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <hr className="border-none h-[1px] bg-grey"></hr>
+                                <Link
+                                  className={`flex items-center gap-2 ml-2`}
+                                  href={
+                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                  }
+                                  as={
+                                    process.env.PUBLIC_URL +
+                                    "/services/" +
+                                    convertToSlug(i.title)
+                                  }
+                                >
+                                  <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                    <i
+                                      className={`${i.icon} text-blue text-md  `}
+                                    ></i>
+                                  </div>
+                                  <span className="text-[#565454]">
+                                    {i.title}
+                                  </span>
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                          <hr className="border-none h-[1px] bg-grey"></hr>
+                        </div>
+                        <div>
+                          <div className="service-cate text-lg font-semibold mt-5">
+                            Cross-Platform App Development
+                          </div>
+                          <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                            {item.subMenu.slice(3, 5).map((i, index) => (
+                              <li
+                                key={index}
+                                className={`${
+                                  pathname === i.to ? "active" : ""
+                                }`}
+                              >
+                                <Link
+                                  className={`flex items-center gap-2 ml-2`}
+                                  href={
+                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                  }
+                                  as={
+                                    process.env.PUBLIC_URL +
+                                    "/services/" +
+                                    convertToSlug(i.title)
+                                  }
+                                >
+                                  <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                    <i
+                                      className={`${i.icon} text-blue text-md `}
+                                    ></i>
+                                  </div>
+                                  <span className="text-[#565454]">
+                                    {i.title}
+                                  </span>
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                          <ul className="grid grid-cols-1 gap-0 gap-y-0 ">
+                            {item.subMenu.slice(5, 9).map((i, index) => (
+                              <li
+                                key={index}
+                                className={`${
+                                  pathname === i.to ? "active" : ""
+                                }`}
+                              >
+                                <Link
+                                  className={`flex items-center gap-2 ml-2`}
+                                  href={
+                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                  }
+                                  as={
+                                    process.env.PUBLIC_URL +
+                                    "/services/" +
+                                    convertToSlug(i.title)
+                                  }
+                                >
+                                  <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                    <i
+                                      className={`${i.icon} text-blue text-md`}
+                                    ></i>
+                                  </div>
+                                  <span className="text-[#565454]">
+                                    {i.title}
+                                  </span>
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                          <hr className="border-none h-[1px] bg-grey"></hr>
+                        </div>
                       </div>
                       <div>
-                        <div className="service-cate text-lg font-semibold mt-5">
-                          Cross-Platform App Development
+                        <div>
+                          <div className="service-cate text-lg font-semibold ">
+                            Language-Specific
+                          </div>
+                          <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                            {item.subMenu.slice(9, 10).map((i, index) => (
+                              <li
+                                key={index}
+                                className={`${
+                                  pathname === i.to ? "active" : ""
+                                }`}
+                              >
+                                <Link
+                                  className={`flex items-center gap-2 ml-2`}
+                                  href={
+                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                  }
+                                  as={
+                                    process.env.PUBLIC_URL +
+                                    "/services/" +
+                                    convertToSlug(i.title)
+                                  }
+                                >
+                                  <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                    <i
+                                      className={`${i.icon} text-blue text-md `}
+                                    ></i>
+                                  </div>
+                                  <span className="text-[#565454]">
+                                    {i.title}
+                                  </span>
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                          <hr className="border-none h-[1px] bg-grey"></hr>
                         </div>
-                        <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
-                          {item.subMenu.slice(3, 5).map((i, index) => (
-                            <li
-                              key={index}
-                              className={`${pathname === i.to ? "active" : ""}`}
-                            >
-                              <Link
-                                className={`flex items-center gap-2 ml-2`}
-                                href={
-                                  process.env.PUBLIC_URL + "/services/[slug]"
-                                }
-                                as={
-                                  process.env.PUBLIC_URL +
-                                  "/services/" +
-                                  convertToSlug(i.title)
-                                }
+                        <div>
+                          <div className="service-cate text-lg font-semibold mt-5">
+                            Legacy/Niche
+                          </div>
+                          <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                            {item.subMenu.slice(10, 11).map((i, index) => (
+                              <li
+                                key={index}
+                                className={`${
+                                  pathname === i.to ? "active" : ""
+                                }`}
                               >
-                                <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                  <i
-                                    className={`${i.icon} text-blue text-md `}
-                                  ></i>
-                                </div>
-                                <span className="text-[#565454]">
-                                  {i.title}
-                                </span>
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <ul className="grid grid-cols-1 gap-0 gap-y-0 ">
-                          {item.subMenu.slice(5, 9).map((i, index) => (
-                            <li
-                              key={index}
-                              className={`${pathname === i.to ? "active" : ""}`}
-                            >
-                              <Link
-                                className={`flex items-center gap-2 ml-2`}
-                                href={
-                                  process.env.PUBLIC_URL + "/services/[slug]"
-                                }
-                                as={
-                                  process.env.PUBLIC_URL +
-                                  "/services/" +
-                                  convertToSlug(i.title)
-                                }
-                              >
-                                <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                  <i
-                                    className={`${i.icon} text-blue text-md`}
-                                  ></i>
-                                </div>
-                                <span className="text-[#565454]">
-                                  {i.title}
-                                </span>
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
+                                <Link
+                                  className={`flex items-center gap-2 ml-2`}
+                                  href={
+                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                  }
+                                  as={
+                                    process.env.PUBLIC_URL +
+                                    "/services/" +
+                                    convertToSlug(i.title)
+                                  }
+                                >
+                                  <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                    <i
+                                      className={`${i.icon} text-blue text-md `}
+                                    ></i>
+                                  </div>
+                                  <span className="text-[#565454]">
+                                    {i.title}
+                                  </span>
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                         <hr className="border-none h-[1px] bg-grey"></hr>
                       </div>
                     </div>
-                    <div>
-                      <div>
-                        <div className="service-cate text-lg font-semibold ">
-                          Language-Specific
+                    <div className="w-1/4 ">
+                      <div className="content bg-linear rounded-lg p-6">
+                        <div className="text-lg font-semibold">
+                          Explore All Mobile Services
                         </div>
-                        <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
-                          {item.subMenu.slice(9, 10).map((i, index) => (
-                            <li
-                              key={index}
-                              className={`${pathname === i.to ? "active" : ""}`}
-                            >
-                              <Link
-                                className={`flex items-center gap-2 ml-2`}
-                                href={
-                                  process.env.PUBLIC_URL + "/services/[slug]"
-                                }
-                                as={
-                                  process.env.PUBLIC_URL +
-                                  "/services/" +
-                                  convertToSlug(i.title)
-                                }
-                              >
-                                <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                  <i
-                                    className={`${i.icon} text-blue text-md `}
-                                  ></i>
-                                </div>
-                                <span className="text-[#565454]">
-                                  {i.title}
-                                </span>
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <hr className="border-none h-[1px] bg-grey"></hr>
-                      </div>
-                      <div>
-                        <div className="service-cate text-lg font-semibold mt-5">
-                          Legacy/Niche
+                        <div className="caption1 text-surface1 mt-1">
+                          Unlocking the Full Spectrum of IT Solutions and
+                          Business Consulting for your needs
                         </div>
-                        <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
-                          {item.subMenu.slice(10, 11).map((i, index) => (
-                            <li
-                              key={index}
-                              className={`${pathname === i.to ? "active" : ""}`}
+                        <Link
+                          className="button-main text-button-sm mt-3"
+                          href="/services/service-detail"
+                        >
+                          Explore Now
+                        </Link>
+                        <div className="more-infor mt-8">
+                          <div className="mail flex items-center">
+                            <Icon.Envelope className="text-lg" />
+                            <div className="caption1 pl-2">
+                              hi.avitex@gmail.com
+                            </div>
+                          </div>
+                          <div className="call flex items-center mt-3">
+                            <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
+                              <Icon.Phone
+                                weight="fill"
+                                className="text-sm text-white"
+                              />
+                            </span>
+                            <div className="text-title pl-2">123 456 7890</div>
+                          </div>
+                          <div className="list-social flex items-center gap-2.5 mt-4">
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.facebook.com/"
+                              target="_blank"
                             >
-                              <Link
-                                className={`flex items-center gap-2 ml-2`}
-                                href={
-                                  process.env.PUBLIC_URL + "/services/[slug]"
-                                }
-                                as={
-                                  process.env.PUBLIC_URL +
-                                  "/services/" +
-                                  convertToSlug(i.title)
-                                }
-                              >
-                                <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                  <i
-                                    className={`${i.icon} text-blue text-md `}
-                                  ></i>
-                                </div>
-                                <span className="text-[#565454]">
-                                  {i.title}
-                                </span>
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      <hr className="border-none h-[1px] bg-grey"></hr>
-                    </div>
-                  </div>
-                  <div className="w-1/4 ">
-                    <div className="content bg-linear rounded-lg p-6">
-                      <div className="text-lg font-semibold">
-                        Explore All Mobile Services
-                      </div>
-                      <div className="caption1 text-surface1 mt-1">
-                        Unlocking the Full Spectrum of IT Solutions and Business
-                        Consulting for your needs
-                      </div>
-                      <Link
-                        className="button-main text-button-sm mt-3"
-                        href="/services/service-detail"
-                      >
-                        Explore Now
-                      </Link>
-                      <div className="more-infor mt-8">
-                        <div className="mail flex items-center">
-                          <Icon.Envelope className="text-lg" />
-                          <div className="caption1 pl-2">
-                            hi.avitex@gmail.com
+                              <span className="icon-facebook text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.linkedin.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-linkedin text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.twitter.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-twitter text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.youtube.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-youtube text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.instagram.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-instagram text-sm"></span>
+                            </Link>
                           </div>
                         </div>
-                        <div className="call flex items-center mt-3">
-                          <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
-                            <Icon.Phone
-                              weight="fill"
-                              className="text-sm text-white"
-                            />
-                          </span>
-                          <div className="text-title pl-2">123 456 7890</div>
-                        </div>
-                        <div className="list-social flex items-center gap-2.5 mt-4">
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.facebook.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-facebook text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.linkedin.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-linkedin text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.twitter.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-twitter text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.youtube.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-youtube text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.instagram.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-instagram text-sm"></span>
-                          </Link>
-                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ) : null}
-              {visible == 2 ? (
-                <div className="ml-2 flex gap-2">
-                  <div className="w-full p-2">
-                    <div className="service-cate text-lg font-semibold">
-                      Web
-                    </div>
-                    <ul className=" w-full relative flex flex-wrap gap-4 gap-y-5 mt-2">
-                      {item.subMenu2.slice(0).map((i, index) => (
-                        <li
-                          key={index}
-                          className={`${
-                            pathname === i.to ? "active" : ""
-                          } bg-[#e8edfc] px-2 flex justify-center`}
-                        >
-                          <Link
-                            className={`flex items-center gap-2 justify-center `}
-                            href={process.env.PUBLIC_URL + "/services/[slug]"}
-                            as={
-                              process.env.PUBLIC_URL +
-                              "/services/" +
-                              convertToSlug(i.title)
-                            }
+                ) : null}
+                {visible == 2 ? (
+                  <div className="ml-2 flex gap-2">
+                    <div className="w-full p-2">
+                      <div className="service-cate text-lg font-semibold">
+                        Web
+                      </div>
+                      <ul className=" w-full relative flex flex-wrap gap-4 gap-y-5 mt-2">
+                        {item.subMenu2.slice(0).map((i, index) => (
+                          <li
+                            key={index}
+                            className={`${
+                              pathname === i.to ? "active" : ""
+                            } bg-[#e8edfc] px-2 flex justify-center`}
                           >
-                            <div className="w-fit  flex justify-center items-center ">
-                              <i className={`${i.icon} text-blue text-md `}></i>
-                            </div>
-                            <span className="text-[#565454]">{i.title}</span>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                    {/* <ul className=" w-full flex flex-wrap gap-0 gap-y-0 mt-2">
+                            <Link
+                              className={`flex items-center gap-2 justify-center `}
+                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              as={
+                                process.env.PUBLIC_URL +
+                                "/services/" +
+                                convertToSlug(i.title)
+                              }
+                            >
+                              <div className="w-fit  flex justify-center items-center ">
+                                <i
+                                  className={`${i.icon} text-blue text-md `}
+                                ></i>
+                              </div>
+                              <span className="text-[#565454]">{i.title}</span>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                      {/* <ul className=" w-full flex flex-wrap gap-0 gap-y-0 mt-2">
                       {item.subMenu2.slice(5,9).map((i, index) => (
                         <li
                           key={index}
@@ -519,1050 +532,1071 @@ export default function Navigator({ disableSubmenu, className }) {
                         </li>
                       ))}
                     </ul> */}
-                  </div>
-                  <div className="w-1/4 ">
-                    <div className="content bg-linear rounded-lg p-6">
-                      <div className="text-lg font-semibold">
-                        Explore All Web Services
-                      </div>
-                      <div className="caption1 text-surface1 mt-1">
-                        Unlocking the Full Spectrum of IT Solutions and Business
-                        Consulting for your needs
-                      </div>
-                      <Link
-                        className="button-main text-button-sm mt-3"
-                        href="/services/service-detail"
-                      >
-                        Explore Now
-                      </Link>
-                      <div className="more-infor mt-8">
-                        <div className="mail flex items-center">
-                          <Icon.Envelope className="text-lg" />
-                          <div className="caption1 pl-2">
-                            hi.avitex@gmail.com
-                          </div>
-                        </div>
-                        <div className="call flex items-center mt-3">
-                          <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
-                            <Icon.Phone
-                              weight="fill"
-                              className="text-sm text-white"
-                            />
-                          </span>
-                          <div className="text-title pl-2">123 456 7890</div>
-                        </div>
-                        <div className="list-social flex items-center gap-2.5 mt-4">
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.facebook.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-facebook text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.linkedin.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-linkedin text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.twitter.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-twitter text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.youtube.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-youtube text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.instagram.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-instagram text-sm"></span>
-                          </Link>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                </div>
-              ) : null}
-              {visible == 3 ? (
-                <div className="ml-2 flex gap-5">
-                  <div>
-                    <div className="service-cate text-lg font-semibold mt-5">
-                      Core AWS Services
-                    </div>
-                    <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
-                      {item.subMenu3.slice(0, 4).map((i, index) => (
-                        <li
-                          key={index}
-                          className={`${pathname === i.to ? "active" : ""}`}
+                    <div className="w-1/4 ">
+                      <div className="content bg-linear rounded-lg p-6">
+                        <div className="text-lg font-semibold">
+                          Explore All Web Services
+                        </div>
+                        <div className="caption1 text-surface1 mt-1">
+                          Unlocking the Full Spectrum of IT Solutions and
+                          Business Consulting for your needs
+                        </div>
+                        <Link
+                          className="button-main text-button-sm mt-3"
+                          href="/services/service-detail"
                         >
-                          <Link
-                            className={`flex items-center justify-start gap-2 ml-1`}
-                            href={process.env.PUBLIC_URL + "/services/[slug]"}
-                            as={
-                              process.env.PUBLIC_URL +
-                              "/services/" +
-                              convertToSlug(i.title)
-                            }
-                          >
-                            {/* <div className="flex flex-col"> */}
-                            <div className="flex gap-2">
-                              <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                <i
-                                  className={`${i.icon} text-blue text-md `}
-                                ></i>
-                              </div>
-                              <div className="flex flex-col items-start">
-                                <span className="text-[#565454]">
-                                  {i.title}
-                                </span>
-                                <span className="text-sm text-[#91939d]">
-                                  {i.desc}
-                                </span>
-                              </div>
+                          Explore Now
+                        </Link>
+                        <div className="more-infor mt-8">
+                          <div className="mail flex items-center">
+                            <Icon.Envelope className="text-lg" />
+                            <div className="caption1 pl-2">
+                              hi.avitex@gmail.com
                             </div>
-                            {/* </div> */}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                    <hr className="border-none h-[1px] bg-grey"></hr>
-                  </div>
-                  <div>
-                    <div className="service-cate text-lg font-semibold mt-5">
-                      Specialized Services
-                    </div>
-                    <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
-                      {item.subMenu3.slice(4, 8).map((i, index) => (
-                        <li
-                          key={index}
-                          className={`${pathname === i.to ? "active" : ""}`}
-                        >
-                          <Link
-                            className={`flex items-center justify-start gap-2 ml-1`}
-                            href={process.env.PUBLIC_URL + "/services/[slug]"}
-                            as={
-                              process.env.PUBLIC_URL +
-                              "/services/" +
-                              convertToSlug(i.title)
-                            }
-                          >
-                            {/* <div className="flex flex-col"> */}
-                            <div className="flex gap-2">
-                              <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                <i
-                                  className={`${i.icon} text-blue text-md `}
-                                ></i>
-                              </div>
-                              <div className="flex flex-col items-start">
-                                <span className="text-[#565454]">
-                                  {i.title}
-                                </span>
-                                <span className="text-sm text-[#91939d]">
-                                  {i.desc}
-                                </span>
-                              </div>
-                            </div>
-                            {/* </div> */}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                    <hr className="border-none h-[1px] bg-grey"></hr>
-                  </div>
-
-                  <div className="w-1/4 ">
-                    <div className="content bg-linear rounded-lg p-6">
-                      <div className="text-lg font-semibold">
-                        Explore All AWS Services
-                      </div>
-                      <div className="caption1 text-surface1 mt-1">
-                        Unlocking the Full Spectrum of IT Solutions and Business
-                        Consulting for your needs
-                      </div>
-                      <Link
-                        className="button-main text-button-sm mt-3"
-                        href="/services/service-detail"
-                      >
-                        Explore Now
-                      </Link>
-                      <div className="more-infor mt-8">
-                        <div className="mail flex items-center">
-                          <Icon.Envelope className="text-lg" />
-                          <div className="caption1 pl-2">
-                            hi.avitex@gmail.com
+                          </div>
+                          <div className="call flex items-center mt-3">
+                            <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
+                              <Icon.Phone
+                                weight="fill"
+                                className="text-sm text-white"
+                              />
+                            </span>
+                            <div className="text-title pl-2">123 456 7890</div>
+                          </div>
+                          <div className="list-social flex items-center gap-2.5 mt-4">
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.facebook.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-facebook text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.linkedin.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-linkedin text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.twitter.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-twitter text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.youtube.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-youtube text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.instagram.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-instagram text-sm"></span>
+                            </Link>
                           </div>
                         </div>
-                        <div className="call flex items-center mt-3">
-                          <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
-                            <Icon.Phone
-                              weight="fill"
-                              className="text-sm text-white"
-                            />
-                          </span>
-                          <div className="text-title pl-2">123 456 7890</div>
-                        </div>
-                        <div className="list-social flex items-center gap-2.5 mt-4">
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.facebook.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-facebook text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.linkedin.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-linkedin text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.twitter.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-twitter text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.youtube.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-youtube text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.instagram.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-instagram text-sm"></span>
-                          </Link>
-                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ) : null}
-              {visible == 4 ? (
-                <div className="flex justify-between ml-2">
-                  <div className="flex gap-20">
-                    <div className="flex flex-col gap-3">
-                      <div className=" w-full ">
-                        <div className="service-cate text-lg font-semibold">
-                          E-commerce Development
-                        </div>
-                        <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
-                          {item.subMenu4.slice(0, 2).map((i, index) => (
-                            <li
-                              key={index}
-                              className={`${pathname === i.to ? "active" : ""}`}
-                            >
-                              <Link
-                                className={`flex items-center gap-4`}
-                                href={
-                                  process.env.PUBLIC_URL + "/services/[slug]"
-                                }
-                                as={
-                                  process.env.PUBLIC_URL +
-                                  "/services/" +
-                                  convertToSlug(i.title)
-                                }
-                              >
-                                <div className="flex gap-2">
-                                  <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                    <i
-                                      className={`${i.icon} text-blue text-md `}
-                                    ></i>
-                                  </div>
-                                  <div className="flex flex-col items-start">
-                                    <span className="text-[#565454]">
-                                      {i.title}
-                                    </span>
-                                    <span className="text-sm text-[#91939d]">
-                                      {i.desc}
-                                    </span>
-                                  </div>
-                                </div>
-                                {/* <span className="">{i.desc}</span> */}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <hr className="border-none h-[1px] bg-grey"></hr>
+                ) : null}
+                {visible == 3 ? (
+                  <div className="ml-2 flex gap-5">
+                    <div>
+                      <div className="service-cate text-lg font-semibold mt-5">
+                        Core AWS Services
                       </div>
-                      <div className=" w-full ">
-                        <div className="service-cate text-lg font-semibold">
-                          E-commerce Design*
-                        </div>
-                        <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
-                          {item.subMenu4.slice(2, 5).map((i, index) => (
-                            <li
-                              key={index}
-                              className={`${pathname === i.to ? "active" : ""}`}
-                            >
-                              <Link
-                                className={`flex items-center gap-4`}
-                                href={
-                                  process.env.PUBLIC_URL + "/services/[slug]"
-                                }
-                                as={
-                                  process.env.PUBLIC_URL +
-                                  "/services/" +
-                                  convertToSlug(i.title)
-                                }
-                              >
-                                <div className="flex gap-2">
-                                  <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                    <i
-                                      className={`${i.icon} text-blue text-md `}
-                                    ></i>
-                                  </div>
-                                  <div className="flex flex-col items-start">
-                                    <span className="text-[#565454]">
-                                      {i.title}
-                                    </span>
-                                    <span className="text-sm text-[#91939d]">
-                                      {i.desc}
-                                    </span>
-                                  </div>
-                                </div>
-                                {/* <span className="">{i.desc}</span> */}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <hr className="border-none h-[1px] bg-grey"></hr>
-                      </div>
-                    </div>
-                    <div className="flex flex-col gap-3">
-                      <div className=" w-full ">
-                        <div className="service-cate text-lg font-semibold">
-                          Platform-Specific Development
-                        </div>
-                        <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
-                          {item.subMenu4.slice(5, 9).map((i, index) => (
-                            <li
-                              key={index}
-                              className={`${pathname === i.to ? "active" : ""}`}
-                            >
-                              <Link
-                                className={`flex items-center gap-4`}
-                                href={
-                                  process.env.PUBLIC_URL + "/services/[slug]"
-                                }
-                                as={
-                                  process.env.PUBLIC_URL +
-                                  "/services/" +
-                                  convertToSlug(i.title)
-                                }
-                              >
-                                <div className="flex gap-2">
-                                  <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                    <i
-                                      className={`${i.icon} text-blue text-md `}
-                                    ></i>
-                                  </div>
-                                  <div className="flex flex-col items-start">
-                                    <span className="text-[#565454]">
-                                      {i.title}
-                                    </span>
-                                    <span className="text-sm text-[#91939d]">
-                                      {i.desc}
-                                    </span>
-                                  </div>
-                                </div>
-                                {/* <span className="">{i.desc}</span> */}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <hr className="border-none h-[1px] bg-grey"></hr>
-                      </div>
-                      <div className=" w-full ">
-                        <div className="service-cate text-lg font-semibold">
-                          E-commerce Integration
-                        </div>
-                        <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
-                          {item.subMenu4.slice(9, 12).map((i, index) => (
-                            <li
-                              key={index}
-                              className={`${pathname === i.to ? "active" : ""}`}
-                            >
-                              <Link
-                                className={`flex items-center gap-4`}
-                                href={
-                                  process.env.PUBLIC_URL + "/services/[slug]"
-                                }
-                                as={
-                                  process.env.PUBLIC_URL +
-                                  "/services/" +
-                                  convertToSlug(i.title)
-                                }
-                              >
-                                <div className="flex gap-2">
-                                  <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                    <i
-                                      className={`${i.icon} text-blue text-md `}
-                                    ></i>
-                                  </div>
-                                  <div className="flex flex-col items-start">
-                                    <span className="text-[#565454]">
-                                      {i.title}
-                                    </span>
-                                    <span className="text-sm text-[#91939d]">
-                                      {i.desc}
-                                    </span>
-                                  </div>
-                                </div>
-                                {/* <span className="">{i.desc}</span> */}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <hr className="border-none h-[1px] bg-grey"></hr>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-1/4 ">
-                    <div className="content bg-linear rounded-lg p-6">
-                      <div className="text-lg font-semibold">
-                        Explore Ecommerce Services
-                      </div>
-                      <div className="caption1 text-surface1 mt-1">
-                        Unlocking the Full Spectrum of IT Solutions and Business
-                        Consulting for your needs
-                      </div>
-                      <Link
-                        className="button-main text-button-sm mt-3"
-                        href="/services/service-detail"
-                      >
-                        Explore Now
-                      </Link>
-                      <div className="more-infor mt-8">
-                        <div className="mail flex items-center">
-                          <Icon.Envelope className="text-lg" />
-                          <div className="caption1 pl-2">
-                            hi.avitex@gmail.com
-                          </div>
-                        </div>
-                        <div className="call flex items-center mt-3">
-                          <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
-                            <Icon.Phone
-                              weight="fill"
-                              className="text-sm text-white"
-                            />
-                          </span>
-                          <div className="text-title pl-2">123 456 7890</div>
-                        </div>
-                        <div className="list-social flex items-center gap-2.5 mt-4">
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.facebook.com/"
-                            target="_blank"
+                      <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                        {item.subMenu3.slice(0, 4).map((i, index) => (
+                          <li
+                            key={index}
+                            className={`${pathname === i.to ? "active" : ""}`}
                           >
-                            <span className="icon-facebook text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.linkedin.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-linkedin text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.twitter.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-twitter text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.youtube.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-youtube text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.instagram.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-instagram text-sm"></span>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ) : null}
-              {visible == 5 ? (
-                <div className="flex gap-2 ml-2">
-                  <div className=" w-3/4 flex gap-5 ">
-                    <div className="flex flex-col gap-3 justify-start">
-                      <div className=" w-full ">
-                        <div className="service-cate text-lg font-semibold">
-                          Artificial Intelligence and Machine Learning
-                        </div>
-                        <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
-                          {item.subMenu5.slice(0, 1).map((i, index) => (
-                            <li
-                              key={index}
-                              className={`${pathname === i.to ? "active" : ""}`}
+                            <Link
+                              className={`flex items-center justify-start gap-2 ml-1`}
+                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              as={
+                                process.env.PUBLIC_URL +
+                                "/services/" +
+                                convertToSlug(i.title)
+                              }
                             >
-                              <Link
-                                className={`flex items-center gap-4`}
-                                href={
-                                  process.env.PUBLIC_URL + "/services/[slug]"
-                                }
-                                as={
-                                  process.env.PUBLIC_URL +
-                                  "/services/" +
-                                  convertToSlug(i.title)
-                                }
-                              >
-                                <div className="flex gap-2">
-                                  <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                    <i
-                                      className={`${i.icon} text-blue text-md `}
-                                    ></i>
-                                  </div>
-                                  <div className="flex flex-col items-start">
-                                    <span className="text-[#565454]">
-                                      {i.title}
-                                    </span>
-                                    <span className="text-sm text-[#91939d]">
-                                      {i.desc}
-                                    </span>
-                                  </div>
+                              {/* <div className="flex flex-col"> */}
+                              <div className="flex gap-2">
+                                <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                  <i
+                                    className={`${i.icon} text-blue text-md `}
+                                  ></i>
                                 </div>
-                                {/* <span className="">{i.desc}</span> */}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <hr className="border-none h-[1px] bg-grey"></hr>
-                      </div>
-                      <div className=" w-full ">
-                        <div className="service-cate text-lg font-semibold">
-                          Augmented and Virtual Reality
-                        </div>
-                        <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
-                          {item.subMenu5.slice(1, 2).map((i, index) => (
-                            <li
-                              key={index}
-                              className={`${pathname === i.to ? "active" : ""}`}
-                            >
-                              <Link
-                                className={`flex items-center gap-4`}
-                                href={
-                                  process.env.PUBLIC_URL + "/services/[slug]"
-                                }
-                                as={
-                                  process.env.PUBLIC_URL +
-                                  "/services/" +
-                                  convertToSlug(i.title)
-                                }
-                              >
-                                <div className="flex gap-2">
-                                  <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                    <i
-                                      className={`${i.icon} text-blue text-md `}
-                                    ></i>
-                                  </div>
-                                  <div className="flex flex-col items-start">
-                                    <span className="text-[#565454]">
-                                      {i.title}
-                                    </span>
-                                    <span className="text-sm text-[#91939d]">
-                                      {i.desc}
-                                    </span>
-                                  </div>
+                                <div className="flex flex-col items-start">
+                                  <span className="text-[#565454]">
+                                    {i.title}
+                                  </span>
+                                  <span className="text-xs text-[#91939d]">
+                                    {i.desc}
+                                  </span>
                                 </div>
-                                {/* <span className="">{i.desc}</span> */}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <hr className="border-none h-[1px] bg-grey"></hr>
-                      </div>
-                      <div className=" w-full ">
-                        <div className="service-cate text-lg font-semibold">
-                          Blockchain Technology
-                        </div>
-                        <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
-                          {item.subMenu5.slice(2, 3).map((i, index) => (
-                            <li
-                              key={index}
-                              className={`${pathname === i.to ? "active" : ""}`}
-                            >
-                              <Link
-                                className={`flex items-center gap-4`}
-                                href={
-                                  process.env.PUBLIC_URL + "/services/[slug]"
-                                }
-                                as={
-                                  process.env.PUBLIC_URL +
-                                  "/services/" +
-                                  convertToSlug(i.title)
-                                }
-                              >
-                                <div className="flex gap-2">
-                                  <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                    <i
-                                      className={`${i.icon} text-blue text-md `}
-                                    ></i>
-                                  </div>
-                                  <div className="flex flex-col items-start">
-                                    <span className="text-[#565454]">
-                                      {i.title}
-                                    </span>
-                                    <span className="text-sm text-[#91939d]">
-                                      {i.desc}
-                                    </span>
-                                  </div>
-                                </div>
-                                {/* <span className="">{i.desc}</span> */}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <hr className="border-none h-[1px] bg-grey"></hr>
-                      </div>
-                      <div className=" w-full ">
-                        <div className="service-cate text-lg font-semibold">
-                          Cloud Computing
-                        </div>
-                        <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
-                          {item.subMenu5.slice(3, 4).map((i, index) => (
-                            <li
-                              key={index}
-                              className={`${pathname === i.to ? "active" : ""}`}
-                            >
-                              <Link
-                                className={`flex items-center gap-4`}
-                                href={
-                                  process.env.PUBLIC_URL + "/services/[slug]"
-                                }
-                                as={
-                                  process.env.PUBLIC_URL +
-                                  "/services/" +
-                                  convertToSlug(i.title)
-                                }
-                              >
-                                <div className="flex gap-2">
-                                  <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                    <i
-                                      className={`${i.icon} text-blue text-md `}
-                                    ></i>
-                                  </div>
-                                  <div className="flex flex-col items-start">
-                                    <span className="text-[#565454]">
-                                      {i.title}
-                                    </span>
-                                    <span className="text-sm text-[#91939d]">
-                                      {i.desc}
-                                    </span>
-                                  </div>
-                                </div>
-                                {/* <span className="">{i.desc}</span> */}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <hr className="border-none h-[1px] bg-grey"></hr>
-                      </div>
+                              </div>
+                              {/* </div> */}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                      <hr className="border-none h-[1px] bg-grey"></hr>
                     </div>
                     <div>
-                      <div className=" w-full ">
-                        <div className="service-cate text-lg font-semibold">
-                          Internet of Things (IoT)
-                        </div>
-                        <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
-                          {item.subMenu5.slice(4, 7).map((i, index) => (
-                            <li
-                              key={index}
-                              className={`${pathname === i.to ? "active" : ""}`}
+                      <div className="service-cate text-lg font-semibold mt-5">
+                        Specialized Services
+                      </div>
+                      <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                        {item.subMenu3.slice(4, 8).map((i, index) => (
+                          <li
+                            key={index}
+                            className={`${pathname === i.to ? "active" : ""}`}
+                          >
+                            <Link
+                              className={`flex items-center justify-start gap-2 ml-1`}
+                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              as={
+                                process.env.PUBLIC_URL +
+                                "/services/" +
+                                convertToSlug(i.title)
+                              }
                             >
-                              <Link
-                                className={`flex items-center gap-4`}
-                                href={
-                                  process.env.PUBLIC_URL + "/services/[slug]"
-                                }
-                                as={
-                                  process.env.PUBLIC_URL +
-                                  "/services/" +
-                                  convertToSlug(i.title)
-                                }
-                              >
-                                <div className="flex gap-2">
-                                  <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                    <i
-                                      className={`${i.icon} text-blue text-md `}
-                                    ></i>
-                                  </div>
-                                  <div className="flex flex-col items-start">
-                                    <span className="text-[#565454]">
-                                      {i.title}
-                                    </span>
-                                    <span className="text-sm text-[#91939d]">
-                                      {i.desc}
-                                    </span>
-                                  </div>
+                              {/* <div className="flex flex-col"> */}
+                              <div className="flex gap-2">
+                                <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                  <i
+                                    className={`${i.icon} text-blue text-md `}
+                                  ></i>
                                 </div>
-                                {/* <span className="">{i.desc}</span> */}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <hr className="border-none h-[1px] bg-grey"></hr>
-                      </div>
-                      <div className=" w-full ">
-                        <div className="service-cate text-lg font-semibold">
-                          Cybersecurity
-                        </div>
-                        <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
-                          {item.subMenu5.slice(7, 8).map((i, index) => (
-                            <li
-                              key={index}
-                              className={`${pathname === i.to ? "active" : ""}`}
-                            >
-                              <Link
-                                className={`flex items-center gap-4`}
-                                href={
-                                  process.env.PUBLIC_URL + "/services/[slug]"
-                                }
-                                as={
-                                  process.env.PUBLIC_URL +
-                                  "/services/" +
-                                  convertToSlug(i.title)
-                                }
-                              >
-                                <div className="flex gap-2">
-                                  <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                    <i
-                                      className={`${i.icon} text-blue text-md `}
-                                    ></i>
-                                  </div>
-                                  <div className="flex flex-col items-start">
-                                    <span className="text-[#565454]">
-                                      {i.title}
-                                    </span>
-                                    <span className="text-sm text-[#91939d]">
-                                      {i.desc}
-                                    </span>
-                                  </div>
+                                <div className="flex flex-col items-start">
+                                  <span className="text-[#565454]">
+                                    {i.title}
+                                  </span>
+                                  <span className="text-xs text-[#91939d]">
+                                    {i.desc}
+                                  </span>
                                 </div>
-                                {/* <span className="">{i.desc}</span> */}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <hr className="border-none h-[1px] bg-grey"></hr>
-                      </div>
+                              </div>
+                              {/* </div> */}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                      <hr className="border-none h-[1px] bg-grey"></hr>
                     </div>
-                  </div>
-                  <div className="w-1/4 ">
-                    <div className="content bg-linear rounded-lg p-6">
-                      <div className="text-lg font-semibold">
-                        Explore All Emerging Technologies
-                      </div>
-                      <div className="caption1 text-surface1 mt-1">
-                        Unlocking the Full Spectrum of IT Solutions and Business
-                        Consulting for your needs
-                      </div>
-                      <Link
-                        className="button-main text-button-sm mt-3"
-                        href="/services/service-detail"
-                      >
-                        Explore Now
-                      </Link>
-                      <div className="more-infor mt-8">
-                        <div className="mail flex items-center">
-                          <Icon.Envelope className="text-lg" />
-                          <div className="caption1 pl-2">
-                            hi.avitex@gmail.com
-                          </div>
+
+                    <div className="w-1/4 ">
+                      <div className="content bg-linear rounded-lg p-6">
+                        <div className="text-lg font-semibold">
+                          Explore All AWS Services
                         </div>
-                        <div className="call flex items-center mt-3">
-                          <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
-                            <Icon.Phone
-                              weight="fill"
-                              className="text-sm text-white"
-                            />
-                          </span>
-                          <div className="text-title pl-2">123 456 7890</div>
+                        <div className="caption1 text-surface1 mt-1">
+                          Unlocking the Full Spectrum of IT Solutions and
+                          Business Consulting for your needs
                         </div>
-                        <div className="list-social flex items-center gap-2.5 mt-4">
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.facebook.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-facebook text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.linkedin.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-linkedin text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.twitter.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-twitter text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.youtube.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-youtube text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.instagram.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-instagram text-sm"></span>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ) : null}
-              {visible == 6 ? (
-                <div className="flex gap-2 ml-2">
-                  <div className=" w-3/4 ">
-                    <div className="service-cate text-lg font-semibold">
-                      Digital Marketing Services
-                    </div>
-                    <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
-                      {item.subMenu6.slice(0).map((i, index) => (
-                        <li
-                          key={index}
-                          className={`${pathname === i.to ? "active" : ""}`}
+                        <Link
+                          className="button-main text-button-sm mt-3"
+                          href="/services/service-detail"
                         >
-                          <Link
-                            className={`flex items-center gap-4`}
-                            href={process.env.PUBLIC_URL + "/services/[slug]"}
-                            as={
-                              process.env.PUBLIC_URL +
-                              "/services/" +
-                              convertToSlug(i.title)
-                            }
-                          >
-                            <div className="flex gap-2">
-                              <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
-                                <i
-                                  className={`${i.icon} text-blue text-md `}
-                                ></i>
-                              </div>
-                              <div className="flex flex-col items-start">
-                                <span className="text-[#565454]">
-                                  {i.title}
-                                </span>
-                                <span className="text-sm text-[#91939d]">
-                                  {i.desc}
-                                </span>
-                              </div>
+                          Explore Now
+                        </Link>
+                        <div className="more-infor mt-8">
+                          <div className="mail flex items-center">
+                            <Icon.Envelope className="text-lg" />
+                            <div className="caption1 pl-2">
+                              hi.avitex@gmail.com
                             </div>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="w-1/4 ">
-                    <div className="content bg-linear rounded-lg p-6">
-                      <div className="text-lg font-semibold">
-                        Explore All Digital Marketing Services
-                      </div>
-                      <div className="caption1 text-surface1 mt-1">
-                        Unlocking the Full Spectrum of IT Solutions and Business
-                        Consulting for your needs
-                      </div>
-                      <Link
-                        className="button-main text-button-sm mt-3"
-                        href="/services/service-detail"
-                      >
-                        Explore Now
-                      </Link>
-                      <div className="more-infor mt-8">
-                        <div className="mail flex items-center">
-                          <Icon.Envelope className="text-lg" />
-                          <div className="caption1 pl-2">
-                            hi.avitex@gmail.com
+                          </div>
+                          <div className="call flex items-center mt-3">
+                            <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
+                              <Icon.Phone
+                                weight="fill"
+                                className="text-sm text-white"
+                              />
+                            </span>
+                            <div className="text-title pl-2">123 456 7890</div>
+                          </div>
+                          <div className="list-social flex items-center gap-2.5 mt-4">
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.facebook.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-facebook text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.linkedin.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-linkedin text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.twitter.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-twitter text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.youtube.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-youtube text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.instagram.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-instagram text-sm"></span>
+                            </Link>
                           </div>
                         </div>
-                        <div className="call flex items-center mt-3">
-                          <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
-                            <Icon.Phone
-                              weight="fill"
-                              className="text-sm text-white"
-                            />
-                          </span>
-                          <div className="text-title pl-2">123 456 7890</div>
-                        </div>
-                        <div className="list-social flex items-center gap-2.5 mt-4">
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.facebook.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-facebook text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.linkedin.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-linkedin text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.twitter.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-twitter text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.youtube.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-youtube text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.instagram.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-instagram text-sm"></span>
-                          </Link>
-                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ) : null}
-              {visible == 7 ? (
-                <div className="flex gap-2 ml-2">
-                  <div className=" w-3/4 ">
-                    <div className="service-cate text-lg font-semibold">
-                      Outsourcing
+                ) : null}
+                {visible == 4 ? (
+                  <div className="flex justify-between ml-2">
+                    <div className="flex gap-20">
+                      <div className="flex flex-col gap-3">
+                        <div className=" w-full ">
+                          <div className="service-cate text-lg font-semibold">
+                            E-commerce Development
+                          </div>
+                          <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                            {item.subMenu4.slice(0, 2).map((i, index) => (
+                              <li
+                                key={index}
+                                className={`${
+                                  pathname === i.to ? "active" : ""
+                                }`}
+                              >
+                                <Link
+                                  className={`flex items-center gap-4`}
+                                  href={
+                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                  }
+                                  as={
+                                    process.env.PUBLIC_URL +
+                                    "/services/" +
+                                    convertToSlug(i.title)
+                                  }
+                                >
+                                  <div className="flex gap-2">
+                                    <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                      <i
+                                        className={`${i.icon} text-blue text-md `}
+                                      ></i>
+                                    </div>
+                                    <div className="flex flex-col items-start">
+                                      <span className="text-[#565454]">
+                                        {i.title}
+                                      </span>
+                                      <span className="text-xs text-[#91939d]">
+                                        {i.desc}
+                                      </span>
+                                    </div>
+                                  </div>
+                                  {/* <span className="">{i.desc}</span> */}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                          <hr className="border-none h-[1px] bg-grey"></hr>
+                        </div>
+                        <div className=" w-full ">
+                          <div className="service-cate text-lg font-semibold">
+                            E-commerce Design*
+                          </div>
+                          <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                            {item.subMenu4.slice(2, 5).map((i, index) => (
+                              <li
+                                key={index}
+                                className={`${
+                                  pathname === i.to ? "active" : ""
+                                }`}
+                              >
+                                <Link
+                                  className={`flex items-center gap-4`}
+                                  href={
+                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                  }
+                                  as={
+                                    process.env.PUBLIC_URL +
+                                    "/services/" +
+                                    convertToSlug(i.title)
+                                  }
+                                >
+                                  <div className="flex gap-2">
+                                    <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                      <i
+                                        className={`${i.icon} text-blue text-md `}
+                                      ></i>
+                                    </div>
+                                    <div className="flex flex-col items-start">
+                                      <span className="text-[#565454]">
+                                        {i.title}
+                                      </span>
+                                      <span className="text-xs text-[#91939d]">
+                                        {i.desc}
+                                      </span>
+                                    </div>
+                                  </div>
+                                  {/* <span className="">{i.desc}</span> */}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                          <hr className="border-none h-[1px] bg-grey"></hr>
+                        </div>
+                      </div>
+                      <div className="flex flex-col gap-3">
+                        <div className=" w-full ">
+                          <div className="service-cate text-lg font-semibold">
+                            Platform-Specific Development
+                          </div>
+                          <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                            {item.subMenu4.slice(5, 9).map((i, index) => (
+                              <li
+                                key={index}
+                                className={`${
+                                  pathname === i.to ? "active" : ""
+                                }`}
+                              >
+                                <Link
+                                  className={`flex items-center gap-4`}
+                                  href={
+                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                  }
+                                  as={
+                                    process.env.PUBLIC_URL +
+                                    "/services/" +
+                                    convertToSlug(i.title)
+                                  }
+                                >
+                                  <div className="flex gap-2">
+                                    <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                      <i
+                                        className={`${i.icon} text-blue text-md `}
+                                      ></i>
+                                    </div>
+                                    <div className="flex flex-col items-start">
+                                      <span className="text-[#565454]">
+                                        {i.title}
+                                      </span>
+                                      <span className="text-xs text-[#91939d]">
+                                        {i.desc}
+                                      </span>
+                                    </div>
+                                  </div>
+                                  {/* <span className="">{i.desc}</span> */}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                          <hr className="border-none h-[1px] bg-grey"></hr>
+                        </div>
+                        <div className=" w-full ">
+                          <div className="service-cate text-lg font-semibold">
+                            E-commerce Integration
+                          </div>
+                          <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                            {item.subMenu4.slice(9, 12).map((i, index) => (
+                              <li
+                                key={index}
+                                className={`${
+                                  pathname === i.to ? "active" : ""
+                                }`}
+                              >
+                                <Link
+                                  className={`flex items-center gap-4`}
+                                  href={
+                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                  }
+                                  as={
+                                    process.env.PUBLIC_URL +
+                                    "/services/" +
+                                    convertToSlug(i.title)
+                                  }
+                                >
+                                  <div className="flex gap-2">
+                                    <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                      <i
+                                        className={`${i.icon} text-blue text-md `}
+                                      ></i>
+                                    </div>
+                                    <div className="flex flex-col items-start">
+                                      <span className="text-[#565454]">
+                                        {i.title}
+                                      </span>
+                                      <span className="text-xs text-[#91939d]">
+                                        {i.desc}
+                                      </span>
+                                    </div>
+                                  </div>
+                                  {/* <span className="">{i.desc}</span> */}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                          <hr className="border-none h-[1px] bg-grey"></hr>
+                        </div>
+                      </div>
                     </div>
-                    <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
-                      {item.subMenu7.slice(0).map((i, index) => (
-                        <li
-                          key={index}
-                          className={`${pathname === i.to ? "active" : ""}`}
+                    <div className="w-1/4 ">
+                      <div className="content bg-linear rounded-lg p-6">
+                        <div className="text-lg font-semibold">
+                          Explore Ecommerce Services
+                        </div>
+                        <div className="caption1 text-surface1 mt-1">
+                          Unlocking the Full Spectrum of IT Solutions and
+                          Business Consulting for your needs
+                        </div>
+                        <Link
+                          className="button-main text-button-sm mt-3"
+                          href="/services/service-detail"
                         >
-                          <Link
-                            className={`flex items-center gap-4`}
-                            href={process.env.PUBLIC_URL + "/services/[slug]"}
-                            as={
-                              process.env.PUBLIC_URL +
-                              "/services/" +
-                              convertToSlug(i.title)
-                            }
-                          >
-                            <span
-                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
-                            ></span>
-                            <span>{i.title}</span>
-                            {/* <span className="">{i.desc}</span> */}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="w-1/4 ">
-                    <div className="content bg-linear rounded-lg p-6">
-                      <div className="text-lg font-semibold">
-                        Explore All Outsourcing Services
-                      </div>
-                      <div className="caption1 text-surface1 mt-1">
-                        Unlocking the Full Spectrum of IT Solutions and Business
-                        Consulting for your needs
-                      </div>
-                      <Link
-                        className="button-main text-button-sm mt-3"
-                        href="/services/service-detail"
-                      >
-                        Explore Now
-                      </Link>
-                      <div className="more-infor mt-8">
-                        <div className="mail flex items-center">
-                          <Icon.Envelope className="text-lg" />
-                          <div className="caption1 pl-2">
-                            hi.avitex@gmail.com
+                          Explore Now
+                        </Link>
+                        <div className="more-infor mt-8">
+                          <div className="mail flex items-center">
+                            <Icon.Envelope className="text-lg" />
+                            <div className="caption1 pl-2">
+                              hi.avitex@gmail.com
+                            </div>
                           </div>
-                        </div>
-                        <div className="call flex items-center mt-3">
-                          <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
-                            <Icon.Phone
-                              weight="fill"
-                              className="text-sm text-white"
-                            />
-                          </span>
-                          <div className="text-title pl-2">123 456 7890</div>
-                        </div>
-                        <div className="list-social flex items-center gap-2.5 mt-4">
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.facebook.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-facebook text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.linkedin.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-linkedin text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.twitter.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-twitter text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.youtube.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-youtube text-base"></span>
-                          </Link>
-                          <Link
-                            className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
-                            href="https://www.instagram.com/"
-                            target="_blank"
-                          >
-                            <span className="icon-instagram text-sm"></span>
-                          </Link>
+                          <div className="call flex items-center mt-3">
+                            <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
+                              <Icon.Phone
+                                weight="fill"
+                                className="text-sm text-white"
+                              />
+                            </span>
+                            <div className="text-title pl-2">123 456 7890</div>
+                          </div>
+                          <div className="list-social flex items-center gap-2.5 mt-4">
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.facebook.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-facebook text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.linkedin.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-linkedin text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.twitter.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-twitter text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.youtube.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-youtube text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.instagram.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-instagram text-sm"></span>
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ) : null}
+                ) : null}
+                {visible == 5 ? (
+                  <div className="flex gap-2 ml-2">
+                    <div className=" w-3/4 flex gap-5 ">
+                      <div className="flex flex-col gap-3 justify-start">
+                        <div className=" w-full ">
+                          <div className="service-cate text-lg font-semibold">
+                            Artificial Intelligence and Machine Learning
+                          </div>
+                          <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                            {item.subMenu5.slice(0, 1).map((i, index) => (
+                              <li
+                                key={index}
+                                className={`${
+                                  pathname === i.to ? "active" : ""
+                                }`}
+                              >
+                                <Link
+                                  className={`flex items-center gap-4`}
+                                  href={
+                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                  }
+                                  as={
+                                    process.env.PUBLIC_URL +
+                                    "/services/" +
+                                    convertToSlug(i.title)
+                                  }
+                                >
+                                  <div className="flex gap-2">
+                                    <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                      <i
+                                        className={`${i.icon} text-blue text-md `}
+                                      ></i>
+                                    </div>
+                                    <div className="flex flex-col items-start">
+                                      <span className="text-[#565454]">
+                                        {i.title}
+                                      </span>
+                                      <span className="text-xs text-[#91939d]">
+                                        {i.desc}
+                                      </span>
+                                    </div>
+                                  </div>
+                                  {/* <span className="">{i.desc}</span> */}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                          <hr className="border-none h-[1px] bg-grey"></hr>
+                        </div>
+                        <div className=" w-full ">
+                          <div className="service-cate text-lg font-semibold">
+                            Augmented and Virtual Reality
+                          </div>
+                          <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                            {item.subMenu5.slice(1, 2).map((i, index) => (
+                              <li
+                                key={index}
+                                className={`${
+                                  pathname === i.to ? "active" : ""
+                                }`}
+                              >
+                                <Link
+                                  className={`flex items-center gap-4`}
+                                  href={
+                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                  }
+                                  as={
+                                    process.env.PUBLIC_URL +
+                                    "/services/" +
+                                    convertToSlug(i.title)
+                                  }
+                                >
+                                  <div className="flex gap-2">
+                                    <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                      <i
+                                        className={`${i.icon} text-blue text-md `}
+                                      ></i>
+                                    </div>
+                                    <div className="flex flex-col items-start">
+                                      <span className="text-[#565454]">
+                                        {i.title}
+                                      </span>
+                                      <span className="text-xs text-[#91939d]">
+                                        {i.desc}
+                                      </span>
+                                    </div>
+                                  </div>
+                                  {/* <span className="">{i.desc}</span> */}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                          <hr className="border-none h-[1px] bg-grey"></hr>
+                        </div>
+                        <div className=" w-full ">
+                          <div className="service-cate text-lg font-semibold">
+                            Blockchain Technology
+                          </div>
+                          <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                            {item.subMenu5.slice(2, 3).map((i, index) => (
+                              <li
+                                key={index}
+                                className={`${
+                                  pathname === i.to ? "active" : ""
+                                }`}
+                              >
+                                <Link
+                                  className={`flex items-center gap-4`}
+                                  href={
+                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                  }
+                                  as={
+                                    process.env.PUBLIC_URL +
+                                    "/services/" +
+                                    convertToSlug(i.title)
+                                  }
+                                >
+                                  <div className="flex gap-2">
+                                    <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                      <i
+                                        className={`${i.icon} text-blue text-md `}
+                                      ></i>
+                                    </div>
+                                    <div className="flex flex-col items-start">
+                                      <span className="text-[#565454]">
+                                        {i.title}
+                                      </span>
+                                      <span className="text-xs text-[#91939d]">
+                                        {i.desc}
+                                      </span>
+                                    </div>
+                                  </div>
+                                  {/* <span className="">{i.desc}</span> */}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                          <hr className="border-none h-[1px] bg-grey"></hr>
+                        </div>
+                        <div className=" w-full ">
+                          <div className="service-cate text-lg font-semibold">
+                            Cloud Computing
+                          </div>
+                          <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                            {item.subMenu5.slice(3, 4).map((i, index) => (
+                              <li
+                                key={index}
+                                className={`${
+                                  pathname === i.to ? "active" : ""
+                                }`}
+                              >
+                                <Link
+                                  className={`flex items-center gap-4`}
+                                  href={
+                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                  }
+                                  as={
+                                    process.env.PUBLIC_URL +
+                                    "/services/" +
+                                    convertToSlug(i.title)
+                                  }
+                                >
+                                  <div className="flex gap-2">
+                                    <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                      <i
+                                        className={`${i.icon} text-blue text-md `}
+                                      ></i>
+                                    </div>
+                                    <div className="flex flex-col items-start">
+                                      <span className="text-[#565454]">
+                                        {i.title}
+                                      </span>
+                                      <span className="text-xs text-[#91939d]">
+                                        {i.desc}
+                                      </span>
+                                    </div>
+                                  </div>
+                                  {/* <span className="">{i.desc}</span> */}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                          <hr className="border-none h-[1px] bg-grey"></hr>
+                        </div>
+                      </div>
+                      <div>
+                        <div className=" w-full ">
+                          <div className="service-cate text-lg font-semibold">
+                            Internet of Things (IoT)
+                          </div>
+                          <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                            {item.subMenu5.slice(4, 7).map((i, index) => (
+                              <li
+                                key={index}
+                                className={`${
+                                  pathname === i.to ? "active" : ""
+                                }`}
+                              >
+                                <Link
+                                  className={`flex items-center gap-4`}
+                                  href={
+                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                  }
+                                  as={
+                                    process.env.PUBLIC_URL +
+                                    "/services/" +
+                                    convertToSlug(i.title)
+                                  }
+                                >
+                                  <div className="flex gap-2">
+                                    <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                      <i
+                                        className={`${i.icon} text-blue text-md `}
+                                      ></i>
+                                    </div>
+                                    <div className="flex flex-col items-start">
+                                      <span className="text-[#565454]">
+                                        {i.title}
+                                      </span>
+                                      <span className="text-xs text-[#91939d]">
+                                        {i.desc}
+                                      </span>
+                                    </div>
+                                  </div>
+                                  {/* <span className="">{i.desc}</span> */}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                          <hr className="border-none h-[1px] bg-grey"></hr>
+                        </div>
+                        <div className=" w-full ">
+                          <div className="service-cate text-lg font-semibold">
+                            Cybersecurity
+                          </div>
+                          <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
+                            {item.subMenu5.slice(7, 8).map((i, index) => (
+                              <li
+                                key={index}
+                                className={`${
+                                  pathname === i.to ? "active" : ""
+                                }`}
+                              >
+                                <Link
+                                  className={`flex items-center gap-4`}
+                                  href={
+                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                  }
+                                  as={
+                                    process.env.PUBLIC_URL +
+                                    "/services/" +
+                                    convertToSlug(i.title)
+                                  }
+                                >
+                                  <div className="flex gap-2">
+                                    <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                      <i
+                                        className={`${i.icon} text-blue text-md `}
+                                      ></i>
+                                    </div>
+                                    <div className="flex flex-col items-start">
+                                      <span className="text-[#565454]">
+                                        {i.title}
+                                      </span>
+                                      <span className="text-xs text-[#91939d]">
+                                        {i.desc}
+                                      </span>
+                                    </div>
+                                  </div>
+                                  {/* <span className="">{i.desc}</span> */}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                          <hr className="border-none h-[1px] bg-grey"></hr>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="w-1/4 ">
+                      <div className="content bg-linear rounded-lg p-6">
+                        <div className="text-lg font-semibold">
+                          Explore All Emerging Technologies
+                        </div>
+                        <div className="caption1 text-surface1 mt-1">
+                          Unlocking the Full Spectrum of IT Solutions and
+                          Business Consulting for your needs
+                        </div>
+                        <Link
+                          className="button-main text-button-sm mt-3"
+                          href="/services/service-detail"
+                        >
+                          Explore Now
+                        </Link>
+                        <div className="more-infor mt-8">
+                          <div className="mail flex items-center">
+                            <Icon.Envelope className="text-lg" />
+                            <div className="caption1 pl-2">
+                              hi.avitex@gmail.com
+                            </div>
+                          </div>
+                          <div className="call flex items-center mt-3">
+                            <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
+                              <Icon.Phone
+                                weight="fill"
+                                className="text-sm text-white"
+                              />
+                            </span>
+                            <div className="text-title pl-2">123 456 7890</div>
+                          </div>
+                          <div className="list-social flex items-center gap-2.5 mt-4">
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.facebook.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-facebook text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.linkedin.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-linkedin text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.twitter.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-twitter text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.youtube.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-youtube text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.instagram.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-instagram text-sm"></span>
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : null}
+                {visible == 6 ? (
+                  <div className="flex gap-2 ml-2">
+                    <div className=" w-3/4 ">
+                      <div className="service-cate text-lg font-semibold">
+                        Digital Marketing Services
+                      </div>
+                      <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
+                        {item.subMenu6.slice(0).map((i, index) => (
+                          <li
+                            key={index}
+                            className={`${pathname === i.to ? "active" : ""}`}
+                          >
+                            <Link
+                              className={`flex items-center gap-4`}
+                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              as={
+                                process.env.PUBLIC_URL +
+                                "/services/" +
+                                convertToSlug(i.title)
+                              }
+                            >
+                              <div className="flex gap-2">
+                                <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                  <i
+                                    className={`${i.icon} text-blue text-md `}
+                                  ></i>
+                                </div>
+                                <div className="flex flex-col items-start">
+                                  <span className="text-[#565454]">
+                                    {i.title}
+                                  </span>
+                                  <span className="text-xs text-[#91939d]">
+                                    {i.desc}
+                                  </span>
+                                </div>
+                              </div>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="w-1/4 ">
+                      <div className="content bg-linear rounded-lg p-6">
+                        <div className="text-lg font-semibold">
+                          Explore All Digital Marketing Services
+                        </div>
+                        <div className="caption1 text-surface1 mt-1">
+                          Unlocking the Full Spectrum of IT Solutions and
+                          Business Consulting for your needs
+                        </div>
+                        <Link
+                          className="button-main text-button-sm mt-3"
+                          href="/services/service-detail"
+                        >
+                          Explore Now
+                        </Link>
+                        <div className="more-infor mt-8">
+                          <div className="mail flex items-center">
+                            <Icon.Envelope className="text-lg" />
+                            <div className="caption1 pl-2">
+                              hi.avitex@gmail.com
+                            </div>
+                          </div>
+                          <div className="call flex items-center mt-3">
+                            <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
+                              <Icon.Phone
+                                weight="fill"
+                                className="text-sm text-white"
+                              />
+                            </span>
+                            <div className="text-title pl-2">123 456 7890</div>
+                          </div>
+                          <div className="list-social flex items-center gap-2.5 mt-4">
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.facebook.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-facebook text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.linkedin.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-linkedin text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.twitter.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-twitter text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.youtube.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-youtube text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.instagram.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-instagram text-sm"></span>
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : null}
+                {visible == 7 ? (
+                  <div className="flex gap-2 ml-2">
+                    <div className=" w-3/4 ">
+                      <div className="service-cate text-lg font-semibold">
+                        Outsourcing
+                      </div>
+                      <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
+                        {item.subMenu7.slice(0).map((i, index) => (
+                          <li
+                            key={index}
+                            className={`${pathname === i.to ? "active" : ""}`}
+                          >
+                            <Link
+                              className={`flex items-center gap-4`}
+                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              as={
+                                process.env.PUBLIC_URL +
+                                "/services/" +
+                                convertToSlug(i.title)
+                              }
+                            >
+                              <span
+                                className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
+                              ></span>
+                              <span>{i.title}</span>
+                              {/* <span className="">{i.desc}</span> */}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="w-1/4 ">
+                      <div className="content bg-linear rounded-lg p-6">
+                        <div className="text-lg font-semibold">
+                          Explore All Outsourcing Services
+                        </div>
+                        <div className="caption1 text-surface1 mt-1">
+                          Unlocking the Full Spectrum of IT Solutions and
+                          Business Consulting for your needs
+                        </div>
+                        <Link
+                          className="button-main text-button-sm mt-3"
+                          href="/services/service-detail"
+                        >
+                          Explore Now
+                        </Link>
+                        <div className="more-infor mt-8">
+                          <div className="mail flex items-center">
+                            <Icon.Envelope className="text-lg" />
+                            <div className="caption1 pl-2">
+                              hi.avitex@gmail.com
+                            </div>
+                          </div>
+                          <div className="call flex items-center mt-3">
+                            <span className="w-6 h-6 bg-blue flex items-center justify-center rounded-full flex-shrink-0">
+                              <Icon.Phone
+                                weight="fill"
+                                className="text-sm text-white"
+                              />
+                            </span>
+                            <div className="text-title pl-2">123 456 7890</div>
+                          </div>
+                          <div className="list-social flex items-center gap-2.5 mt-4">
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.facebook.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-facebook text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.linkedin.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-linkedin text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.twitter.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-twitter text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.youtube.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-youtube text-base"></span>
+                            </Link>
+                            <Link
+                              className="item rounded-full w-10 h-10 flex items-center justify-center bg-white text-surface1 hover:bg-black hover:text-white duration-300"
+                              href="https://www.instagram.com/"
+                              target="_blank"
+                            >
+                              <span className="icon-instagram text-sm"></span>
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : null}
+              </div>
             </div>
           </li>
         );
