@@ -111,7 +111,7 @@ export default function Navigator({ disableSubmenu, className }) {
               }}
             >
               <div
-                className="w-1/5 h-[60vh] flex flex-col gap-3 justify-start items-center shadow-none overflow-y-scroll"
+                className="w-fit sm:h-[80vh] lg:h-fit flex flex-col gap-0 justify-start items-center shadow-none "
                 style={{ boxShadow: "10px 0 5px rgb(182 182 182 / 10%)" }}
               >
                 <h1 className="text-lg w-full text-left px-5 ml-4 font-semibold text-[#2d50e1]">
@@ -146,7 +146,7 @@ export default function Navigator({ disableSubmenu, className }) {
                 ))}
                 <hr className="border-none h-[1px] bg-grey w-full"></hr>
               </div>
-              <div className="w-4/5 overflow-y-scroll h-[60vh]">
+              <div className="w-4/5  h-[60vh]">
                 {visible == 1 ? (
                   <div className="ml-2 flex gap-2 ">
                     <div className=" w-3/4 flex gap-5 ">
@@ -767,8 +767,8 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                 ) : null}
                 {visible == 4 ? (
-                  <div className="flex justify-between ml-2">
-                    <div className="flex gap-20">
+                  <div className="flex justify-between ml-2 w-full">
+                    <div className="flex gap-20 w-full">
                       <div className="flex flex-col gap-3">
                         <div className=" w-full ">
                           <div className="service-cate text-lg font-semibold">
@@ -954,7 +954,7 @@ export default function Navigator({ disableSubmenu, className }) {
                         </div>
                       </div>
                     </div>
-                    <div className="w-1/4 ">
+                    {/* <div className="w-1/4 ">
                       <div className="content bg-linear rounded-lg p-6">
                         <div className="text-lg font-semibold">
                           Explore Ecommerce Services
@@ -1024,12 +1024,12 @@ export default function Navigator({ disableSubmenu, className }) {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 ) : null}
                 {visible == 5 ? (
                   <div className="flex gap-2 ml-2">
-                    <div className=" w-3/4 flex gap-5 ">
+                    <div className=" w-full flex gap-20 ">
                       <div className="flex flex-col gap-3 justify-start">
                         <div className=" w-full ">
                           <div className="service-cate text-lg font-semibold">
@@ -1305,7 +1305,7 @@ export default function Navigator({ disableSubmenu, className }) {
                         </div>
                       </div>
                     </div>
-                    <div className="w-1/4 ">
+                    {/* <div className="w-1/4 ">
                       <div className="content bg-linear rounded-lg p-6">
                         <div className="text-lg font-semibold">
                           Explore All Emerging Technologies
@@ -1375,12 +1375,12 @@ export default function Navigator({ disableSubmenu, className }) {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 ) : null}
                 {visible == 6 ? (
-                  <div className="flex gap-2 ml-2">
-                    <div className=" w-3/4 ">
+                  <div className="flex gap-20 ml-2">
+                    <div className=" w-full ">
                       <div className="service-cate text-lg font-semibold">
                         Digital Marketing Services
                       </div>
@@ -1419,7 +1419,7 @@ export default function Navigator({ disableSubmenu, className }) {
                         ))}
                       </ul>
                     </div>
-                    <div className="w-1/4 ">
+                    {/* <div className="w-1/4 ">
                       <div className="content bg-linear rounded-lg p-6">
                         <div className="text-lg font-semibold">
                           Explore All Digital Marketing Services
@@ -1489,7 +1489,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 ) : null}
                 {visible == 7 ? (
