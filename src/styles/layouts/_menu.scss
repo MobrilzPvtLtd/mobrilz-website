@@ -260,17 +260,17 @@
                 border-radius: 8px;
                 transition: all ease 0.3s;
 
-                &:after {
-                  content: "";
-                  position: absolute;
-                  bottom: 10px;
-                  left: 20px;
-                  background-color: setColor(black);
-                  height: 1px;
-                  width: 0;
-                  z-index: 0;
-                  transition: $transition;
-                }
+                // &:after {
+                //   content: "";
+                //   position: absolute;
+                //   bottom: 10px;
+                //   left: 20px;
+                //   background-color: setColor(black);
+                //   height: 1px;
+                //   width: 0;
+                //   z-index: 0;
+                //   transition: $transition;
+                // }
               }
 
               &.active,
