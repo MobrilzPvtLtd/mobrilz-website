@@ -17,9 +17,9 @@ export default function TopNavOne() {
 
   return (
     <>
-      <div className="bg-blue-600 text-black font-semibold px-3 py-1 bg-white dark:bg-black dark:text-white flex items-center justify-center text-center">
+      <div className="bg-blue-600 text-black font-semibold px-3 py-0 bg-white dark:bg-black dark:text-white flex items-center justify-center text-center">
         <div className="flex justify-center">
-          <div className="hidden lg_2:flex items-center gap-2  px-2.5 py-[5px] rounded-full ">
+          <div className="hidden lg_2:flex items-center gap-2  px-2.5 py-1 rounded-full ">
             <span className="icon bg-white text-blue w-8 h-8 flex items-center justify-center rounded-full">
               <Icon.EnvelopeSimple className="text-2xl flex-shrink-0" />
             </span>

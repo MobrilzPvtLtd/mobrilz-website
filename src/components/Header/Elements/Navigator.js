@@ -111,7 +111,7 @@ export default function Navigator({ disableSubmenu, className }) {
               }}
             >
               <div
-                className="w-fit h-96 flex flex-col gap-3 justify-start items-center shadow-none"
+                className="w-fit h-fit flex flex-col gap-3 justify-start items-center shadow-none"
                 style={{ boxShadow: "10px 0 5px rgb(182 182 182 / 10%)" }}
               >
                 <h1 className="text-lg w-full text-left px-5 ml-4 font-semibold text-[#2d50e1]">

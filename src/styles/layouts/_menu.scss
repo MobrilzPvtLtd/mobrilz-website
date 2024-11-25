@@ -137,7 +137,7 @@
             transition: transform ease 0.4s, opacity ease 0.4s,
               visibility ease 0.4s;
             z-index: 99;
-            min-height: 40rem;
+            min-height: fit-content;
 
             &.style-pages {
               width: 400px;
