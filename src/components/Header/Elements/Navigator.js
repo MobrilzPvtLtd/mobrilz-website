@@ -1344,11 +1344,21 @@ export default function Navigator({ disableSubmenu, className }) {
                               convertToSlug(i.title)
                             }
                           >
-                            <span
-                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
-                            ></span>
-                            <span>{i.title}</span>
-                            {/* <span className="">{i.desc}</span> */}
+                            <div className="flex gap-2">
+                              <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
+                                <i
+                                  className={`${i.icon} text-blue text-md `}
+                                ></i>
+                              </div>
+                              <div className="flex flex-col items-start">
+                                <span className="text-[#565454]">
+                                  {i.title}
+                                </span>
+                                <span className="text-sm text-[#91939d]">
+                                  {i.desc}
+                                </span>
+                              </div>
+                            </div>
                           </Link>
                         </li>
                       ))}
