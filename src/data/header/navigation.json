@@ -842,6 +842,8 @@
       {
         "title": "Portfolio",
         "to": "#",
+        "icon": "fal fa-briefcase",
+        "desc" : "Dummy Text",
         "subMenu": [
           { "title": "Android", "to": "#" },
           { "title": "IOS", "to": "#" },
@@ -850,7 +852,9 @@
       },
       {
         "title": "SEO Case Study",
-        "to": "#"
+        "to": "#",
+        "icon": "fa-brands fa-google",
+        "desc" : "Dummy Text"
       }
     ]
   },
@@ -860,26 +864,58 @@
     "subMenu": [
       {
         "title": "Seo packages",
-        "to": "#"
+        "to": "#",
+        "icon": "fa-brands fa-google",
+        "desc" : "Dummy Text"
       }
     ]
   },
-  { "title": "Blogs", "to": "#" },
+  
   {
     "title": "About",
     "to": "#!",
     "subMenu": [
       {
         "title": "About Us",
-        "to": "#"
+        "to": "#",
+        "icon": "fal fa-address-card",
+        "desc" : "Dummy Text"
       },
       {
         "title": "Career",
-        "to": "#"
+        "to": "#",
+        "icon": "fal fa-briefcase",
+        "desc" : "Dummy Text"
       },
       {
         "title": "What We Do",
-        "to": "#"
+        "to": "#",
+        "icon": "fal fa-ballot-check",
+        "desc" : "Dummy Text"
+      }
+    ]
+  },
+  {
+    "title": "Support",
+    "to": "#!",
+    "subMenu": [
+      {
+        "title": "Blog",
+        "to": "#",
+        "icon": "fa-brands fa-blogger",
+        "desc" : "Dummy Text"
+      },
+      {
+        "title": "Contact Us",
+        "to": "#",
+        "icon": "fal fa-address-book",
+        "desc" : "Dummy Text"
+      },
+      {
+        "title": "Payment Methods",
+        "to": "#",
+        "icon": "fal fa-dollar-sign",
+        "desc" : "Dummy Text"
       }
     ]
   }

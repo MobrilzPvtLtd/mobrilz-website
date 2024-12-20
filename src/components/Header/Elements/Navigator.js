@@ -35,13 +35,13 @@ export default function Navigator({ disableSubmenu, className }) {
       id: 1,
       title: "Mobile",
       icon: "fa-regular fa-mobile",
-      desc: "Custom mobile app solutions.",
+      desc: "Custom app solutions.",
     },
     {
       id: 2,
       title: "Web",
       icon: "fa-regular fa-desktop",
-      desc: "full-stack web development.",
+      desc: "web development.",
     },
     {
       id: 3,
@@ -63,7 +63,7 @@ export default function Navigator({ disableSubmenu, className }) {
     },
     {
       id: 6,
-      title: "Digital Marketing Services",
+      title: "Digital Marketing",
       icon: "fa-regular fa-globe",
       desc: "Boost online visibility",
     },
@@ -129,17 +129,15 @@ export default function Navigator({ disableSubmenu, className }) {
                       activeClass(item.id);
                     }}
                   >
-                    <button className=" text-black dark:text-white w-[17rem] h-10 p-2 px-5  text-sm text-left font-semibold flex gap-4 justify-start items-center">
+                    <button className=" text-black dark:text-white w-[20rem] h-10 p-2 px-5  text-sm text-left font-semibold flex gap-4 justify-start items-center">
                       <div className="w-10 aspect-video border border-grey p-2 flex bg-white rounded-[50%] justify-center items-center ">
                         <i
                           className={`${item.icon} text-blue text-lg   hover:bg-linear aspect-square`}
                         ></i>
                       </div>
                       <div className="flex flex-col justify-start">
-                        <span>{item.title}</span>
-                        <span className="text-xs text-[#91939d]">
-                          {item.desc}
-                        </span>
+                        <span className="text-base">{item.title}</span>
+                        <span className=" text-[#91939d]">{item.desc}</span>
                       </div>
                     </button>
                   </div>
@@ -152,7 +150,7 @@ export default function Navigator({ disableSubmenu, className }) {
                     <div className=" w-3/4 flex gap-5 ">
                       <div>
                         <div>
-                          <div className="service-cate text-lg font-semibold">
+                          <div className="service-cate text-base font-semibold">
                             Native App Development
                           </div>
                           <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -176,10 +174,10 @@ export default function Navigator({ disableSubmenu, className }) {
                                 >
                                   <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                     <i
-                                      className={`${i.icon} text-blue text-md  `}
+                                      className={`${i.icon} text-blue text-base  `}
                                     ></i>
                                   </div>
-                                  <span className="text-[#565454]">
+                                  <span className="text-[#565454] text-base">
                                     {i.title}
                                   </span>
                                 </Link>
@@ -189,7 +187,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           <hr className="border-none h-[1px] bg-grey"></hr>
                         </div>
                         <div>
-                          <div className="service-cate text-lg font-semibold mt-5">
+                          <div className="service-cate text-base font-semibold mt-5">
                             Cross-Platform App Development
                           </div>
                           <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -213,10 +211,10 @@ export default function Navigator({ disableSubmenu, className }) {
                                 >
                                   <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                     <i
-                                      className={`${i.icon} text-blue text-md `}
+                                      className={`${i.icon} text-blue text-base `}
                                     ></i>
                                   </div>
-                                  <span className="text-[#565454]">
+                                  <span className="text-[#565454] text-base">
                                     {i.title}
                                   </span>
                                 </Link>
@@ -244,10 +242,10 @@ export default function Navigator({ disableSubmenu, className }) {
                                 >
                                   <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                     <i
-                                      className={`${i.icon} text-blue text-md`}
+                                      className={`${i.icon} text-blue text-lg`}
                                     ></i>
                                   </div>
-                                  <span className="text-[#565454]">
+                                  <span className="text-[#565454] text-base">
                                     {i.title}
                                   </span>
                                 </Link>
@@ -259,7 +257,7 @@ export default function Navigator({ disableSubmenu, className }) {
                       </div>
                       <div>
                         <div>
-                          <div className="service-cate text-lg font-semibold ">
+                          <div className="service-cate text-base font-semibold ">
                             Language-Specific
                           </div>
                           <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -283,10 +281,10 @@ export default function Navigator({ disableSubmenu, className }) {
                                 >
                                   <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                     <i
-                                      className={`${i.icon} text-blue text-md `}
+                                      className={`${i.icon} text-blue text-base `}
                                     ></i>
                                   </div>
-                                  <span className="text-[#565454]">
+                                  <span className="text-[#565454] text-base">
                                     {i.title}
                                   </span>
                                 </Link>
@@ -296,7 +294,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           <hr className="border-none h-[1px] bg-grey"></hr>
                         </div>
                         <div>
-                          <div className="service-cate text-lg font-semibold mt-5">
+                          <div className="service-cate text-base font-semibold mt-5">
                             Legacy/Niche
                           </div>
                           <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -320,10 +318,10 @@ export default function Navigator({ disableSubmenu, className }) {
                                 >
                                   <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                     <i
-                                      className={`${i.icon} text-blue text-md `}
+                                      className={`${i.icon} text-blue text-base `}
                                     ></i>
                                   </div>
-                                  <span className="text-[#565454]">
+                                  <span className="text-[#565454] text-base">
                                     {i.title}
                                   </span>
                                 </Link>
@@ -410,7 +408,7 @@ export default function Navigator({ disableSubmenu, className }) {
                 {visible == 2 ? (
                   <div className="ml-2 flex gap-2">
                     <div className="w-full p-2">
-                      <div className="service-cate text-lg font-semibold">
+                      <div className="service-cate text-base font-semibold">
                         Web
                       </div>
                       <ul className=" w-full relative flex flex-wrap gap-4 gap-y-5 mt-2">
@@ -432,10 +430,12 @@ export default function Navigator({ disableSubmenu, className }) {
                             >
                               <div className="w-fit  flex justify-center items-center ">
                                 <i
-                                  className={`${i.icon} text-blue text-md `}
+                                  className={`${i.icon} text-blue text-base `}
                                 ></i>
                               </div>
-                              <span className="text-[#565454]">{i.title}</span>
+                              <span className="text-[#565454] text-base">
+                                {i.title}
+                              </span>
                             </Link>
                           </li>
                         ))}
@@ -456,9 +456,9 @@ export default function Navigator({ disableSubmenu, className }) {
                             }
                           >
                             <span
-                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
+                              className={`${i.icon} text-blue text-base flex-shrink-0 w-5`}
                             ></span>
-                            <span>{i.title}</span>
+                            <span class="text-base">{i.title}</span>
                           </Link>
                         </li>
                       ))}
@@ -479,9 +479,9 @@ export default function Navigator({ disableSubmenu, className }) {
                             }
                           >
                             <span
-                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
+                              className={`${i.icon} text-blue text-base flex-shrink-0 w-5`}
                             ></span>
-                            <span>{i.title}</span>
+                            <span class="text-base">{i.title}</span>
                           </Link>
                         </li>
                       ))}
@@ -502,9 +502,9 @@ export default function Navigator({ disableSubmenu, className }) {
                             }
                           >
                             <span
-                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
+                              className={`${i.icon} text-blue text-base flex-shrink-0 w-5`}
                             ></span>
-                            <span>{i.title}</span>
+                            <span class="text-base">{i.title}</span>
                           </Link>
                         </li>
                       ))}
@@ -525,9 +525,9 @@ export default function Navigator({ disableSubmenu, className }) {
                             }
                           >
                             <span
-                              className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
+                              className={`${i.icon} text-blue text-base flex-shrink-0 w-5`}
                             ></span>
-                            <span>{i.title}</span>
+                            <span class="text-base">{i.title}</span>
                           </Link>
                         </li>
                       ))}
@@ -609,7 +609,7 @@ export default function Navigator({ disableSubmenu, className }) {
                 {visible == 3 ? (
                   <div className="ml-2 flex gap-5">
                     <div>
-                      <div className="service-cate text-lg font-semibold mt-5">
+                      <div className="service-cate text-base font-semibold mt-5">
                         Core AWS Services
                       </div>
                       <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -631,14 +631,14 @@ export default function Navigator({ disableSubmenu, className }) {
                               <div className="flex gap-2">
                                 <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                   <i
-                                    className={`${i.icon} text-blue text-md `}
+                                    className={`${i.icon} text-blue text-base `}
                                   ></i>
                                 </div>
                                 <div className="flex flex-col items-start">
-                                  <span className="text-[#565454]">
+                                  <span className="text-[#565454] text-base">
                                     {i.title}
                                   </span>
-                                  <span className="text-xs text-[#91939d]">
+                                  <span className="text-sm text-[#91939d]">
                                     {i.desc}
                                   </span>
                                 </div>
@@ -651,7 +651,7 @@ export default function Navigator({ disableSubmenu, className }) {
                       <hr className="border-none h-[1px] bg-grey"></hr>
                     </div>
                     <div>
-                      <div className="service-cate text-lg font-semibold mt-5">
+                      <div className="service-cate text-base font-semibold mt-5">
                         Specialized Services
                       </div>
                       <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -673,14 +673,14 @@ export default function Navigator({ disableSubmenu, className }) {
                               <div className="flex gap-2">
                                 <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                   <i
-                                    className={`${i.icon} text-blue text-md `}
+                                    className={`${i.icon} text-blue text-base `}
                                   ></i>
                                 </div>
                                 <div className="flex flex-col items-start">
-                                  <span className="text-[#565454]">
+                                  <span className="text-[#565454] text-base">
                                     {i.title}
                                   </span>
-                                  <span className="text-xs text-[#91939d]">
+                                  <span className="text-sm text-[#91939d]">
                                     {i.desc}
                                   </span>
                                 </div>
@@ -771,7 +771,7 @@ export default function Navigator({ disableSubmenu, className }) {
                     <div className="flex gap-20 w-full">
                       <div className="flex flex-col gap-3">
                         <div className=" w-full ">
-                          <div className="service-cate text-lg font-semibold">
+                          <div className="service-cate text-base font-semibold">
                             E-commerce Development
                           </div>
                           <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -796,14 +796,14 @@ export default function Navigator({ disableSubmenu, className }) {
                                   <div className="flex gap-2">
                                     <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                       <i
-                                        className={`${i.icon} text-blue text-md `}
+                                        className={`${i.icon} text-blue text-base `}
                                       ></i>
                                     </div>
                                     <div className="flex flex-col items-start">
-                                      <span className="text-[#565454]">
+                                      <span className="text-[#565454] text-base">
                                         {i.title}
                                       </span>
-                                      <span className="text-xs text-[#91939d]">
+                                      <span className="text-sm text-[#91939d]">
                                         {i.desc}
                                       </span>
                                     </div>
@@ -816,7 +816,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           <hr className="border-none h-[1px] bg-grey"></hr>
                         </div>
                         <div className=" w-full ">
-                          <div className="service-cate text-lg font-semibold">
+                          <div className="service-cate text-base font-semibold">
                             E-commerce Design*
                           </div>
                           <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -841,14 +841,14 @@ export default function Navigator({ disableSubmenu, className }) {
                                   <div className="flex gap-2">
                                     <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                       <i
-                                        className={`${i.icon} text-blue text-md `}
+                                        className={`${i.icon} text-blue text-base `}
                                       ></i>
                                     </div>
                                     <div className="flex flex-col items-start">
-                                      <span className="text-[#565454]">
+                                      <span className="text-[#565454] text-base">
                                         {i.title}
                                       </span>
-                                      <span className="text-xs text-[#91939d]">
+                                      <span className="text-sm text-[#91939d]">
                                         {i.desc}
                                       </span>
                                     </div>
@@ -863,7 +863,7 @@ export default function Navigator({ disableSubmenu, className }) {
                       </div>
                       <div className="flex flex-col gap-3">
                         <div className=" w-full ">
-                          <div className="service-cate text-lg font-semibold">
+                          <div className="service-cate text-base font-semibold">
                             Platform-Specific Development
                           </div>
                           <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -888,14 +888,14 @@ export default function Navigator({ disableSubmenu, className }) {
                                   <div className="flex gap-2">
                                     <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                       <i
-                                        className={`${i.icon} text-blue text-md `}
+                                        className={`${i.icon} text-blue text-base `}
                                       ></i>
                                     </div>
                                     <div className="flex flex-col items-start">
-                                      <span className="text-[#565454]">
+                                      <span className="text-[#565454] text-base">
                                         {i.title}
                                       </span>
-                                      <span className="text-xs text-[#91939d]">
+                                      <span className="text-sm text-[#91939d]">
                                         {i.desc}
                                       </span>
                                     </div>
@@ -908,7 +908,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           <hr className="border-none h-[1px] bg-grey"></hr>
                         </div>
                         <div className=" w-full ">
-                          <div className="service-cate text-lg font-semibold">
+                          <div className="service-cate text-base font-semibold">
                             E-commerce Integration
                           </div>
                           <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -933,14 +933,14 @@ export default function Navigator({ disableSubmenu, className }) {
                                   <div className="flex gap-2">
                                     <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                       <i
-                                        className={`${i.icon} text-blue text-md `}
+                                        className={`${i.icon} text-blue text-base `}
                                       ></i>
                                     </div>
                                     <div className="flex flex-col items-start">
-                                      <span className="text-[#565454]">
+                                      <span className="text-[#565454] text-base">
                                         {i.title}
                                       </span>
-                                      <span className="text-xs text-[#91939d]">
+                                      <span className="text-base text-[#91939d] ">
                                         {i.desc}
                                       </span>
                                     </div>
@@ -956,7 +956,7 @@ export default function Navigator({ disableSubmenu, className }) {
                     </div>
                     {/* <div className="w-1/4 ">
                       <div className="content bg-linear rounded-lg p-6">
-                        <div className="text-lg font-semibold">
+                        <div className="text-base font-semibold">
                           Explore Ecommerce Services
                         </div>
                         <div className="caption1 text-surface1 mt-1">
@@ -971,7 +971,7 @@ export default function Navigator({ disableSubmenu, className }) {
                         </Link>
                         <div className="more-infor mt-8">
                           <div className="mail flex items-center">
-                            <Icon.Envelope className="text-lg" />
+                            <Icon.Envelope className="text-base" />
                             <div className="caption1 pl-2">
                               hi.avitex@gmail.com
                             </div>
@@ -1032,7 +1032,7 @@ export default function Navigator({ disableSubmenu, className }) {
                     <div className=" w-full flex gap-20 ">
                       <div className="flex flex-col gap-3 justify-start">
                         <div className=" w-full ">
-                          <div className="service-cate text-lg font-semibold">
+                          <div className="service-cate text-base font-semibold">
                             Artificial Intelligence and Machine Learning
                           </div>
                           <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -1057,14 +1057,14 @@ export default function Navigator({ disableSubmenu, className }) {
                                   <div className="flex gap-2">
                                     <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                       <i
-                                        className={`${i.icon} text-blue text-md `}
+                                        className={`${i.icon} text-blue text-base `}
                                       ></i>
                                     </div>
                                     <div className="flex flex-col items-start">
-                                      <span className="text-[#565454]">
+                                      <span className="text-[#565454] text-base">
                                         {i.title}
                                       </span>
-                                      <span className="text-xs text-[#91939d]">
+                                      <span className="text-sm text-[#91939d]">
                                         {i.desc}
                                       </span>
                                     </div>
@@ -1077,7 +1077,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           <hr className="border-none h-[1px] bg-grey"></hr>
                         </div>
                         <div className=" w-full ">
-                          <div className="service-cate text-lg font-semibold">
+                          <div className="service-cate text-base font-semibold">
                             Augmented and Virtual Reality
                           </div>
                           <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -1106,10 +1106,10 @@ export default function Navigator({ disableSubmenu, className }) {
                                       ></i>
                                     </div>
                                     <div className="flex flex-col items-start">
-                                      <span className="text-[#565454]">
+                                      <span className="text-[#565454] text-base">
                                         {i.title}
                                       </span>
-                                      <span className="text-xs text-[#91939d]">
+                                      <span className="text-sm text-[#91939d]">
                                         {i.desc}
                                       </span>
                                     </div>
@@ -1122,7 +1122,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           <hr className="border-none h-[1px] bg-grey"></hr>
                         </div>
                         <div className=" w-full ">
-                          <div className="service-cate text-lg font-semibold">
+                          <div className="service-cate text-base font-semibold">
                             Blockchain Technology
                           </div>
                           <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -1147,14 +1147,14 @@ export default function Navigator({ disableSubmenu, className }) {
                                   <div className="flex gap-2">
                                     <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                       <i
-                                        className={`${i.icon} text-blue text-md `}
+                                        className={`${i.icon} text-blue text-base `}
                                       ></i>
                                     </div>
                                     <div className="flex flex-col items-start">
-                                      <span className="text-[#565454]">
+                                      <span className="text-[#565454] text-base">
                                         {i.title}
                                       </span>
-                                      <span className="text-xs text-[#91939d]">
+                                      <span className="text-sm text-[#91939d]">
                                         {i.desc}
                                       </span>
                                     </div>
@@ -1167,7 +1167,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           <hr className="border-none h-[1px] bg-grey"></hr>
                         </div>
                         <div className=" w-full ">
-                          <div className="service-cate text-lg font-semibold">
+                          <div className="service-cate text-base font-semibold">
                             Cloud Computing
                           </div>
                           <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -1192,14 +1192,14 @@ export default function Navigator({ disableSubmenu, className }) {
                                   <div className="flex gap-2">
                                     <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                       <i
-                                        className={`${i.icon} text-blue text-md `}
+                                        className={`${i.icon} text-blue text-base `}
                                       ></i>
                                     </div>
                                     <div className="flex flex-col items-start">
-                                      <span className="text-[#565454]">
+                                      <span className="text-[#565454] text-base">
                                         {i.title}
                                       </span>
-                                      <span className="text-xs text-[#91939d]">
+                                      <span className="text-sm text-[#91939d]">
                                         {i.desc}
                                       </span>
                                     </div>
@@ -1214,7 +1214,7 @@ export default function Navigator({ disableSubmenu, className }) {
                       </div>
                       <div>
                         <div className=" w-full ">
-                          <div className="service-cate text-lg font-semibold">
+                          <div className="service-cate text-base font-semibold">
                             Internet of Things (IoT)
                           </div>
                           <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -1239,14 +1239,14 @@ export default function Navigator({ disableSubmenu, className }) {
                                   <div className="flex gap-2">
                                     <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                       <i
-                                        className={`${i.icon} text-blue text-md `}
+                                        className={`${i.icon} text-blue text-base `}
                                       ></i>
                                     </div>
                                     <div className="flex flex-col items-start">
-                                      <span className="text-[#565454]">
+                                      <span className="text-[#565454] text-base">
                                         {i.title}
                                       </span>
-                                      <span className="text-xs text-[#91939d]">
+                                      <span className="text-sm text-[#91939d]">
                                         {i.desc}
                                       </span>
                                     </div>
@@ -1259,7 +1259,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           <hr className="border-none h-[1px] bg-grey"></hr>
                         </div>
                         <div className=" w-full ">
-                          <div className="service-cate text-lg font-semibold">
+                          <div className="service-cate text-base font-semibold">
                             Cybersecurity
                           </div>
                           <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -1284,14 +1284,14 @@ export default function Navigator({ disableSubmenu, className }) {
                                   <div className="flex gap-2">
                                     <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                       <i
-                                        className={`${i.icon} text-blue text-md `}
+                                        className={`${i.icon} text-blue text-base `}
                                       ></i>
                                     </div>
                                     <div className="flex flex-col items-start">
-                                      <span className="text-[#565454]">
+                                      <span className="text-[#565454] text-base">
                                         {i.title}
                                       </span>
-                                      <span className="text-xs text-[#91939d]">
+                                      <span className="text-sm text-[#91939d]">
                                         {i.desc}
                                       </span>
                                     </div>
@@ -1307,7 +1307,7 @@ export default function Navigator({ disableSubmenu, className }) {
                     </div>
                     {/* <div className="w-1/4 ">
                       <div className="content bg-linear rounded-lg p-6">
-                        <div className="text-lg font-semibold">
+                        <div className="text-base font-semibold">
                           Explore All Emerging Technologies
                         </div>
                         <div className="caption1 text-surface1 mt-1">
@@ -1322,7 +1322,7 @@ export default function Navigator({ disableSubmenu, className }) {
                         </Link>
                         <div className="more-infor mt-8">
                           <div className="mail flex items-center">
-                            <Icon.Envelope className="text-lg" />
+                            <Icon.Envelope className="text-base" />
                             <div className="caption1 pl-2">
                               hi.avitex@gmail.com
                             </div>
@@ -1381,7 +1381,7 @@ export default function Navigator({ disableSubmenu, className }) {
                 {visible == 6 ? (
                   <div className="flex gap-20 ml-2">
                     <div className=" w-full ">
-                      <div className="service-cate text-lg font-semibold">
+                      <div className="service-cate text-base font-semibold">
                         Digital Marketing Services
                       </div>
                       <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
@@ -1402,14 +1402,14 @@ export default function Navigator({ disableSubmenu, className }) {
                               <div className="flex gap-2">
                                 <div className="w-11 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                   <i
-                                    className={`${i.icon} text-blue text-md `}
+                                    className={`${i.icon} text-blue text-base `}
                                   ></i>
                                 </div>
                                 <div className="flex flex-col items-start">
-                                  <span className="text-[#565454]">
+                                  <span className="text-[#565454] text-base">
                                     {i.title}
                                   </span>
-                                  <span className="text-xs text-[#91939d]">
+                                  <span className="text-sm text-[#91939d]">
                                     {i.desc}
                                   </span>
                                 </div>
@@ -1421,7 +1421,7 @@ export default function Navigator({ disableSubmenu, className }) {
                     </div>
                     {/* <div className="w-1/4 ">
                       <div className="content bg-linear rounded-lg p-6">
-                        <div className="text-lg font-semibold">
+                        <div className="text-base font-semibold">
                           Explore All Digital Marketing Services
                         </div>
                         <div className="caption1 text-surface1 mt-1">
@@ -1436,7 +1436,7 @@ export default function Navigator({ disableSubmenu, className }) {
                         </Link>
                         <div className="more-infor mt-8">
                           <div className="mail flex items-center">
-                            <Icon.Envelope className="text-lg" />
+                            <Icon.Envelope className="text-base" />
                             <div className="caption1 pl-2">
                               hi.avitex@gmail.com
                             </div>
@@ -1495,7 +1495,7 @@ export default function Navigator({ disableSubmenu, className }) {
                 {visible == 7 ? (
                   <div className="flex gap-2 ml-2">
                     <div className=" w-3/4 ">
-                      <div className="service-cate text-lg font-semibold">
+                      <div className="service-cate text-base font-semibold">
                         Outsourcing
                       </div>
                       <ul className="grid grid-cols-2 gap-0 gap-y-0 mt-2">
@@ -1514,9 +1514,9 @@ export default function Navigator({ disableSubmenu, className }) {
                               }
                             >
                               <span
-                                className={`${i.icon} text-blue text-lg flex-shrink-0 w-5`}
+                                className={`${i.icon} text-blue text-base flex-shrink-0 w-5`}
                               ></span>
-                              <span>{i.title}</span>
+                              <span class="text-base">{i.title}</span>
                               {/* <span className="">{i.desc}</span> */}
                             </Link>
                           </li>
@@ -1525,7 +1525,7 @@ export default function Navigator({ disableSubmenu, className }) {
                     </div>
                     <div className="w-1/4 ">
                       <div className="content bg-linear rounded-lg p-6">
-                        <div className="text-lg font-semibold">
+                        <div className="text-base font-semibold">
                           Explore All Outsourcing Services
                         </div>
                         <div className="caption1 text-surface1 mt-1">
@@ -1617,7 +1617,7 @@ export default function Navigator({ disableSubmenu, className }) {
                 <div className=" w-full flex gap-5 ">
                   <div>
                     <div>
-                      <div className="service-cate text-lg font-semibold">
+                      <div className="service-cate text-base font-semibold">
                         Digital Transformation
                       </div>
                       <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -1637,10 +1637,12 @@ export default function Navigator({ disableSubmenu, className }) {
                             >
                               <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                 <i
-                                  className={`${i.icon} text-blue text-md  `}
+                                  className={`${i.icon} text-blue text-base  `}
                                 ></i>
                               </div>
-                              <span className="text-[#565454]">{i.title}</span>
+                              <span className="text-[#565454] text-base">
+                                {i.title}
+                              </span>
                             </Link>
                           </li>
                         ))}
@@ -1648,7 +1650,7 @@ export default function Navigator({ disableSubmenu, className }) {
                       <hr className="border-none h-[1px] bg-grey"></hr>
                     </div>
                     <div>
-                      <div className="service-cate text-lg font-semibold mt-5">
+                      <div className="service-cate text-base font-semibold mt-5">
                         Industrial Automation
                       </div>
                       <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -1668,10 +1670,12 @@ export default function Navigator({ disableSubmenu, className }) {
                             >
                               <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                 <i
-                                  className={`${i.icon} text-blue text-md `}
+                                  className={`${i.icon} text-blue text-base `}
                                 ></i>
                               </div>
-                              <span className="text-[#565454]">{i.title}</span>
+                              <span className="text-[#565454] text-base">
+                                {i.title}
+                              </span>
                             </Link>
                           </li>
                         ))}
@@ -1708,7 +1712,7 @@ export default function Navigator({ disableSubmenu, className }) {
                       <hr className="border-none h-[1px] bg-grey"></hr>
                     </div>
                     <div>
-                      <div className="service-cate text-lg font-semibold ">
+                      <div className="service-cate text-base font-semibold ">
                         Product Development
                       </div>
                       <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -1728,10 +1732,12 @@ export default function Navigator({ disableSubmenu, className }) {
                             >
                               <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                 <i
-                                  className={`${i.icon} text-blue text-md `}
+                                  className={`${i.icon} text-blue text-base `}
                                 ></i>
                               </div>
-                              <span className="text-[#565454]">{i.title}</span>
+                              <span className="text-[#565454] text-base">
+                                {i.title}
+                              </span>
                             </Link>
                           </li>
                         ))}
@@ -1741,7 +1747,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                   <div>
                     <div>
-                      <div className="service-cate text-lg font-semibold">
+                      <div className="service-cate text-base font-semibold">
                         Media and Entertainment
                       </div>
                       <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -1761,10 +1767,12 @@ export default function Navigator({ disableSubmenu, className }) {
                             >
                               <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                 <i
-                                  className={`${i.icon} text-blue text-md `}
+                                  className={`${i.icon} text-blue text-base `}
                                 ></i>
                               </div>
-                              <span className="text-[#565454]">{i.title}</span>
+                              <span className="text-[#565454] text-base">
+                                {i.title}
+                              </span>
                             </Link>
                           </li>
                         ))}
@@ -1772,7 +1780,7 @@ export default function Navigator({ disableSubmenu, className }) {
                     </div>
                     <hr className="border-none h-[1px] bg-grey"></hr>
                     <div>
-                      <div className="service-cate text-lg font-semibold mt-5">
+                      <div className="service-cate text-base font-semibold mt-5">
                         Education and Learning
                       </div>
                       <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -1792,10 +1800,12 @@ export default function Navigator({ disableSubmenu, className }) {
                             >
                               <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                 <i
-                                  className={`${i.icon} text-blue text-md `}
+                                  className={`${i.icon} text-blue text-base `}
                                 ></i>
                               </div>
-                              <span className="text-[#565454]">{i.title}</span>
+                              <span className="text-[#565454] text-base">
+                                {i.title}
+                              </span>
                             </Link>
                           </li>
                         ))}
@@ -1803,7 +1813,7 @@ export default function Navigator({ disableSubmenu, className }) {
                     </div>
                     <hr className="border-none h-[1px] bg-grey"></hr>
                     <div>
-                      <div className="service-cate text-lg font-semibold mt-5">
+                      <div className="service-cate text-base font-semibold mt-5">
                         Logistics and Transportation
                       </div>
                       <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -1823,10 +1833,12 @@ export default function Navigator({ disableSubmenu, className }) {
                             >
                               <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                 <i
-                                  className={`${i.icon} text-blue text-md `}
+                                  className={`${i.icon} text-blue text-base `}
                                 ></i>
                               </div>
-                              <span className="text-[#565454]">{i.title}</span>
+                              <span className="text-[#565454] text-base">
+                                {i.title}
+                              </span>
                             </Link>
                           </li>
                         ))}
@@ -1836,7 +1848,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                   <div>
                     <div>
-                      <div className="service-cate text-lg font-semibold">
+                      <div className="service-cate text-base font-semibold">
                         Social and Community
                       </div>
                       <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -1856,10 +1868,12 @@ export default function Navigator({ disableSubmenu, className }) {
                             >
                               <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                 <i
-                                  className={`${i.icon} text-blue text-md `}
+                                  className={`${i.icon} text-blue text-base `}
                                 ></i>
                               </div>
-                              <span className="text-[#565454]">{i.title}</span>
+                              <span className="text-[#565454] text-base">
+                                {i.title}
+                              </span>
                             </Link>
                           </li>
                         ))}
@@ -1867,7 +1881,7 @@ export default function Navigator({ disableSubmenu, className }) {
                     </div>
                     <hr className="border-none h-[1px] bg-grey"></hr>
                     <div>
-                      <div className="service-cate text-lg font-semibold mt-5">
+                      <div className="service-cate text-base font-semibold mt-5">
                         Travel and Hospitality
                       </div>
                       <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -1887,10 +1901,12 @@ export default function Navigator({ disableSubmenu, className }) {
                             >
                               <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                 <i
-                                  className={`${i.icon} text-blue text-md `}
+                                  className={`${i.icon} text-blue text-base `}
                                 ></i>
                               </div>
-                              <span className="text-[#565454]">{i.title}</span>
+                              <span className="text-[#565454] text-base">
+                                {i.title}
+                              </span>
                             </Link>
                           </li>
                         ))}
@@ -1898,7 +1914,7 @@ export default function Navigator({ disableSubmenu, className }) {
                     </div>
                     <hr className="border-none h-[1px] bg-grey"></hr>
                     <div>
-                      <div className="service-cate text-lg font-semibold mt-5">
+                      <div className="service-cate text-base font-semibold mt-5">
                         Food and Beverage
                       </div>
                       <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -1918,10 +1934,12 @@ export default function Navigator({ disableSubmenu, className }) {
                             >
                               <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                 <i
-                                  className={`${i.icon} text-blue text-md `}
+                                  className={`${i.icon} text-blue text-base `}
                                 ></i>
                               </div>
-                              <span className="text-[#565454]">{i.title}</span>
+                              <span className="text-[#565454] text-base">
+                                {i.title}
+                              </span>
                             </Link>
                           </li>
                         ))}
@@ -1931,7 +1949,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   </div>
                   <div>
                     <div>
-                      <div className="service-cate text-lg font-semibold">
+                      <div className="service-cate text-base font-semibold">
                         Other Services
                       </div>
                       <ul className="grid grid-cols-1 gap-0 gap-y-0 mt-2">
@@ -1951,10 +1969,12 @@ export default function Navigator({ disableSubmenu, className }) {
                             >
                               <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                 <i
-                                  className={`${i.icon} text-blue text-md `}
+                                  className={`${i.icon} text-blue text-base `}
                                 ></i>
                               </div>
-                              <span className="text-[#565454]">{i.title}</span>
+                              <span className="text-[#565454] text-base">
+                                {i.title}
+                              </span>
                             </Link>
                           </li>
                         ))}
@@ -1969,7 +1989,7 @@ export default function Navigator({ disableSubmenu, className }) {
           </li>
         );
       }
-      if (item.title === "Pages") {
+      if (item.title === "Our Work") {
         return (
           <li
             className={`relative ${
@@ -1980,16 +2000,186 @@ export default function Navigator({ disableSubmenu, className }) {
             <Link href={process.env.PUBLIC_URL + item.to}>
               <span className="text-white">{item.title}</span>
             </Link>
-            <ul className="dropdown-menu style-pages grid grid-cols-2 gap-5">
+            <ul className="dropdown-menu style-pages ">
               {item.subMenu?.map((i, index) => (
-                <li
-                  key={index}
-                  className={`${pathname.includes(i.to) ? "active" : ""}`}
-                >
-                  <Link href={i.to}>
-                    <span className="text-white">{i.title}</span>
-                  </Link>
-                </li>
+                // <li
+                //   key={index}
+                //   className={`${pathname.includes(i.to) ? "active" : ""}`}
+                // >
+                //   <Link href={i.to}>
+                //     <span className="text-white">{i.title}</span>
+                //   </Link>
+                // </li>
+                <div
+                    className={`w-full transition-all py-1 mb-2 ${
+                      item.id === active ? "bg-[#e8edfc] scale-[1.01]" : ""
+                    } hover:bg-[#e8edfc] hover:scale-[1.01] focus:bg-[#e8edfc] focus:scale-[1.01] active:bg-[#e8edfc]`}
+                    key={index}
+                    // onMouseEnter={() => {
+                    //   handleHover(item.id);
+                    //   handleActive(item.id);
+                    //   activeClass(item.id);
+                    // }}
+                  >
+                    <button className=" text-black w-[20rem] dark:text-white h-10 p-2 px-5  text-sm text-left font-semibold flex gap-2 justify-start items-center">
+                      <div className="w-10 aspect-video border border-grey p-2 flex bg-white rounded-[50%] justify-center items-center ">
+                        <i
+                          className={`${i.icon} text-blue text-base   hover:bg-linear aspect-square`}
+                        ></i>
+                      </div>
+                      <div className="flex flex-col justify-start">
+                        <span className="text-base">{i.title}</span>
+                        <span className=" text-[#91939d] text-sm">{i.desc}</span>
+                      </div>
+                    </button>
+                  </div>
+              ))}
+            </ul>
+          </li>
+        );
+      }
+      if (item.title === "Packages") {
+        return (
+          <li
+            className={`relative ${
+              pathname.includes("/pages/") ? "active" : ""
+            }`}
+            key={index}
+          >
+            <Link href={process.env.PUBLIC_URL + item.to}>
+              <span className="text-white">{item.title}</span>
+            </Link>
+            <ul className="dropdown-menu style-pages ">
+              {item.subMenu?.map((i, index) => (
+                // <li
+                //   key={index}
+                //   className={`${pathname.includes(i.to) ? "active" : ""}`}
+                // >
+                //   <Link href={i.to}>
+                //     <span className="text-white">{i.title}</span>
+                //   </Link>
+                // </li>
+                <div
+                    className={`w-full transition-all py-1 mb-2 ${
+                      item.id === active ? "bg-[#e8edfc] scale-[1.01]" : ""
+                    } hover:bg-[#e8edfc] hover:scale-[1.01] focus:bg-[#e8edfc] focus:scale-[1.01] active:bg-[#e8edfc]`}
+                    key={index}
+                    // onMouseEnter={() => {
+                    //   handleHover(item.id);
+                    //   handleActive(item.id);
+                    //   activeClass(item.id);
+                    // }}
+                  >
+                    <button className=" text-black dark:text-white h-10 p-2 px-5  text-sm text-left font-semibold flex gap-4 justify-start items-center">
+                      <div className="w-10 aspect-video border border-grey p-2 flex bg-white rounded-[50%] justify-center items-center ">
+                        <i
+                          className={`${i.icon} text-blue text-base   hover:bg-linear aspect-square`}
+                        ></i>
+                      </div>
+                      <div className="flex flex-col justify-start">
+                        <span class="text-base">{i.title}</span>
+                        <span className=" text-[#91939d] text-sm">{i.desc}</span>
+                      </div>
+                    </button>
+                  </div>
+              ))}
+            </ul>
+          </li>
+        );
+      }
+      if (item.title === "About") {
+        return (
+          <li
+            className={`relative ${
+              pathname.includes("/pages/") ? "active" : ""
+            }`}
+            key={index}
+          >
+            <Link href={process.env.PUBLIC_URL + item.to}>
+              <span className="text-white">{item.title}</span>
+            </Link>
+            <ul className="dropdown-menu style-pages ">
+              {item.subMenu?.map((i, index) => (
+                // <li
+                //   key={index}
+                //   className={`${pathname.includes(i.to) ? "active" : ""}`}
+                // >
+                //   <Link href={i.to}>
+                //     <span className="text-white">{i.title}</span>
+                //   </Link>
+                // </li>
+                <div
+                    className={`w-full transition-all py-1 mb-2 ${
+                      item.id === active ? "bg-[#e8edfc] scale-[1.01]" : ""
+                    } hover:bg-[#e8edfc] hover:scale-[1.01] focus:bg-[#e8edfc] focus:scale-[1.01] active:bg-[#e8edfc]`}
+                    key={index}
+                    // onMouseEnter={() => {
+                    //   handleHover(item.id);
+                    //   handleActive(item.id);
+                    //   activeClass(item.id);
+                    // }}
+                  >
+                    <button className=" text-black dark:text-white h-10 p-2 px-5  text-sm text-left font-semibold flex gap-4 justify-start items-center">
+                      <div className="w-10 aspect-video border border-grey p-2 flex bg-white rounded-[50%] justify-center items-center ">
+                        <i
+                          className={`${i.icon} text-blue text-lg   hover:bg-linear aspect-square`}
+                        ></i>
+                      </div>
+                      <div className="flex flex-col justify-start">
+                        <span class="text-base">{i.title}</span>
+                        <span className=" text-[#91939d] text-sm">{i.desc}</span>
+                      </div>
+                    </button>
+                  </div>
+              ))}
+            </ul>
+          </li>
+        );
+      }
+      if (item.title === "Support") {
+        return (
+          <li
+            className={`relative ${
+              pathname.includes("/pages/") ? "active" : ""
+            }`}
+            key={index}
+          >
+            <Link href={process.env.PUBLIC_URL + item.to}>
+              <span className="text-white">{item.title}</span>
+            </Link>
+            <ul className="dropdown-menu style-pages ">
+              {item.subMenu?.map((i, index) => (
+                // <li
+                //   key={index}
+                //   className={`${pathname.includes(i.to) ? "active" : ""}`}
+                // >
+                //   <Link href={i.to}>
+                //     <span className="text-white">{i.title}</span>
+                //   </Link>
+                // </li>
+                <div
+                    className={`w-full transition-all py-1 mb-2 ${
+                      item.id === active ? "bg-[#e8edfc] scale-[1.01]" : ""
+                    } hover:bg-[#e8edfc] hover:scale-[1.01] focus:bg-[#e8edfc] focus:scale-[1.01] active:bg-[#e8edfc]`}
+                    key={index}
+                    // onMouseEnter={() => {
+                    //   handleHover(item.id);
+                    //   handleActive(item.id);
+                    //   activeClass(item.id);
+                    // }}
+                  >
+                    <button className=" text-black w-[20rem] dark:text-white h-10 p-2 px-5  text-sm text-left font-semibold flex gap-4 justify-start items-center">
+                      <div className="w-10 aspect-video border border-grey p-2 flex bg-white rounded-[50%] justify-center items-center ">
+                        <i
+                          className={`${i.icon} text-blue text-lg   hover:bg-linear aspect-square`}
+                        ></i>
+                      </div>
+                      <div className="flex flex-col justify-start">
+                        <span class="text-base">{i.title}</span>
+                        <span className=" text-[#91939d] text-sm">{i.desc}</span>
+                      </div>
+                    </button>
+                  </div>
               ))}
             </ul>
           </li>
@@ -2017,7 +2207,7 @@ export default function Navigator({ disableSubmenu, className }) {
                   className={`${pathname.includes(i.to) ? "active" : ""}`}
                 >
                   <Link href={i.to}>
-                    <span>{i.title}</span>
+                    <span class="text-base">{i.title}</span>
                   </Link>
                 </li>
               ))}
