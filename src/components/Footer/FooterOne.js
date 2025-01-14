@@ -189,9 +189,9 @@ export default function FooterOne({ classname }) {
                 </div>
               </div>
             </div> */}
-            <div className="w-full md:w-1/2">
-              <div className="footer-navigate flex md:justify-evenly max-md:gap-20 max-sm:gap-y-6 max-sm:flex-wrap">
-                <div className="w-1/4">
+            <div className="w-full">
+              <div className="footer-navigate flex md:justify-evenly max-sm:gap-4 max-sm:flex-wrap">
+                <div className="w-full sm:w-1/4">
                   <div className="item-heading text-button">About Company</div>
                   <ul className="list-nav mt-3">
                     {data.map(
@@ -219,66 +219,70 @@ export default function FooterOne({ classname }) {
                     )}
                   </ul>
                 </div>
-                <div className="w-1/2 flex flex-col ">
+                <div className="w-full sm:w-1/4">
                   <div className="item-heading text-button">Services</div>
-                  <div className="flex">
-                    <div className="w-1/2">
-                      <ul className="list-nav mt-3">
-                        {data.map(
-                          (item) =>
-                            item.title === "Mobile Service" && (
-                              <div>
-                                {item.submenu.map((item, index) => (
-                                  <li className="mt-2" key={index}>
-                                    <Link
-                                      className={`caption1 hover-underline ${
-                                        classname && "underline-white"
-                                      }`}
-                                      // href={process.env.PUBLIC_URL + "/services/[slug]"}
-                                      // as={
-                                      //   process.env.PUBLIC_URL + "/services/" + convertToSlug(item.title) + "?id=" + item.id
-                                      // }
-                                      href="#!"
-                                    >
-                                      {item.title}
-                                    </Link>
-                                  </li>
-                                ))}
-                              </div>
-                            )
-                        )}
-                      </ul>
-                    </div>
-                    <div className="w-1/2">
-                      <ul className="list-nav mt-3">
-                        {data.map(
-                          (item) =>
-                            item.title === "Web Services" && (
-                              <div>
-                                {item.submenu.map((item, index) => (
-                                  <li className="mt-2" key={index}>
-                                    <Link
-                                      className={`caption1 hover-underline ${
-                                        classname && "underline-white"
-                                      }`}
-                                      // href={process.env.PUBLIC_URL + "/services/[slug]"}
-                                      // as={
-                                      //   process.env.PUBLIC_URL + "/services/" + convertToSlug(item.title) + "?id=" + item.id
-                                      // }
-                                      href="#!"
-                                    >
-                                      {item.title}
-                                    </Link>
-                                  </li>
-                                ))}
-                              </div>
-                            )
-                        )}
-                      </ul>
-                    </div>
+                  {/* <div className="flex"> */}
+                  <div className="w-1/2">
+                    <ul className="list-nav mt-3">
+                      {data.map(
+                        (item) =>
+                          item.title === "Mobile Service" && (
+                            <div>
+                              {item.submenu.map((item, index) => (
+                                <li className="mt-2" key={index}>
+                                  <Link
+                                    className={`caption1 hover-underline ${
+                                      classname && "underline-white"
+                                    }`}
+                                    // href={process.env.PUBLIC_URL + "/services/[slug]"}
+                                    // as={
+                                    //   process.env.PUBLIC_URL + "/services/" + convertToSlug(item.title) + "?id=" + item.id
+                                    // }
+                                    href="#!"
+                                  >
+                                    {item.title}
+                                  </Link>
+                                </li>
+                              ))}
+                            </div>
+                          )
+                      )}
+                    </ul>
+                  </div>
+
+                  {/* </div> */}
+                </div>
+                <div className="w-full sm:w-1/4">
+                  <div className="w-1/2">
+                    <ul className="list-nav mt-3">
+                      {data.map(
+                        (item) =>
+                          item.title === "Web Services" && (
+                            <div>
+                              {item.submenu.map((item, index) => (
+                                <li className="mt-2" key={index}>
+                                  <Link
+                                    className={`caption1 hover-underline ${
+                                      classname && "underline-white"
+                                    }`}
+                                    // href={process.env.PUBLIC_URL + "/services/[slug]"}
+                                    // as={
+                                    //   process.env.PUBLIC_URL + "/services/" + convertToSlug(item.title) + "?id=" + item.id
+                                    // }
+                                    href="#!"
+                                  >
+                                    {item.title}
+                                  </Link>
+                                </li>
+                              ))}
+                            </div>
+                          )
+                      )}
+                    </ul>
                   </div>
                 </div>
-                <div className="w-1/4">
+
+                <div className="w-full sm:w-1/4">
                   <div className="item-heading text-button">RESOURCES</div>
                   <ul className="list-nav mt-3">
                     {data.map(
@@ -310,8 +314,8 @@ export default function FooterOne({ classname }) {
             </div>
             <div className="xl:w-1/4 w-full">
               <div className="company-contact max-xl:w-1/2 max-sm:w-full">
-                <div className="heading text-button">Newsletter</div>
-                <div className="send-block mt-4 flex items-center w-full relative">
+                {/* <div className="heading text-button">Newsletter</div> */}
+                {/* <div className="send-block mt-4 flex items-center w-full relative">
                   <Icon.Envelope className="text-lg absolute top-1/2 left-0 -translate-y-1/2" />
                   <input
                     className={`caption1 w-full h-[50px] pl-7 pr-9 bg-transparent border-b ${
@@ -325,7 +329,7 @@ export default function FooterOne({ classname }) {
                   <button className="absolute right-0 top-1/2 -translate-y-1/2">
                     <Icon.PaperPlaneTilt className="text-2xl" />
                   </button>
-                </div>
+                </div> */}
                 <div className="list-social flex items-center flex-wrap gap-2.5 mt-7">
                   <Link
                     className={`item rounded-full w-10 h-10 flex items-center justify-center duration-300 border ${
@@ -385,8 +389,8 @@ export default function FooterOne({ classname }) {
                 </div>
               </div>
             </div>
-            <div className="flex xl:w-1/4 md:w-1/2">
-              <div className="w-1/4 flex flex-col gap-3">
+            <div className="flex flex-col gap-10 md:flex-col lg:flex-row xl:flex-row">
+              <div className="w-full md:w-1/4 flex flex-col gap-3">
                 <div className="heading text-button flex gap-2 items-center">
                   {" "}
                   <div className="w-12 aspect-video border border-grey p-2 flex bg-white rounded-[50%] justify-center items-center ">
@@ -458,7 +462,7 @@ export default function FooterOne({ classname }) {
                   Opening Hours: 10:00 - 18:00
                 </div>
               </div>
-              <div className="w-1/4 flex flex-col gap-3">
+              <div className="w-full md:w-1/4 flex flex-col gap-3">
                 <div className="flex flex-col gap-3">
                   <div className="heading text-button flex gap-2 items-center">
                     <div className="w-12 aspect-video border border-grey p-2 flex bg-white rounded-[50%] justify-center items-center ">
@@ -559,7 +563,7 @@ export default function FooterOne({ classname }) {
                   </div>
                 </div>
               </div>
-              <div className="w-1/4 flex flex-col gap-3">
+              <div className="w-full md:w-1/4 flex flex-col gap-3">
                 <div className="heading text-button flex gap-2 items-center">
                   <div className="w-12 aspect-video border border-grey p-2 flex bg-white rounded-[50%] justify-center items-center ">
                     <svg
@@ -595,7 +599,7 @@ export default function FooterOne({ classname }) {
                   Paris
                 </div>
               </div>
-              <div className="w-1/4 flex flex-col gap-3">
+              <div className="w-full md:w-1/4 flex flex-col gap-3">
                 <div className="heading text-button flex gap-2 items-center">
                   <div className="w-12 aspect-video border border-grey p-2 flex bg-white rounded-[50%] justify-center items-center ">
                     <svg

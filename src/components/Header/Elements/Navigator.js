@@ -2021,10 +2021,10 @@ export default function Navigator({ disableSubmenu, className }) {
                     //   activeClass(item.id);
                     // }}
                   >
-                    <button className=" text-black w-[20rem] dark:text-white h-10 p-2 px-5  text-sm text-left font-semibold flex gap-2 justify-start items-center">
-                      <div className="w-10 aspect-video border border-grey p-2 flex bg-white rounded-[50%] justify-center items-center ">
+                    <button className=" text-black w-[20rem] dark:text-white h-10  text-sm text-left font-semibold flex gap-2 justify-start items-center">
+                      <div className="w-10 aspect-video border border-grey p-2 ml-1 flex bg-white rounded-[50%] justify-center items-center ">
                         <i
-                          className={`${i.icon} text-blue text-base   hover:bg-linear aspect-square`}
+                          className={`${i.icon} text-blue text-base   hover:bg-linear aspect-square `}
                         ></i>
                       </div>
                       <div className="flex flex-col justify-start">
@@ -2070,8 +2070,8 @@ export default function Navigator({ disableSubmenu, className }) {
                     //   activeClass(item.id);
                     // }}
                   >
-                    <button className=" text-black dark:text-white h-10 p-2 px-5  text-sm text-left font-semibold flex gap-4 justify-start items-center">
-                      <div className="w-10 aspect-video border border-grey p-2 flex bg-white rounded-[50%] justify-center items-center ">
+                    <button className=" text-black dark:text-white h-10  text-sm text-left font-semibold flex gap-2 justify-start items-center">
+                      <div className="w-10 aspect-video border border-grey p-2 flex ml-1 bg-white rounded-[50%] justify-center items-center ">
                         <i
                           className={`${i.icon} text-blue text-base   hover:bg-linear aspect-square`}
                         ></i>
@@ -2119,8 +2119,8 @@ export default function Navigator({ disableSubmenu, className }) {
                     //   activeClass(item.id);
                     // }}
                   >
-                    <button className=" text-black dark:text-white h-10 p-2 px-5  text-sm text-left font-semibold flex gap-4 justify-start items-center">
-                      <div className="w-10 aspect-video border border-grey p-2 flex bg-white rounded-[50%] justify-center items-center ">
+                    <button className=" text-black dark:text-white h-10  text-sm text-left font-semibold flex gap-2 justify-start items-center">
+                      <div className="w-10 aspect-video border border-grey p-2 ml-1 flex bg-white rounded-[50%] justify-center items-center ">
                         <i
                           className={`${i.icon} text-blue text-lg   hover:bg-linear aspect-square`}
                         ></i>
@@ -2168,8 +2168,8 @@ export default function Navigator({ disableSubmenu, className }) {
                     //   activeClass(item.id);
                     // }}
                   >
-                    <button className=" text-black w-[20rem] dark:text-white h-10 p-2 px-5  text-sm text-left font-semibold flex gap-4 justify-start items-center">
-                      <div className="w-10 aspect-video border border-grey p-2 flex bg-white rounded-[50%] justify-center items-center ">
+                    <button className=" text-black w-[20rem] dark:text-white h-10  text-sm text-left font-semibold flex gap-2 justify-start items-center">
+                      <div className="w-10 aspect-video border border-grey p-2 ml-1 flex bg-white rounded-[50%] justify-center items-center ">
                         <i
                           className={`${i.icon} text-blue text-lg   hover:bg-linear aspect-square`}
                         ></i>

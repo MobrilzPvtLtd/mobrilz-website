@@ -12,16 +12,16 @@ const CaseStudyOne = ({ classname, data, start, limit }) => {
             <div className="container">
                 <div className="flex items-center justify-between w-full max-lg:flex-wrap gap-y-2">
                     <div className="max-lg:w-full">
-                        <div className="tag text-label">Why we do</div>
-                        <h3 className="heading3 mt-3">Case studies</h3>
+                        <div className="tag text-label">Our Blogs</div>
+                        <h3 className="heading3 mt-3 text-center w-full">Blogs</h3>
                     </div>
-                    <div className="xl:w-5/12 lg:w-1/2 w-full">
-                        <span className="body2">Case studies that showcase the agency's approach, process, and results for specific clients.</span>
-                    </div>
+                    {/* <div className="xl:w-5/12 lg:w-1/2 w-full">
+                        <span className="body2">Explores Our Blogs</span>
+                    </div> */}
                 </div>
                 <div className="list md:mt-10 mt-6 overflow-hidden">
                     <Swiper
-                        spaceBetween={24}
+                        spaceBetween={50}
                         slidesPerView={1}
                         loop={true}
                         pagination={{ clickable: true }}
@@ -39,7 +39,7 @@ const CaseStudyOne = ({ classname, data, start, limit }) => {
                         }}
                     >
                         {data.slice(start, limit).map((item, index) => (
-                            <SwiperSlide key={index}>
+                            <SwiperSlide className="px-10" key={index}>
                                 <CaseStudyItem data={item} style={'style-one'} />
                             </SwiperSlide>
                         ))}
