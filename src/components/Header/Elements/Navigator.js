@@ -1605,7 +1605,7 @@ export default function Navigator({ disableSubmenu, className }) {
         return (
           <li
             key={index}
-            className={`${pathname.includes("/services/") ? "active" : ""}`}
+            className={`${pathname.includes("/industry/") ? "active" : ""}`}
             onMouseLeave={() => activeClass(1)}
           >
             <Link href={process.env.PUBLIC_URL + item.to}>
@@ -1628,7 +1628,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
                               as={
                                 process.env.PUBLIC_URL +
                                 "/services/" +
@@ -1661,10 +1661,10 @@ export default function Navigator({ disableSubmenu, className }) {
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
                               as={
                                 process.env.PUBLIC_URL +
-                                "/services/" +
+                                "/industry/" +
                                 convertToSlug(i.title)
                               }
                             >
@@ -1723,7 +1723,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
                               as={
                                 process.env.PUBLIC_URL +
                                 "/services/" +
@@ -1758,7 +1758,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
                               as={
                                 process.env.PUBLIC_URL +
                                 "/services/" +
@@ -1791,7 +1791,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
                               as={
                                 process.env.PUBLIC_URL +
                                 "/services/" +
@@ -1824,7 +1824,7 @@ export default function Navigator({ disableSubmenu, className }) {
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
                               as={
                                 process.env.PUBLIC_URL +
                                 "/services/" +
@@ -1859,10 +1859,10 @@ export default function Navigator({ disableSubmenu, className }) {
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
                               as={
                                 process.env.PUBLIC_URL +
-                                "/services/" +
+                                "/industry/" +
                                 convertToSlug(i.title)
                               }
                             >
@@ -1892,10 +1892,10 @@ export default function Navigator({ disableSubmenu, className }) {
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
                               as={
                                 process.env.PUBLIC_URL +
-                                "/services/" +
+                                "/industry/" +
                                 convertToSlug(i.title)
                               }
                             >
@@ -1925,10 +1925,10 @@ export default function Navigator({ disableSubmenu, className }) {
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
                               as={
                                 process.env.PUBLIC_URL +
-                                "/services/" +
+                                "/industry/" +
                                 convertToSlug(i.title)
                               }
                             >
@@ -1960,10 +1960,10 @@ export default function Navigator({ disableSubmenu, className }) {
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
                               as={
                                 process.env.PUBLIC_URL +
-                                "/services/" +
+                                "/industry/" +
                                 convertToSlug(i.title)
                               }
                             >
