@@ -53,7 +53,7 @@ export default function BrandOne({ classname }) {
             >
               {logos.map((logo, index) => (
                 <SwiperSlide key={index}>
-                  <Link href={'#!'} scroll={false} className="brand-item flex items-center justify-center">
+                  <Link href={'#!'} scroll={false} className="brand-item grid grid-rows-2 items-center justify-center">
                     <Image width={4000} height={3000} src={logo} alt="1" className="lg:h-[44px] h-9 w-auto" />
                   </Link>
                 </SwiperSlide>
