@@ -218,11 +218,68 @@ export default function FooterOne({ classname }) {
                         )
                     )}
                   </ul>
+                  <div className="list-social flex items-center flex-wrap gap-2.5 mt-7">
+                  <Link
+                    className={`item rounded-full w-10 h-10 flex items-center justify-center duration-300 border ${
+                      classname
+                        ? "border-surface2 hover:text-black hover:bg-white"
+                        : "border-black hover:text-white hover:bg-black"
+                    }`}
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                  >
+                    <i className="icon-facebook text-base"></i>
+                  </Link>
+                  <Link
+                    className={`item rounded-full w-10 h-10 flex items-center justify-center duration-300 border ${
+                      classname
+                        ? "border-surface2 hover:text-black hover:bg-white"
+                        : "border-black hover:text-white hover:bg-black"
+                    }`}
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                  >
+                    <i className="icon-linkedin text-base"></i>
+                  </Link>
+                  <Link
+                    className={`item rounded-full w-10 h-10 flex items-center justify-center duration-300 border ${
+                      classname
+                        ? "border-surface2 hover:text-black hover:bg-white"
+                        : "border-black hover:text-white hover:bg-black"
+                    }`}
+                    href="https://www.twitter.com/"
+                    target="_blank"
+                  >
+                    <i className="icon-twitter text-base"></i>
+                  </Link>
+                  <Link
+                    className={`item rounded-full w-10 h-10 flex items-center justify-center duration-300 border ${
+                      classname
+                        ? "border-surface2 hover:text-black hover:bg-white"
+                        : "border-black hover:text-white hover:bg-black"
+                    }`}
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                  >
+                    <i className="icon-youtube text-base"></i>
+                  </Link>
+                  <Link
+                    className={`item rounded-full w-10 h-10 flex items-center justify-center duration-300 border ${
+                      classname
+                        ? "border-surface2 hover:text-black hover:bg-white"
+                        : "border-black hover:text-white hover:bg-black"
+                    }`}
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                  >
+                    <i className="icon-instagram text-sm"></i>
+                  </Link>
+                </div>
                 </div>
                 <div className="w-full sm:w-1/4">
                   <div className="item-heading text-button">Services</div>
                   {/* <div className="flex"> */}
-                  <div className="w-1/2">
+                  <div className="w-full">
                     <ul className="list-nav mt-3">
                       {data.map(
                         (item) =>
@@ -253,7 +310,7 @@ export default function FooterOne({ classname }) {
                   {/* </div> */}
                 </div>
                 <div className="w-full sm:w-1/4">
-                  <div className="w-1/2">
+                  <div className="w-full">
                     <ul className="list-nav mt-3">
                       {data.map(
                         (item) =>
@@ -330,63 +387,7 @@ export default function FooterOne({ classname }) {
                     <Icon.PaperPlaneTilt className="text-2xl" />
                   </button>
                 </div> */}
-                <div className="list-social flex items-center flex-wrap gap-2.5 mt-7">
-                  <Link
-                    className={`item rounded-full w-10 h-10 flex items-center justify-center duration-300 border ${
-                      classname
-                        ? "border-surface2 hover:text-black hover:bg-white"
-                        : "border-black hover:text-white hover:bg-black"
-                    }`}
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                  >
-                    <i className="icon-facebook text-base"></i>
-                  </Link>
-                  <Link
-                    className={`item rounded-full w-10 h-10 flex items-center justify-center duration-300 border ${
-                      classname
-                        ? "border-surface2 hover:text-black hover:bg-white"
-                        : "border-black hover:text-white hover:bg-black"
-                    }`}
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                  >
-                    <i className="icon-linkedin text-base"></i>
-                  </Link>
-                  <Link
-                    className={`item rounded-full w-10 h-10 flex items-center justify-center duration-300 border ${
-                      classname
-                        ? "border-surface2 hover:text-black hover:bg-white"
-                        : "border-black hover:text-white hover:bg-black"
-                    }`}
-                    href="https://www.twitter.com/"
-                    target="_blank"
-                  >
-                    <i className="icon-twitter text-base"></i>
-                  </Link>
-                  <Link
-                    className={`item rounded-full w-10 h-10 flex items-center justify-center duration-300 border ${
-                      classname
-                        ? "border-surface2 hover:text-black hover:bg-white"
-                        : "border-black hover:text-white hover:bg-black"
-                    }`}
-                    href="https://www.youtube.com/"
-                    target="_blank"
-                  >
-                    <i className="icon-youtube text-base"></i>
-                  </Link>
-                  <Link
-                    className={`item rounded-full w-10 h-10 flex items-center justify-center duration-300 border ${
-                      classname
-                        ? "border-surface2 hover:text-black hover:bg-white"
-                        : "border-black hover:text-white hover:bg-black"
-                    }`}
-                    href="https://www.instagram.com/"
-                    target="_blank"
-                  >
-                    <i className="icon-instagram text-sm"></i>
-                  </Link>
-                </div>
+                
               </div>
             </div>
             <div className="flex flex-col gap-10 md:flex-col lg:flex-row xl:flex-row">
