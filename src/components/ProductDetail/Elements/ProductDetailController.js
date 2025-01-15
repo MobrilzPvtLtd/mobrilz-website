@@ -7,7 +7,6 @@ import classNames from "classnames";
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 
 import Quantity from "../../Control/Quantity";
-import AddToCart from "../../Control/AddToCart";
 import Button from "../../Control/Button";
 import {
   getAvaiableQuantityInCart,
@@ -18,7 +17,6 @@ import {
 export default function ProductDetailController({
   data,
   getQuantity,
-  onAddToCart,
   onAddToWishList,
 }) {
   const [quantity, setQuantity] = useState();
@@ -40,12 +38,7 @@ export default function ProductDetailController({
         maxValue={avaiableProduct}
       />
       <div className="flex items-center justify-between gap-2 w-full">
-        <AddToCart
-          className={`w-full text-center rounded ${classNames({
-            "-disable": quantity > avaiableProduct || data.quantity < 1,
-          })}`}
-          onClick={onAddToCart}
-        />
+        
         <div className="product-detail__controler__actions">
           <div data-tip data-for="add-wishlist">
             <Button
