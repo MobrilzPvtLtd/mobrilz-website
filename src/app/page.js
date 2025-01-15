@@ -17,6 +17,7 @@ import ContactOne from "@/components/Sections/Contact/ContactOne";
 import SliderTwo from "@/components/Sections/Slider/SliderTwo";
 import allCss from "../styles/components/all.css"
 import Head from 'next/head';
+import PortfolioPage from "./pages/portfolio/page";
 
 export default function Home() {
  
@@ -36,6 +37,7 @@ export default function Home() {
         <SolutionOne data={serviceData} start={0} limit={6} />
         <ServiceOne data={serviceData} start={6} limit={16} />
         <CaseStudyOne classname={'bg-linear lg:mt-20 sm:mt-14 mt-10 lg:py-20 sm:py-14 py-10'} data={caseStudyData} start={0} limit={5} />
+        <PortfolioPage/>
         {/* <BannerOne /> */}
         <BrandOne classname={'bg-white lg:py-20 md:py-14 py-10'} />
         <TestimonialOne data={testimonialData} />

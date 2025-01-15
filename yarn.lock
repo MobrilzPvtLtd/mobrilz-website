@@ -570,6 +570,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tabler/icons-react@npm:^3.28.1":
+  version: 3.28.1
+  resolution: "@tabler/icons-react@npm:3.28.1"
+  dependencies:
+    "@tabler/icons": "npm:3.28.1"
+  peerDependencies:
+    react: ">= 16"
+  checksum: 10c0/fe8b7baaae5a2c896c519c509d3c05e83cf4ea0c5b683add200cd2c0587a66a590a3ca26f54e91a8ee2b15c519c0854651c11490c2eab8ef111cee9b8e76b3e3
+  languageName: node
+  linkType: hard
+
+"@tabler/icons@npm:3.28.1":
+  version: 3.28.1
+  resolution: "@tabler/icons@npm:3.28.1"
+  checksum: 10c0/330f738b74d203e910382725f4ff6b9c177f8738a54c71fc6e56c3204cf21749b0512148650ae85c211692c49aa5e03f09f2ea8458688309d917bb65f698dbd0
+  languageName: node
+  linkType: hard
+
 "@types/prop-types@npm:*":
   version: 15.7.13
   resolution: "@types/prop-types@npm:15.7.13"
@@ -869,7 +887,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clsx@npm:^2.0.0, clsx@npm:^2.1.0":
+"clsx@npm:^2.0.0, clsx@npm:^2.1.0, clsx@npm:^2.1.1":
   version: 2.1.1
   resolution: "clsx@npm:2.1.1"
   checksum: 10c0/c4c8eb865f8c82baab07e71bfa8897c73454881c4f99d6bc81585aecd7c441746c1399d08363dc096c550cceaf97bd4ce1e8854e1771e9998d9f94c4fe075839
@@ -1104,6 +1122,28 @@ __metadata:
   version: 4.3.7
   resolution: "fraction.js@npm:4.3.7"
   checksum: 10c0/df291391beea9ab4c263487ffd9d17fed162dbb736982dee1379b2a8cc94e4e24e46ed508c6d278aded9080ba51872f1bc5f3a5fd8d7c74e5f105b508ac28711
+  languageName: node
+  linkType: hard
+
+"framer-motion@npm:^11.18.0":
+  version: 11.18.0
+  resolution: "framer-motion@npm:11.18.0"
+  dependencies:
+    motion-dom: "npm:^11.16.4"
+    motion-utils: "npm:^11.16.0"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    "@emotion/is-prop-valid": "*"
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/7f3c1e420bca2d920b7f48dfb54b072938771f9237feed02d576884398f4a68ccb2d1ae36b28cf2410dbfe2db6edb4c03429a1d896e789d08a972360c6ad82b1
   languageName: node
   linkType: hard
 
@@ -1639,9 +1679,12 @@ __metadata:
     "@heroicons/react": "npm:v1"
     "@phosphor-icons/react": "npm:^2.1.5"
     "@react-spring/web": "npm:^9.7.5"
+    "@tabler/icons-react": "npm:^3.28.1"
     autoprefixer: "npm:^10.4.19"
     bootstrap: "npm:^5.3.3"
     classnames: "npm:^2.5.1"
+    clsx: "npm:^2.1.1"
+    framer-motion: "npm:^11.18.0"
     gsap: "npm:^3.12.5"
     next: "npm:14.1.0"
     next-themes: "npm:^0.4.3"
@@ -1674,10 +1717,27 @@ __metadata:
     sass: "npm:^1.71.1"
     slick-carousel: "npm:^1.8.1"
     swiper: "npm:^11.0.7"
+    tailwind-merge: "npm:^2.6.0"
     tailwindcss: "npm:^3.4.3"
     uuid: "npm:^9.0.1"
   languageName: unknown
   linkType: soft
+
+"motion-dom@npm:^11.16.4":
+  version: 11.16.4
+  resolution: "motion-dom@npm:11.16.4"
+  dependencies:
+    motion-utils: "npm:^11.16.0"
+  checksum: 10c0/66de6d40aef59d3004aaf17e39c7c2d2c679306207fdb28c73917d6a05e8c962747fea53d2e516c25d994109d38e127943a759fed18a0fadfc2572a3335fc0d2
+  languageName: node
+  linkType: hard
+
+"motion-utils@npm:^11.16.0":
+  version: 11.16.0
+  resolution: "motion-utils@npm:11.16.0"
+  checksum: 10c0/e68efa08b9546a2fb065537cedcbab1a416d43cdc5773e02ea01408c276e56bbea9ef76d330e80d8536a6ac585b0bbb6f4f2b9d97637d8d36418483e4492ddff
+  languageName: node
+  linkType: hard
 
 "ms@npm:2.0.0":
   version: 2.0.0
@@ -2733,6 +2793,13 @@ __metadata:
   version: 11.1.14
   resolution: "swiper@npm:11.1.14"
   checksum: 10c0/a1075cbd2254aedd22b411ea03cbd7a91ba1cc79d7c2dc41f215e987811e449a2915a26b39fdfc1d7c08250fa2cfbe51d28476f834e75033c73ea357a4ac9f8d
+  languageName: node
+  linkType: hard
+
+"tailwind-merge@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "tailwind-merge@npm:2.6.0"
+  checksum: 10c0/fc8a5535524de9f4dacf1c16ab298581c7bb757d68a95faaf28942b1c555a619bba9d4c6726fe83986e44973b315410c1a5226e5354c30ba82353bd6d2288fa5
   languageName: node
   linkType: hard
 

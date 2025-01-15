@@ -21,8 +21,11 @@
     "@heroicons/react": "v1",
     "@phosphor-icons/react": "^2.1.5",
     "@react-spring/web": "^9.7.5",
+    "@tabler/icons-react": "^3.28.1",
     "bootstrap": "^5.3.3",
     "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.18.0",
     "gsap": "^3.12.5",
     "next": "14.1.0",
     "next-themes": "^0.4.3",
@@ -51,6 +54,7 @@
     "redux-thunk": "^3.1.0",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.0.7",
+    "tailwind-merge": "^2.6.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {

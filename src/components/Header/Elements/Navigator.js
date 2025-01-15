@@ -14,7 +14,7 @@ export default function Navigator({ disableSubmenu, className }) {
   const activeClass = (item) => {
     setVisible(item);
   };
-
+console.log("pathname",pathname)
   const handleHover = (state) => {
     if (state == 1) {
       setHoverColor("#e8edfc");
