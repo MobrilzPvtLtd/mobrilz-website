@@ -9,8 +9,8 @@ const PortfolioPage = () => {
   ));
 
   return (
-    <div className="container w-full h-full py-20">
-     <div class="xl:w-2/3 lg:w-3/4 w-full"><div class="tag text-label">What we have done</div><h3 class="heading3 mt-3">Portfolio</h3></div>
+    <div className="w-full h-full py-20">
+     <div class="container xl:w-2/3 lg:w-3/4 w-full ml-10 flex flex-col justify-center items-start"><div class="tag text-label">What we have done</div><h3 class="heading3 mt-3">Portfolio</h3></div>
       <Carousel items={cards} />
     </div>
   );

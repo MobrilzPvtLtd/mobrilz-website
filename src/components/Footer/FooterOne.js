@@ -218,7 +218,20 @@ export default function FooterOne({ classname }) {
                         )
                     )}
                   </ul>
-                  <div className="list-social flex items-center flex-wrap gap-2.5 mt-7">
+                  <div className="mt-7">
+                  <h2>Follow Us On</h2>
+                  <div className="list-social flex items-center flex-wrap gap-2.5 mt-1">
+                  <Link
+                    className={`item rounded-full w-10 h-10 flex items-center justify-center duration-300 border ${
+                      classname
+                        ? "border-surface2 hover:text-black hover:bg-white"
+                        : "border-black hover:text-white hover:bg-black"
+                    }`}
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                  >
+                   <i class="fab fa-github text-base"></i> 
+                  </Link>
                   <Link
                     className={`item rounded-full w-10 h-10 flex items-center justify-center duration-300 border ${
                       classname
@@ -241,7 +254,7 @@ export default function FooterOne({ classname }) {
                   >
                     <i className="icon-linkedin text-base"></i>
                   </Link>
-                  <Link
+                  {/* <Link
                     className={`item rounded-full w-10 h-10 flex items-center justify-center duration-300 border ${
                       classname
                         ? "border-surface2 hover:text-black hover:bg-white"
@@ -273,7 +286,8 @@ export default function FooterOne({ classname }) {
                     target="_blank"
                   >
                     <i className="icon-instagram text-sm"></i>
-                  </Link>
+                  </Link> */}
+                </div>
                 </div>
                 </div>
                 <div className="w-full sm:w-1/4">
