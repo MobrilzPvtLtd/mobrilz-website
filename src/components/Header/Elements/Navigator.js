@@ -1638,7 +1638,7 @@ console.log("pathname",pathname ,process.env.NEXT_PUBLIC_PUBLIC_URL)
                               <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                 <i
                                   className={`${i.icon} text-blue text-base  `}
-                                >{i.icon}</i>
+                                ></i>
                               </div>
                               <span className="text-[#565454] text-base">
                                 {i.title}

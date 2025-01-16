@@ -227,7 +227,7 @@ export default function FooterOne({ classname }) {
                         ? "border-surface2 hover:text-black hover:bg-white"
                         : "border-black hover:text-white hover:bg-black"
                     }`}
-                    href="https://www.linkedin.com/"
+                    href="https://www.github.com/"
                     target="_blank"
                   >
                    <i class="fab fa-github text-base"></i> 
