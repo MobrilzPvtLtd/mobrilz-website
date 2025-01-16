@@ -14,7 +14,7 @@ export default function Navigator({ disableSubmenu, className }) {
   const activeClass = (item) => {
     setVisible(item);
   };
-console.log("pathname",pathname)
+console.log("pathname",pathname ,process.env.NEXT_PUBLIC_PUBLIC_URL)
   const handleHover = (state) => {
     if (state == 1) {
       setHoverColor("#e8edfc");
@@ -88,7 +88,7 @@ console.log("pathname",pathname)
             }`}
             key={index}
           >
-            <Link href={process.env.PUBLIC_URL + item.to}>
+            <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + item.to}>
               <span className="text-white">{item.title}</span>
             </Link>
           </li>
@@ -101,8 +101,8 @@ console.log("pathname",pathname)
             className={`${pathname.includes("/services/") ? "active" : ""}`}
             onMouseLeave={() => activeClass(1)}
           >
-            <Link href={process.env.PUBLIC_URL + item.to}>
-              <span className="text-white">{item.title}</span>
+            <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + item.to}>
+              <span className="text-white">{item.title} </span>
             </Link>
             <div
               className="dropdown-menu-service -wide flex gap-3 w-full"
@@ -164,10 +164,10 @@ console.log("pathname",pathname)
                                 <Link
                                   className={`flex items-center gap-2 ml-2`}
                                   href={
-                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"
                                   }
                                   as={
-                                    process.env.PUBLIC_URL +
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL +
                                     "/services/" +
                                     convertToSlug(i.title)
                                   }
@@ -201,10 +201,10 @@ console.log("pathname",pathname)
                                 <Link
                                   className={`flex items-center gap-2 ml-2`}
                                   href={
-                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"
                                   }
                                   as={
-                                    process.env.PUBLIC_URL +
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL +
                                     "/services/" +
                                     convertToSlug(i.title)
                                   }
@@ -232,10 +232,10 @@ console.log("pathname",pathname)
                                 <Link
                                   className={`flex items-center gap-2 ml-2`}
                                   href={
-                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"
                                   }
                                   as={
-                                    process.env.PUBLIC_URL +
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL +
                                     "/services/" +
                                     convertToSlug(i.title)
                                   }
@@ -271,10 +271,10 @@ console.log("pathname",pathname)
                                 <Link
                                   className={`flex items-center gap-2 ml-2`}
                                   href={
-                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"
                                   }
                                   as={
-                                    process.env.PUBLIC_URL +
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL +
                                     "/services/" +
                                     convertToSlug(i.title)
                                   }
@@ -308,10 +308,10 @@ console.log("pathname",pathname)
                                 <Link
                                   className={`flex items-center gap-2 ml-2`}
                                   href={
-                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"
                                   }
                                   as={
-                                    process.env.PUBLIC_URL +
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL +
                                     "/services/" +
                                     convertToSlug(i.title)
                                   }
@@ -421,9 +421,9 @@ console.log("pathname",pathname)
                           >
                             <Link
                               className={`flex items-center gap-2 justify-center `}
-                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                               as={
-                                process.env.PUBLIC_URL +
+                                process.env.NEXT_PUBLIC_PUBLIC_URL +
                                 "/services/" +
                                 convertToSlug(i.title)
                               }
@@ -448,9 +448,9 @@ console.log("pathname",pathname)
                         >
                           <Link
                             className={`flex items-center gap-4`}
-                            href={process.env.PUBLIC_URL + "/services/[slug]"}
+                            href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                             as={
-                              process.env.PUBLIC_URL +
+                              process.env.NEXT_PUBLIC_PUBLIC_URL +
                               "/services/" +
                               convertToSlug(i.title)
                             }
@@ -471,9 +471,9 @@ console.log("pathname",pathname)
                         >
                           <Link
                             className={`flex items-center gap-4`}
-                            href={process.env.PUBLIC_URL + "/services/[slug]"}
+                            href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                             as={
-                              process.env.PUBLIC_URL +
+                              process.env.NEXT_PUBLIC_PUBLIC_URL +
                               "/services/" +
                               convertToSlug(i.title)
                             }
@@ -494,9 +494,9 @@ console.log("pathname",pathname)
                         >
                           <Link
                             className={`flex items-center gap-4`}
-                            href={process.env.PUBLIC_URL + "/services/[slug]"}
+                            href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                             as={
-                              process.env.PUBLIC_URL +
+                              process.env.NEXT_PUBLIC_PUBLIC_URL +
                               "/services/" +
                               convertToSlug(i.title)
                             }
@@ -517,9 +517,9 @@ console.log("pathname",pathname)
                         >
                           <Link
                             className={`flex items-center gap-4`}
-                            href={process.env.PUBLIC_URL + "/services/[slug]"}
+                            href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                             as={
-                              process.env.PUBLIC_URL +
+                              process.env.NEXT_PUBLIC_PUBLIC_URL +
                               "/services/" +
                               convertToSlug(i.title)
                             }
@@ -620,9 +620,9 @@ console.log("pathname",pathname)
                           >
                             <Link
                               className={`flex items-center justify-start gap-2 ml-1`}
-                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                               as={
-                                process.env.PUBLIC_URL +
+                                process.env.NEXT_PUBLIC_PUBLIC_URL +
                                 "/services/" +
                                 convertToSlug(i.title)
                               }
@@ -662,9 +662,9 @@ console.log("pathname",pathname)
                           >
                             <Link
                               className={`flex items-center justify-start gap-2 ml-1`}
-                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                               as={
-                                process.env.PUBLIC_URL +
+                                process.env.NEXT_PUBLIC_PUBLIC_URL +
                                 "/services/" +
                                 convertToSlug(i.title)
                               }
@@ -785,10 +785,10 @@ console.log("pathname",pathname)
                                 <Link
                                   className={`flex items-center gap-4`}
                                   href={
-                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"
                                   }
                                   as={
-                                    process.env.PUBLIC_URL +
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL +
                                     "/services/" +
                                     convertToSlug(i.title)
                                   }
@@ -830,10 +830,10 @@ console.log("pathname",pathname)
                                 <Link
                                   className={`flex items-center gap-4`}
                                   href={
-                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"
                                   }
                                   as={
-                                    process.env.PUBLIC_URL +
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL +
                                     "/services/" +
                                     convertToSlug(i.title)
                                   }
@@ -877,10 +877,10 @@ console.log("pathname",pathname)
                                 <Link
                                   className={`flex items-center gap-4`}
                                   href={
-                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"
                                   }
                                   as={
-                                    process.env.PUBLIC_URL +
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL +
                                     "/services/" +
                                     convertToSlug(i.title)
                                   }
@@ -922,10 +922,10 @@ console.log("pathname",pathname)
                                 <Link
                                   className={`flex items-center gap-4`}
                                   href={
-                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"
                                   }
                                   as={
-                                    process.env.PUBLIC_URL +
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL +
                                     "/services/" +
                                     convertToSlug(i.title)
                                   }
@@ -1046,10 +1046,10 @@ console.log("pathname",pathname)
                                 <Link
                                   className={`flex items-center gap-4`}
                                   href={
-                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"
                                   }
                                   as={
-                                    process.env.PUBLIC_URL +
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL +
                                     "/services/" +
                                     convertToSlug(i.title)
                                   }
@@ -1091,10 +1091,10 @@ console.log("pathname",pathname)
                                 <Link
                                   className={`flex items-center gap-4`}
                                   href={
-                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"
                                   }
                                   as={
-                                    process.env.PUBLIC_URL +
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL +
                                     "/services/" +
                                     convertToSlug(i.title)
                                   }
@@ -1136,10 +1136,10 @@ console.log("pathname",pathname)
                                 <Link
                                   className={`flex items-center gap-4`}
                                   href={
-                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"
                                   }
                                   as={
-                                    process.env.PUBLIC_URL +
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL +
                                     "/services/" +
                                     convertToSlug(i.title)
                                   }
@@ -1181,10 +1181,10 @@ console.log("pathname",pathname)
                                 <Link
                                   className={`flex items-center gap-4`}
                                   href={
-                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"
                                   }
                                   as={
-                                    process.env.PUBLIC_URL +
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL +
                                     "/services/" +
                                     convertToSlug(i.title)
                                   }
@@ -1228,10 +1228,10 @@ console.log("pathname",pathname)
                                 <Link
                                   className={`flex items-center gap-4`}
                                   href={
-                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"
                                   }
                                   as={
-                                    process.env.PUBLIC_URL +
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL +
                                     "/services/" +
                                     convertToSlug(i.title)
                                   }
@@ -1273,10 +1273,10 @@ console.log("pathname",pathname)
                                 <Link
                                   className={`flex items-center gap-4`}
                                   href={
-                                    process.env.PUBLIC_URL + "/services/[slug]"
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"
                                   }
                                   as={
-                                    process.env.PUBLIC_URL +
+                                    process.env.NEXT_PUBLIC_PUBLIC_URL +
                                     "/services/" +
                                     convertToSlug(i.title)
                                   }
@@ -1392,9 +1392,9 @@ console.log("pathname",pathname)
                           >
                             <Link
                               className={`flex items-center gap-4`}
-                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                               as={
-                                process.env.PUBLIC_URL +
+                                process.env.NEXT_PUBLIC_PUBLIC_URL +
                                 "/services/" +
                                 convertToSlug(i.title)
                               }
@@ -1506,9 +1506,9 @@ console.log("pathname",pathname)
                           >
                             <Link
                               className={`flex items-center gap-4`}
-                              href={process.env.PUBLIC_URL + "/services/[slug]"}
+                              href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                               as={
-                                process.env.PUBLIC_URL +
+                                process.env.NEXT_PUBLIC_PUBLIC_URL +
                                 "/services/" +
                                 convertToSlug(i.title)
                               }
@@ -1608,7 +1608,7 @@ console.log("pathname",pathname)
             className={`${pathname.includes("/industry/") ? "active" : ""}`}
             onMouseLeave={() => activeClass(1)}
           >
-            <Link href={process.env.PUBLIC_URL + item.to}>
+            <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + item.to}>
               <span className="text-white">{item.title}</span>
             </Link>
             <div className="dropdown-menu -wide flex gap-3">
@@ -1628,17 +1628,17 @@ console.log("pathname",pathname)
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
+                              href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/industry/[slug]"}
                               as={
-                                process.env.PUBLIC_URL +
-                                "/services/" +
+                                process.env.NEXT_PUBLIC_PUBLIC_URL +
+                                "/industry/" +
                                 convertToSlug(i.title)
                               }
                             >
                               <div className="w-7 border border-grey p-1 bg-white rounded-[50%] flex justify-center items-center ">
                                 <i
                                   className={`${i.icon} text-blue text-base  `}
-                                ></i>
+                                >{i.icon}</i>
                               </div>
                               <span className="text-[#565454] text-base">
                                 {i.title}
@@ -1661,9 +1661,9 @@ console.log("pathname",pathname)
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
+                              href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/industry/[slug]"}
                               as={
-                                process.env.PUBLIC_URL +
+                                process.env.NEXT_PUBLIC_PUBLIC_URL +
                                 "/industry/" +
                                 convertToSlug(i.title)
                               }
@@ -1689,10 +1689,10 @@ console.log("pathname",pathname)
                               <Link
                                 className={`flex items-center gap-2 ml-2`}
                                 href={
-                                  process.env.PUBLIC_URL + "/services/[slug]"
+                                  process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"
                                 }
                                 as={
-                                  process.env.PUBLIC_URL +
+                                  process.env.NEXT_PUBLIC_PUBLIC_URL +
                                   "/services/" +
                                   convertToSlug(i.title)
                                 }
@@ -1723,10 +1723,10 @@ console.log("pathname",pathname)
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
+                              href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/industry/[slug]"}
                               as={
-                                process.env.PUBLIC_URL +
-                                "/services/" +
+                                process.env.NEXT_PUBLIC_PUBLIC_URL +
+                                "/industry/" +
                                 convertToSlug(i.title)
                               }
                             >
@@ -1758,10 +1758,10 @@ console.log("pathname",pathname)
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
+                              href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/industry/[slug]"}
                               as={
-                                process.env.PUBLIC_URL +
-                                "/services/" +
+                                process.env.NEXT_PUBLIC_PUBLIC_URL +
+                                "/industry/" +
                                 convertToSlug(i.title)
                               }
                             >
@@ -1791,10 +1791,10 @@ console.log("pathname",pathname)
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
+                              href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/industry/[slug]"}
                               as={
-                                process.env.PUBLIC_URL +
-                                "/services/" +
+                                process.env.NEXT_PUBLIC_PUBLIC_URL +
+                                "/industry/" +
                                 convertToSlug(i.title)
                               }
                             >
@@ -1824,10 +1824,10 @@ console.log("pathname",pathname)
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
+                              href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/industry/[slug]"}
                               as={
-                                process.env.PUBLIC_URL +
-                                "/services/" +
+                                process.env.NEXT_PUBLIC_PUBLIC_URL +
+                                "/industry/" +
                                 convertToSlug(i.title)
                               }
                             >
@@ -1859,9 +1859,9 @@ console.log("pathname",pathname)
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
+                              href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/industry/[slug]"}
                               as={
-                                process.env.PUBLIC_URL +
+                                process.env.NEXT_PUBLIC_PUBLIC_URL +
                                 "/industry/" +
                                 convertToSlug(i.title)
                               }
@@ -1892,9 +1892,9 @@ console.log("pathname",pathname)
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
+                              href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/industry/[slug]"}
                               as={
-                                process.env.PUBLIC_URL +
+                                process.env.NEXT_PUBLIC_PUBLIC_URL +
                                 "/industry/" +
                                 convertToSlug(i.title)
                               }
@@ -1925,9 +1925,9 @@ console.log("pathname",pathname)
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
+                              href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/industry/[slug]"}
                               as={
-                                process.env.PUBLIC_URL +
+                                process.env.NEXT_PUBLIC_PUBLIC_URL +
                                 "/industry/" +
                                 convertToSlug(i.title)
                               }
@@ -1960,9 +1960,9 @@ console.log("pathname",pathname)
                           >
                             <Link
                               className={`flex items-center gap-2 ml-2`}
-                              href={process.env.PUBLIC_URL + "/industry/[slug]"}
+                              href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/industry/[slug]"}
                               as={
-                                process.env.PUBLIC_URL +
+                                process.env.NEXT_PUBLIC_PUBLIC_URL +
                                 "/industry/" +
                                 convertToSlug(i.title)
                               }
@@ -1997,7 +1997,7 @@ console.log("pathname",pathname)
             }`}
             key={index}
           >
-            <Link href={process.env.PUBLIC_URL + item.to}>
+            <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + item.to}>
               <span className="text-white">{item.title}</span>
             </Link>
             <ul className="dropdown-menu style-pages ">
@@ -2046,7 +2046,7 @@ console.log("pathname",pathname)
             }`}
             key={index}
           >
-            <Link href={process.env.PUBLIC_URL + item.to}>
+            <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + item.to}>
               <span className="text-white">{item.title}</span>
             </Link>
             <ul className="dropdown-menu style-pages ">
@@ -2095,7 +2095,7 @@ console.log("pathname",pathname)
             }`}
             key={index}
           >
-            <Link href={process.env.PUBLIC_URL + item.to}>
+            <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + item.to}>
               <span className="text-white">{item.title}</span>
             </Link>
             <ul className="dropdown-menu style-pages ">
@@ -2144,7 +2144,7 @@ console.log("pathname",pathname)
             }`}
             key={index}
           >
-            <Link href={process.env.PUBLIC_URL + item.to}>
+            <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + item.to}>
               <span className="text-white">{item.title}</span>
             </Link>
             <ul className="dropdown-menu style-pages ">
@@ -2196,7 +2196,7 @@ console.log("pathname",pathname)
           }`}
           key={index}
         >
-          <Link href={process.env.PUBLIC_URL + item.to}>
+          <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + item.to}>
             <span className="text-white">{item.title}</span>
           </Link>
           {item.title != "Blogs" && item.title != "Career" ? (
@@ -2223,7 +2223,7 @@ console.log("pathname",pathname)
         <ul>
           {menuData.map((item, index) => (
             <li key={index}>
-              <Link href={process.env.PUBLIC_URL + item.to}>
+              <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + item.to}>
                 <span>{item.title}</span>
               </Link>
             </li>

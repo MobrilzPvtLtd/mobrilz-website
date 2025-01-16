@@ -136,16 +136,16 @@ const LayoutDetailOne = ({ data }) => {
                             <div className="infor-below flex max-sm:flex-wrap items-center justify-between gap-6 py-6 mt-8 border-t border-b border-outline">
                                 {data.id === 1 ? (
                                     <Link className="text-left cursor-pointer"
-                                        href={process.env.PUBLIC_URL + "/blog/detail1/[slug]"}
-                                        as={process.env.PUBLIC_URL + "/blog/detail1/" + convertToSlug(blogData[blogData.length - 1].title) + "?id=" + blogData[blogData.length - 1].id}
+                                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/[slug]"}
+                                        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/" + convertToSlug(blogData[blogData.length - 1].title) + "?id=" + blogData[blogData.length - 1].id}
                                     >
                                         <div className="text-button text-surface2">Previous</div>
                                         <div className="heading6 duration-300 hover:text-blue mt-1">{blogData[blogData.length - 1].title}</div>
                                     </Link>
                                 ) : (
                                     <Link className="text-left cursor-pointer"
-                                        href={process.env.PUBLIC_URL + "/blog/detail1/[slug]"}
-                                        as={process.env.PUBLIC_URL + "/blog/detail1/" + convertToSlug(blogData[Number(data.id) - 2].title) + "?id=" + blogData[Number(data.id) - 2].id}
+                                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/[slug]"}
+                                        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/" + convertToSlug(blogData[Number(data.id) - 2].title) + "?id=" + blogData[Number(data.id) - 2].id}
                                     >
                                         <div className="text-button text-surface2">Previous</div>
                                         <div className="heading6 duration-300 hover:text-blue mt-1">{blogData[Number(data.id) - 2].title}</div>
@@ -153,16 +153,16 @@ const LayoutDetailOne = ({ data }) => {
                                 )}
                                 {Number(data.id) === blogData.length ? (
                                     <Link className="sm:text-right cursor-pointer"
-                                        href={process.env.PUBLIC_URL + "/blog/detail1/[slug]"}
-                                        as={process.env.PUBLIC_URL + "/blog/detail1/" + convertToSlug(blogData[0].title) + "?id=" + blogData[0].id}
+                                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/[slug]"}
+                                        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/" + convertToSlug(blogData[0].title) + "?id=" + blogData[0].id}
                                     >
                                         <div className="text-button text-surface2">Next</div>
                                         <div className="heading6 duration-300 hover:text-blue mt-1">{blogData[0].title}</div>
                                     </Link>
                                 ) : (
                                     <Link className="sm:text-right cursor-pointer"
-                                        href={process.env.PUBLIC_URL + "/blog/detail1/[slug]"}
-                                        as={process.env.PUBLIC_URL + "/blog/detail1/" + convertToSlug(blogData[Number(data.id)].title) + "?id=" + blogData[Number(data.id)].id}
+                                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/[slug]"}
+                                        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/" + convertToSlug(blogData[Number(data.id)].title) + "?id=" + blogData[Number(data.id)].id}
                                     >
                                         <div className="text-button text-surface2">Next</div>
                                         <div className="heading6 duration-300 hover:text-blue mt-1">{blogData[Number(data.id)].title}</div>

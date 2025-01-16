@@ -36,10 +36,10 @@ const SliderTwo = () => {
                     & <br />Web Solutions Company</h2>
                     <div className="body2 text-white md:mt-4 mt-2">Mobrilz is a Noida-NCR-based mobile & web app development company providing services in the USA,<br></br> Canada, Europe, the Middle east, and across the world.</div>
                     <div className="group-btn flex items-center flex-wrap gap-3 md:mt-8 mt-5">
-                      {/* <Link href={process.env.PUBLIC_URL + "/services/[slug]"} */}
+                      {/* <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"} */}
                       <Link href="#"
                         // as={
-                        //   process.env.PUBLIC_URL +
+                        //   process.env.NEXT_PUBLIC_PUBLIC_URL +
                         //   "/services/" +
                         //   convertToSlug('Managed IT Services')
                       

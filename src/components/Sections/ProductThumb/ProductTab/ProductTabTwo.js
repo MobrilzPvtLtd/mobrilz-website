@@ -31,7 +31,7 @@ export default function ProductTabTwo({ data }) {
                   })}
                   key={index}
                 >
-                  <a href={process.env.PUBLIC_URL + "#!"}
+                  <a href={process.env.NEXT_PUBLIC_PUBLIC_URL + "#!"}
                     onClick={(e) => {
                       e.preventDefault();
                       setCurrentCategory(category);
@@ -43,7 +43,7 @@ export default function ProductTabTwo({ data }) {
               ))}
             </ul>
             <Button
-              action={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}
+              action={process.env.NEXT_PUBLIC_PUBLIC_URL + "/shop/fullwidth-4col"}
               color="white"
               content="View all"
             />

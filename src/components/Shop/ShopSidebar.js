@@ -36,7 +36,7 @@ export default function ShopSidebar() {
                   active: item === filterData.category,
                 })}
               >
-                <Link href={process.env.PUBLIC_URL + "#"} key={index}>
+                <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + "#"} key={index}>
                   <div
                     onClick={(e) => {
                       e.preventDefault();
@@ -116,11 +116,11 @@ export default function ShopSidebar() {
           </div>
         </div>
         <div className="shop-sidebar__section">
-          <Link href={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}>
+          <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/shop/fullwidth-4col"}>
             <div className="shop-sidebar__section__banner">
               <img
                 src={
-                  process.env.PUBLIC_URL +
+                  process.env.NEXT_PUBLIC_PUBLIC_URL +
                   "/images/shop/advertisment.png"
                 }
                 alt="ads"

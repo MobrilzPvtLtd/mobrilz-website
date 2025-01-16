@@ -22,8 +22,8 @@ export default function PostCardTwo({ data }) {
       </div>
       <div className="post-card-two__content">
         <Link
-          href={process.env.PUBLIC_URL + "/blog/post/[slug]"}
-          as={process.env.PUBLIC_URL + "/blog/post/" + data.slug}
+          href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/post/[slug]"}
+          as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/post/" + data.slug}
         >
           <span>{data.title}</span>
         </Link>

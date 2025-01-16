@@ -7,9 +7,9 @@ const ServiceItem = ({ data, type }) => {
             {type === 'style-one' && (
                 <div className="service-item -solution rounded-2xl  h-full">
                     <Link className="main md:p-10 p-8 flex flex-col items-center h-full"
-                        // href={process.env.PUBLIC_URL + "/services/[slug]"}
+                        // href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                         // as={
-                        //     process.env.PUBLIC_URL + "/services/" + convertToSlug(data.title) + "?id=" + data.id
+                        //     process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/" + convertToSlug(data.title) + "?id=" + data.id
                         // }
                         href="#"
                     >
@@ -22,9 +22,9 @@ const ServiceItem = ({ data, type }) => {
             {type === 'style-two' && (
                 <div className="service-item style-two rounded-2xl bg-white h-full">
                     <Link className="main md:p-10 p-8 flex items-start gap-6 h-full"
-                        href={process.env.PUBLIC_URL + "/services/[slug]"}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                         as={
-                            process.env.PUBLIC_URL + "/services/" + convertToSlug(data.title) + "?id=" + data.id
+                            process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/" + convertToSlug(data.title) + "?id=" + data.id
                         }
                     >
                         <i className={`${data.icon} text-6xl text-blue flex-shrink-0`}></i>
@@ -38,9 +38,9 @@ const ServiceItem = ({ data, type }) => {
             {type === 'style-three' && (
                 <div className="service-item -solution style-three">
                     <Link className="main"
-                        href={process.env.PUBLIC_URL + "/services/[slug]"}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                         as={
-                            process.env.PUBLIC_URL + "/services/" + convertToSlug(data.title) + "?id=" + data.id
+                            process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/" + convertToSlug(data.title) + "?id=" + data.id
                         }
                     >
                         <i className={`${data.icon} text-6xl flex-shrink-0`}></i>
@@ -54,9 +54,9 @@ const ServiceItem = ({ data, type }) => {
             {type === 'style-four' && (
                 <div className="service-item style-four -solution bg-white h-full">
                     <Link className="main md:p-[60px] p-10 flex max-sm:flex-col items-start gap-6 h-full"
-                        href={process.env.PUBLIC_URL + "/services/[slug]"}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                         as={
-                            process.env.PUBLIC_URL + "/services/" + convertToSlug(data.title) + "?id=" + data.id
+                            process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/" + convertToSlug(data.title) + "?id=" + data.id
                         }
                     >
                         <i className={`${data.icon} text-6xl text-pink flex-shrink-0`}></i>
@@ -70,9 +70,9 @@ const ServiceItem = ({ data, type }) => {
             {type === 'style-five' && (
                 <div className="service-item -solution style-five">
                     <Link className="main p-10 max-sm:py-6 max-sm:px-8 block relative h-full bg-white border-r border-outline"
-                        href={process.env.PUBLIC_URL + "/services/[slug]"}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                         as={
-                            process.env.PUBLIC_URL + "/services/" + convertToSlug(data.title) + "?id=" + data.id
+                            process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/" + convertToSlug(data.title) + "?id=" + data.id
                         }
                     >
                         <div className="slash flex items-center absolute -top-4 right-6 opacity-0 duration-500">
@@ -90,8 +90,8 @@ const ServiceItem = ({ data, type }) => {
             {type === 'style-six' && (
                 <div className="service-item style-six">
                     <Link className="main p-8 block relative h-full bg-white rounded-[20px] shadow-lg"
-                        href={process.env.PUBLIC_URL + "/services/[slug]"}
-                        as={process.env.PUBLIC_URL + "/services/" + convertToSlug(data.title) + "?id=" + data.id}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
+                        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/" + convertToSlug(data.title) + "?id=" + data.id}
                     >
                         <i className={`${data.icon} text-purple text-6xl flex-shrink-0`}></i>
                         <div className="mt-6">
@@ -104,9 +104,9 @@ const ServiceItem = ({ data, type }) => {
             {type === 'style-seven' && (
                 <div className="service-item -solution rounded-2xl bg-white border border-outline h-full">
                     <Link className="main xl:p-10 p-8 flex flex-col items-center h-full"
-                        href={process.env.PUBLIC_URL + "/services/[slug]"}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                         as={
-                            process.env.PUBLIC_URL + "/services/" + convertToSlug(data.title) + "?id=" + data.id
+                            process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/" + convertToSlug(data.title) + "?id=" + data.id
                         }
                     >
                         <i className={`${data.icon} text-6xl`}></i>

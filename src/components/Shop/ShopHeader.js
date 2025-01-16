@@ -19,7 +19,7 @@ export default function ShopHeader({
       <div className="shop-header__view">
         <div className="shop-header__view__icon">
           <a
-            href={process.env.PUBLIC_URL + "#"}
+            href={process.env.NEXT_PUBLIC_PUBLIC_URL + "#"}
             className={view === "grid" ? "active" : ""}
             onClick={(e) => {
               e.preventDefault();
@@ -29,7 +29,7 @@ export default function ShopHeader({
             <i className="fas fa-th"></i>
           </a>
           <a
-            href={process.env.PUBLIC_URL + "#"}
+            href={process.env.NEXT_PUBLIC_PUBLIC_URL + "#"}
             className={view === "list" ? "active" : ""}
             onClick={(e) => {
               e.preventDefault();

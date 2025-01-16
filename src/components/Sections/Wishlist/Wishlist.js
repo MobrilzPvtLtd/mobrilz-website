@@ -66,11 +66,11 @@ const Wishlist = () => {
                                                         <h5>{item.category}</h5>
                                                         <Link
                                                             href={
-                                                                process.env.PUBLIC_URL +
+                                                                process.env.NEXT_PUBLIC_PUBLIC_URL +
                                                                 "/shop/product/[slug]"
                                                             }
                                                             as={
-                                                                process.env.PUBLIC_URL +
+                                                                process.env.NEXT_PUBLIC_PUBLIC_URL +
                                                                 "/shop/product/" +
                                                                 item.slug
                                                             }
@@ -84,7 +84,7 @@ const Wishlist = () => {
                                             <td>{item.quantity > 0 ? "In stock" : "Out stock"}</td>
                                             <td>
                                                 <a
-                                                    href={process.env.PUBLIC_URL + "#"}
+                                                    href={process.env.NEXT_PUBLIC_PUBLIC_URL + "#"}
                                                     className={`btn -dark ${checkProductInCart(item.id) ? "-disable" : ""
                                                         }`}
                                                     onClick={(e) => addToCartHandle(e, item)}
@@ -95,7 +95,7 @@ const Wishlist = () => {
                                                 </a>
                                                 <a
                                                     className="remove-btn"
-                                                    href={process.env.PUBLIC_URL + "#"}
+                                                    href={process.env.NEXT_PUBLIC_PUBLIC_URL + "#"}
                                                     onClick={(e) => removeWishlistProduct(e, item.id)}
                                                 >
                                                     <i className="fas fa-times"></i>

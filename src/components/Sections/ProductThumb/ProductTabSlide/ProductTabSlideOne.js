@@ -69,7 +69,7 @@ export default function ProductTabSlideOne({ data }) {
                   })}
                   key={index}
                 >
-                  <Link href={process.env.PUBLIC_URL + "#"}>
+                  <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + "#"}>
                     <span
                       onClick={(e) => {
                         e.preventDefault();
@@ -83,7 +83,7 @@ export default function ProductTabSlideOne({ data }) {
               ))}
             </ul>
             <Button
-              action={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}
+              action={process.env.NEXT_PUBLIC_PUBLIC_URL + "/shop/fullwidth-4col"}
               color="white"
               content="View all"
             />

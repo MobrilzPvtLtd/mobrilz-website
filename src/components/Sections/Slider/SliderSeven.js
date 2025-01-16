@@ -15,9 +15,9 @@ const SliderSeven = () => {
               <div className="text-label">Experience Digital Excellence with Us</div>
               <h2 className="heading1 mt-3">Crafting Digital Success Stories Together</h2>
               <div className="button mt-6">
-                <Link href={process.env.PUBLIC_URL + "/services/[slug]"}
+                <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                   as={
-                    process.env.PUBLIC_URL +
+                    process.env.NEXT_PUBLIC_PUBLIC_URL +
                     "/services/" +
                     convertToSlug('Managed IT Services')
                   }

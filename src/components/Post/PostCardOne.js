@@ -17,7 +17,7 @@ export default function PostCardOne({ data }) {
           </p>
           <Link
             href={
-              process.env.PUBLIC_URL +
+              process.env.NEXT_PUBLIC_PUBLIC_URL +
               "/blog/category/" +
               convertToSlug(data.category)
             }
@@ -26,8 +26,8 @@ export default function PostCardOne({ data }) {
           </Link>
         </div>
         <Link
-          href={process.env.PUBLIC_URL + "/blog/post/[slug]"}
-          as={process.env.PUBLIC_URL + "/blog/post/" + data.slug}
+          href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/post/[slug]"}
+          as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/post/" + data.slug}
         >
           <span className="post-card-one__content__title">{data.title}</span>
         </Link>

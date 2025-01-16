@@ -9,8 +9,8 @@ const BlogItem = ({ data, type }) => {
             {type === 'style-two' && (
                 <div className="blog-item">
                     <Link className="main-item block"
-                        href={process.env.PUBLIC_URL + "/blog/detail1/[slug]"}
-                        as={process.env.PUBLIC_URL + "/blog/detail1/" + convertToSlug(data.title) + "?id=" + data.id}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/[slug]"}
+                        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/" + convertToSlug(data.title) + "?id=" + data.id}
                     >
                         <div className="bg-img block w-full overflow-hidden rounded-xl">
                             <Image width={5000} height={5000} className="w-full block" src={data.thumbImage} alt={data.title} />
@@ -27,8 +27,8 @@ const BlogItem = ({ data, type }) => {
             {type === 'style-four' && (
                 <div className="blog-item h-full">
                     <Link className="main-item block h-full"
-                        href={process.env.PUBLIC_URL + "/blog/detail1/[slug]"}
-                        as={process.env.PUBLIC_URL + "/blog/detail1/" + convertToSlug(data.title) + "?id=" + data.id}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/[slug]"}
+                        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/" + convertToSlug(data.title) + "?id=" + data.id}
                     >
                         <div className="bg-img block relative w-full overflow-hidden">
                             <Image width={5000} height={5000} className="w-full block" src={data.thumbImage} alt={data.title} />
@@ -44,8 +44,8 @@ const BlogItem = ({ data, type }) => {
             {type === 'style-five' && (
                 <div className="blog-item sm:px-6 sm:border-r border-outline">
                     <Link className="main-item block"
-                        href={process.env.PUBLIC_URL + "/blog/detail1/[slug]"}
-                        as={process.env.PUBLIC_URL + "/blog/detail1/" + convertToSlug(data.title) + "?id=" + data.id}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/[slug]"}
+                        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/" + convertToSlug(data.title) + "?id=" + data.id}
                     >
                         <div className="bg-img block w-full overflow-hidden">
                             <Image width={5000} height={5000} className="w-full h-full block" src={data.thumbImage} alt={data.title} />
@@ -61,8 +61,8 @@ const BlogItem = ({ data, type }) => {
             {type === 'style-six' && (
                 <div className="blog-item h-full">
                     <Link className="main-item block h-full overflow-hidden rounded-[20px]"
-                        href={process.env.PUBLIC_URL + "/blog/detail1/[slug]"}
-                        as={process.env.PUBLIC_URL + "/blog/detail1/" + convertToSlug(data.title) + "?id=" + data.id}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/[slug]"}
+                        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/" + convertToSlug(data.title) + "?id=" + data.id}
                     >
                         <div className="bg-img block relative w-full overflow-hidden">
                             <Image width={5000} height={5000} className="w-full block" src={data.thumbImage} alt={data.title} />
@@ -78,8 +78,8 @@ const BlogItem = ({ data, type }) => {
             {type === 'style-list' && (
                 <div className="blog-item style-list">
                     <Link className="main-item relative flex items-center max-sm:flex-col bg-white border border-outline rounded-2xl overflow-hidden duration-300 hover:shadow-lg"
-                        href={process.env.PUBLIC_URL + "/blog/detail1/[slug]"}
-                        as={process.env.PUBLIC_URL + "/blog/detail1/" + convertToSlug(data.title) + "?id=" + data.id}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/[slug]"}
+                        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/" + convertToSlug(data.title) + "?id=" + data.id}
                     >
                         <div className="bg-img sm:absolute top-0 left-0 sm:w-[45%] w-full h-full overflow-hidden">
                             <Image width={5000} height={5000} className="w-full h-full object-cover" src={data.thumbImage} alt={data.title} />
@@ -96,8 +96,8 @@ const BlogItem = ({ data, type }) => {
             {type === 'style-modern' && (
                 <div className="blog-item style-modern">
                     <Link className="main-item relative block bg-white duration-500 rounded-xl overflow-hidden shadow-lg"
-                        href={process.env.PUBLIC_URL + "/blog/detail1/[slug]"}
-                        as={process.env.PUBLIC_URL + "/blog/detail1/" + convertToSlug(data.title) + "?id=" + data.id}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/[slug]"}
+                        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/" + convertToSlug(data.title) + "?id=" + data.id}
                     >
                         <div className="bg-img absolute top-0 left-0 w-full h-full duration-500 opacity-0 z-[-1]">
                             <Image width={5000} height={5000} className="w-full h-full object-cover" src={data.thumbImage} alt={data.title} />

@@ -103,8 +103,8 @@ const BlogSidebar = ({ classname, data, layout }) => {
                             <Link
                                 key={item.id}
                                 className="blog-item flex item-start gap-4"
-                                href={process.env.PUBLIC_URL + "/blog/detail1/[slug]"}
-                                as={process.env.PUBLIC_URL + "/blog/detail1/" + convertToSlug(item.title) + "?id=" + item.id}
+                                href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/[slug]"}
+                                as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/detail1/" + convertToSlug(item.title) + "?id=" + item.id}
                             >
                                 <div className="item-img flex-shrink-0">
                                     <img className="w-20 h-20 rounded-lg object-cover" src={item.thumbImage} alt={item.thumbImage} />

@@ -34,9 +34,9 @@ const SliderTwo = () => {
                     <h2 className="heading1 text-white">Experts engineering <br />industrial solutions</h2>
                     <div className="body2 text-white md:mt-4 mt-2">Collaborating to create a roadmap for your triumph</div>
                     <div className="group-btn flex items-center flex-wrap gap-3 md:mt-8 mt-5">
-                      <Link href={process.env.PUBLIC_URL + "/services/[slug]"}
+                      <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                         as={
-                          process.env.PUBLIC_URL +
+                          process.env.NEXT_PUBLIC_PUBLIC_URL +
                           "/services/" +
                           convertToSlug('Managed IT Services')
                         }
@@ -84,9 +84,9 @@ const SliderTwo = () => {
                       </div>
                     </div>
                     <div className="group-btn flex items-center flex-wrap gap-3 md:mt-8 mt-5">
-                      <Link href={process.env.PUBLIC_URL + "/services/[slug]"}
+                      <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                         as={
-                          process.env.PUBLIC_URL +
+                          process.env.NEXT_PUBLIC_PUBLIC_URL +
                           "/services/" +
                           convertToSlug('Managed IT Services')
                         }

@@ -22,8 +22,8 @@ export default function PostCardFeatured({ data }) {
             </Link>
           </div>
           <Link
-            href={process.env.PUBLIC_URL + "/blog/post/[slug]"}
-            as={process.env.PUBLIC_URL + "/blog/post/" + data.slug}
+            href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/post/[slug]"}
+            as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/post/" + data.slug}
           >
             <span className="post-card-featured-title">{data.title}</span>
           </Link>

@@ -9,8 +9,8 @@ const CaseStudyItem = ({ data, style }) => {
             {style === 'style-one' && (
                 <div className="case-studies-item md:px-6 md:border-r md:border-outline">
                     <Link className="main-item block"
-                        href={process.env.PUBLIC_URL + "/case-studies/case-studies-detail1/[slug]"}
-                        as={process.env.PUBLIC_URL + "/case-studies/case-studies-detail1/" + convertToSlug(data.title) + "?id=" + data.id}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/case-studies/case-studies-detail1/[slug]"}
+                        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/case-studies/case-studies-detail1/" + convertToSlug(data.title) + "?id=" + data.id}
                     >
                         <div className="bg-img block w-full aspect-[397/258] overflow-hidden rounded-xl">
                             <Image width={4000} height={4000} className="w-full h-full object-cover block" src={data.thumbImage} alt={data.title} />
@@ -27,8 +27,8 @@ const CaseStudyItem = ({ data, style }) => {
             {style === 'style-four' && (
                 <div className="case-studies-item">
                     <Link className="main-item block relative"
-                        href={process.env.PUBLIC_URL + "/case-studies/case-studies-detail1/[slug]"}
-                        as={process.env.PUBLIC_URL + "/case-studies/case-studies-detail1/" + convertToSlug(data.title) + "?id=" + data.id}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/case-studies/case-studies-detail1/[slug]"}
+                        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/case-studies/case-studies-detail1/" + convertToSlug(data.title) + "?id=" + data.id}
                     >
                         <div className="bg-img block w-full overflow-hidden">
                             <Image width={4000} height={4000} className="w-full h-full object-cover block " src={data.thumbImage} alt={data.title} />
@@ -44,8 +44,8 @@ const CaseStudyItem = ({ data, style }) => {
                 <div className="item">
                     <Link
                         className="main-item block relative rounded-[20px] overflow-hidden"
-                        href={process.env.PUBLIC_URL + "/case-studies/case-studies-detail1/[slug]"}
-                        as={process.env.PUBLIC_URL + "/case-studies/case-studies-detail1/" + convertToSlug(data.title) + "?id=" + data.id}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/case-studies/case-studies-detail1/[slug]"}
+                        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/case-studies/case-studies-detail1/" + convertToSlug(data.title) + "?id=" + data.id}
                     >
                         <div className="bg-brand absolute top-5 left-5">
                             <Image width={5000} height={5000} className="w-full" src={data.brand} alt={data.brand} />
@@ -63,8 +63,8 @@ const CaseStudyItem = ({ data, style }) => {
             {style === 'hide-info' && (
                 <div className="case-studies-item duration-300 hover:shadow-lg overflow-hidden rounded-xl">
                     <Link className="main-item overflow-hidden block relative"
-                        href={process.env.PUBLIC_URL + "/case-studies/case-studies-detail1/[slug]"}
-                        as={process.env.PUBLIC_URL + "/case-studies/case-studies-detail1/" + convertToSlug(data.title) + "?id=" + data.id}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/case-studies/case-studies-detail1/[slug]"}
+                        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/case-studies/case-studies-detail1/" + convertToSlug(data.title) + "?id=" + data.id}
                     >
                         <div className="bg-img block w-full">
                             <Image width={4000} height={4000} className="w-full h-full object-cover block" src={data.thumbImage} alt={data.title} />
@@ -79,8 +79,8 @@ const CaseStudyItem = ({ data, style }) => {
             {style === 'style-list' && (
                 <div className="case-studies-item">
                     <Link className="main-item flex max-md:flex-col items-center bg-white rounded-[20px] overflow-hidden shadow-lg"
-                        href={process.env.PUBLIC_URL + "/case-studies/case-studies-detail1/[slug]"}
-                        as={process.env.PUBLIC_URL + "/case-studies/case-studies-detail1/" + convertToSlug(data.title) + "?id=" + data.id}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/case-studies/case-studies-detail1/[slug]"}
+                        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/case-studies/case-studies-detail1/" + convertToSlug(data.title) + "?id=" + data.id}
                     >
                         <div className="bg-img overflow-hidden lg:w-7/12 md:w-1/2 w-full lg:pr-[45px] md:pr-6 aspect-[397/258]">
                             <Image width={4000} height={4000} className="w-full h-full object-cover block" src={data.thumbImage} alt={data.title} />

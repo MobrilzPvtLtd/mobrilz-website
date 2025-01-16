@@ -13,9 +13,9 @@ const ServiceOne = ({ data, start, limit }) => {
                         <h3 className="heading3 mt-3">Solve technology problems in every industry that customers need.</h3>
                     </div>
                     <Link className="text-button border-b border-blue inline-block duration-300 hover:text-blue whitespace-nowrap"
-                        href={process.env.PUBLIC_URL + "/services/[slug]"}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                         as={
-                            process.env.PUBLIC_URL +
+                            process.env.NEXT_PUBLIC_PUBLIC_URL +
                             "/services/" +
                             convertToSlug('Managed IT Services')
                         }
@@ -28,9 +28,9 @@ const ServiceOne = ({ data, start, limit }) => {
                         <Link
                             key={index}
                             className="service-item -list bg-surface py-4 px-5 flex items-center rounded-lg h-full"
-                            href={process.env.PUBLIC_URL + "/services/[slug]"}
+                            href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                             as={
-                                process.env.PUBLIC_URL + "/services/" + convertToSlug(item.title) + "?id=" + item.id
+                                process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/" + convertToSlug(item.title) + "?id=" + item.id
                             }
                         >
                             {Icon[item.icon] && React.createElement(Icon[item.icon], { className: 'service-icon text-2xl flex-shrink-0' })}

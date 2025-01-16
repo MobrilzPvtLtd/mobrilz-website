@@ -8,7 +8,7 @@ export default function PostCardFour({ data }) {
         <img src="" alt="Post image" />
       </div>
       <div className="post-card-four__content">
-        <Link href={process.env.PUBLIC_URL + "/blog/" + data.slug}>
+        <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/" + data.slug}>
           <a href="#">{data.title}</a>
         </Link>
       </div>

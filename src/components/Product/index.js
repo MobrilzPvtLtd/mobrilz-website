@@ -62,8 +62,8 @@ function Product(props) {
     <>
       <div className={`product-item ${classNames(props.className)}`}>
         <Link
-          href={`${process.env.PUBLIC_URL}/pages/products-detail/[slug]`}
-          as={`${process.env.PUBLIC_URL}/pages/products-detail/${convertToSlug(data.name.toLowerCase())}?id=${data.id}`}
+          href={`${process.env.NEXT_PUBLIC_PUBLIC_URL}/pages/products-detail/[slug]`}
+          as={`${process.env.NEXT_PUBLIC_PUBLIC_URL}/pages/products-detail/${convertToSlug(data.name.toLowerCase())}?id=${data.id}`}
           className="block w-full h-full relative"
         >
           <div className="product__thumb relative overflow-hidden border border-outline bg-surface rounded-lg">

@@ -29,7 +29,7 @@ export default function NavigationFull({ showMenu, setShowMenu }) {
             <ul>
               {menuData.map((item, index) => (
                 <li key={index}>
-                  <Link href={process.env.PUBLIC_URL + item.to}>
+                  <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + item.to}>
                     <span>{item.title}</span>
                   </Link>
                 </li>

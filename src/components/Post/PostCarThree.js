@@ -5,20 +5,20 @@ export default function PostCarThree({ data }) {
   return (
     <div className="post-card-three">
       <Link
-        href={process.env.PUBLIC_URL + "/blog/post/[slug]"}
-        as={process.env.PUBLIC_URL + "/blog/post/" + data.slug}
+        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/post/[slug]"}
+        as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/post/" + data.slug}
       >
         <span className="post-card-three__image">
           <img
-            src={process.env.PUBLIC_URL + data.thumbImage}
+            src={process.env.NEXT_PUBLIC_PUBLIC_URL + data.thumbImage}
             alt={data.title}
           />
         </span>
       </Link>
       <div className="post-card-three__content">
         <Link
-          href={process.env.PUBLIC_URL + "/blog/post/[slug]"}
-          as={process.env.PUBLIC_URL + "/blog/post/" + data.slug}
+          href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/post/[slug]"}
+          as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/blog/post/" + data.slug}
         >
           <span>{data.title}</span>
         </Link>

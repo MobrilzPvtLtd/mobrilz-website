@@ -9,9 +9,9 @@ const SolutionThree = ({ data, start, limit }) => {
                 <div className="heading flex items-center justify-between">
                     <h3 className="heading3 ">Our solutions</h3>
                     <Link className="text-button border-b-2 border-yellow inline-block duration-300 hover:text-yellow whitespace-nowrap"
-                        href={process.env.PUBLIC_URL + "/services/[slug]"}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                         as={
-                            process.env.PUBLIC_URL +
+                            process.env.NEXT_PUBLIC_PUBLIC_URL +
                             "/services/" +
                             convertToSlug('Managed IT Services')
                         }

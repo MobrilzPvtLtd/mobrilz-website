@@ -41,7 +41,7 @@ export default function Navigator() {
                 <ul className="dropdown-menu__col">
                   {item.subMenu.slice(0, 4).map((i, index) => (
                     <li key={index}>
-                      <Link href={`${process.env.PUBLIC_URL}${i.to}`}>
+                      <Link href={`${process.env.NEXT_PUBLIC_PUBLIC_URL}${i.to}`}>
                         <span>{i.title}</span>
                       </Link>
                     </li>
@@ -50,7 +50,7 @@ export default function Navigator() {
                 <ul className="dropdown-menu__col">
                   {item.subMenu.slice(4, 8).map((i, index) => (
                     <li key={index}>
-                      <Link href={`${process.env.PUBLIC_URL}${i.to}`}>
+                      <Link href={`${process.env.NEXT_PUBLIC_PUBLIC_URL}${i.to}`}>
                         <span>{i.title}</span>
                       </Link>
                     </li>
@@ -59,7 +59,7 @@ export default function Navigator() {
                 <ul className="dropdown-menu__col">
                   {item.subMenu.slice(8).map((i, index) => (
                     <li key={index}>
-                      <Link href={`${process.env.PUBLIC_URL}${i.to}`}>
+                      <Link href={`${process.env.NEXT_PUBLIC_PUBLIC_URL}${i.to}`}>
                         <span>{i.title}</span>
                       </Link>
                     </li>
@@ -107,7 +107,7 @@ export default function Navigator() {
             <ul className="dropdown-menu">
               {item?.subMenu?.map((i, index) => (
                 <li key={index}>
-                  <Link href={`${process.env.PUBLIC_URL}${i.to}`}>
+                  <Link href={`${process.env.NEXT_PUBLIC_PUBLIC_URL}${i.to}`}>
                     <span>{i.title}</span>
                   </Link>
                 </li>

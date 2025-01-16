@@ -31,7 +31,7 @@ const Checkout = () => {
                                         <h5 className="checkout-title">Contact information</h5>
                                         <p>
                                             Already have an account?
-                                            <Link href={process.env.PUBLIC_URL + "#"}>
+                                            <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + "#"}>
                                                 <span>Login</span>
                                             </Link>
                                         </p>

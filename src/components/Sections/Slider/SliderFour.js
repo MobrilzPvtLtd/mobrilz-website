@@ -35,9 +35,9 @@ const SliderFour = () => {
                     <div className="text-label text-white">Experience Digital Excellence with Us</div>
                     <h2 className="heading1 text-white mt-4">Crafting Digital <br />Success Stories <br />Together</h2>
                     <div className="group-btn flex items-center flex-wrap gap-3 md:mt-8 mt-5">
-                      <Link href={process.env.PUBLIC_URL + "/services/[slug]"}
+                      <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                         as={
-                          process.env.PUBLIC_URL +
+                          process.env.NEXT_PUBLIC_PUBLIC_URL +
                           "/services/" +
                           convertToSlug('Managed IT Services')
                         }
@@ -64,9 +64,9 @@ const SliderFour = () => {
                     <div className="text-label text-white">Experience Digital Excellence with Us</div>
                     <h2 className="heading1 text-white mt-4">Navigate the <br />Digital Frontier <br />Together</h2>
                     <div className="group-btn flex items-center flex-wrap gap-3 md:mt-8 mt-5">
-                      <Link href={process.env.PUBLIC_URL + "/services/[slug]"}
+                      <Link href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                         as={
-                          process.env.PUBLIC_URL +
+                          process.env.NEXT_PUBLIC_PUBLIC_URL +
                           "/services/" +
                           convertToSlug('Managed IT Services')
                         }

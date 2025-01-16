@@ -204,9 +204,9 @@ export default function FooterOne({ classname }) {
                                   className={`caption1 hover-underline ${
                                     classname && "underline-white"
                                   }`}
-                                  // href={process.env.PUBLIC_URL + "/services/[slug]"}
+                                  // href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                                   // as={
-                                  //   process.env.PUBLIC_URL + "/services/" + convertToSlug(item.title) + "?id=" + item.id
+                                  //   process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/" + convertToSlug(item.title) + "?id=" + item.id
                                   // }
                                   href="#!"
                                 >
@@ -305,9 +305,9 @@ export default function FooterOne({ classname }) {
                                     className={`caption1 hover-underline ${
                                       classname && "underline-white"
                                     }`}
-                                    // href={process.env.PUBLIC_URL + "/services/[slug]"}
+                                    // href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                                     // as={
-                                    //   process.env.PUBLIC_URL + "/services/" + convertToSlug(item.title) + "?id=" + item.id
+                                    //   process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/" + convertToSlug(item.title) + "?id=" + item.id
                                     // }
                                     href="#!"
                                   >
@@ -336,9 +336,9 @@ export default function FooterOne({ classname }) {
                                     className={`caption1 hover-underline ${
                                       classname && "underline-white"
                                     }`}
-                                    // href={process.env.PUBLIC_URL + "/services/[slug]"}
+                                    // href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                                     // as={
-                                    //   process.env.PUBLIC_URL + "/services/" + convertToSlug(item.title) + "?id=" + item.id
+                                    //   process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/" + convertToSlug(item.title) + "?id=" + item.id
                                     // }
                                     href="#!"
                                   >
@@ -366,9 +366,9 @@ export default function FooterOne({ classname }) {
                                   className={`caption1 hover-underline ${
                                     classname && "underline-white"
                                   }`}
-                                  // href={process.env.PUBLIC_URL + "/services/[slug]"}
+                                  // href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/[slug]"}
                                   // as={
-                                  //   process.env.PUBLIC_URL + "/services/" + convertToSlug(item.title) + "?id=" + item.id
+                                  //   process.env.NEXT_PUBLIC_PUBLIC_URL + "/services/" + convertToSlug(item.title) + "?id=" + item.id
                                   // }
                                   href="#!"
                                 >

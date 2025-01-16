@@ -8,8 +8,8 @@ const OutstandingCaseStudies = ({ data, showDesc }) => {
         <div className="heading-content">
             <div className="container">
                 <Link className="content-main style-one block bg-white rounded-3xl overflow-hidden shadow-lg"
-                    href={process.env.PUBLIC_URL + "/case-studies/case-studies-detail1/[slug]"}
-                    as={process.env.PUBLIC_URL + "/case-studies/case-studies-detail1/" + convertToSlug(data.title) + "?id=" + data.id}
+                    href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/case-studies/case-studies-detail1/[slug]"}
+                    as={process.env.NEXT_PUBLIC_PUBLIC_URL + "/case-studies/case-studies-detail1/" + convertToSlug(data.title) + "?id=" + data.id}
                 >
                     <div className="flex max-lg:flex-col-reverse items-center justify-between relative">
                         <div className="lg:w-1/2">

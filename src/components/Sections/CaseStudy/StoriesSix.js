@@ -10,7 +10,7 @@ const StoriesSix = () => {
                 <div className="heading flex items-center justify-between">
                     <h3 className="heading3">Success stories</h3>
                     <Link className="text-button border-b-2 border-purple inline-block duration-300 hover:text-purple whitespace-nowrap"
-                        href={process.env.PUBLIC_URL + "/case-studies/case-studies-one"}
+                        href={process.env.NEXT_PUBLIC_PUBLIC_URL + "/case-studies/case-studies-one"}
                     >
                         View All
                     </Link>

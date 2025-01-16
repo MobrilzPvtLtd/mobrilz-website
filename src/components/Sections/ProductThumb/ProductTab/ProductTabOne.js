@@ -26,7 +26,7 @@ export default function ProductTabOne({ data, categories }) {
                 className={classNames({ active: currentCategory === category })}
                 key={index}
               >
-                <a href={process.env.PUBLIC_URL + "#!"}
+                <a href={process.env.NEXT_PUBLIC_PUBLIC_URL + "#!"}
                   onClick={(e) => {
                     e.preventDefault();
                     setCurrentCategory(category);
@@ -59,7 +59,7 @@ export default function ProductTabOne({ data, categories }) {
               </div>
               <div className="text-center">
                 <Button
-                  action={process.env.PUBLIC_URL + "/shop/fullwidth-4col"}
+                  action={process.env.NEXT_PUBLIC_PUBLIC_URL + "/shop/fullwidth-4col"}
                   color="transparent"
                   className="-underline"
                   content="View all product"
